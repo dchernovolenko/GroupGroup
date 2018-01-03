@@ -1,6 +1,6 @@
 import json, sqlite3
 
-def createTable():
+def create_table():
     dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
@@ -9,7 +9,7 @@ def createTable():
     db.commit()
     db.close()
 
-def createAccount(user, pw):
+def create_account(user, pw):
     dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
@@ -18,8 +18,20 @@ def createAccount(user, pw):
     db.commit()
     db.close()
 
-
+def look_for(user):
+    dbf = "data/accounts.db"
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "SELECT '%s' FROM users;" % (user)
+    name = c.execute(command)
+    if name == user:
+        db.commit()
+        db.close()
+        return True
+    db.commit()
+    db.close()
+    return False
 
 if __name__ == "__main__":
-    createTable()
-    createAccount("normal_force", "m1*g")
+    create_table()
+    create_account("normal_force", "m1*g")
