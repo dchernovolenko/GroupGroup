@@ -23,5 +23,5 @@ freudenbergJ -- 2018-01-02 13:59:21
 added login database
 
 freudenbergJ -- 2018-01-04 16:02:30
-added accounts
+added login flask stuff
 
