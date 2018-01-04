@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Home </title>
+  </head>
+  <body>
+    <center>
+      {% set messages = get_flashed_messages() %}
+      {% for message in messages %}
+      {{ message }}
+      {% endfor %}
+      <form method = "POST" action = "/authenticate">
+        <b> Input your user </b>
+        <input type = "text" name = "username"> <br>
+        <b> Input your password </b>
+	      <input type = "password" name = "password"> <br>
+        <input type = "submit" value = "Boom">
+      </form>
+      <br><br>
+      Water tastes good.
+    </center>
+  </body>
+</html>

@@ -1,17 +1,76 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
 from random import *
-import json, urllib2, sys
+import json, urllib2, sys, os
+from utils import db
 
 lat = 0
 long = 0
 
 my_app = Flask(__name__)
+my_app.secret_key = os.urandom(64)
+
 
 @my_app.route('/')
 def root():
     lat = uniform(-65,65) # random floats; avoiding the arctic circles
     long = uniform(-180,180)
     return render_template("game.html")
+
+@my_app.route('/login', methods=['GET','POST'])
+def login():
+    if "user" in session:
+        return redirect(url_for('root'))
+    return render_template('login.html')
+
+@my_app.route('/authenticate', methods=['GET','POST'])
+def authenticate():
+    user = request.form['username']
+    pw = request.form['password']
+
+    print "[app] user is " + user
+    print "[app] pw is " + pw
+
+    if db.look_for(user):
+        #authenticate pass
+        print "hi"
+        if db.check_pass(user, pw):
+            session['user'] = user
+            return redirect(url_for('root'))
+        else:
+            flash ("Incorrect Password.")
+            return redirect(url_for('login'))
+    else:
+        flash ("User does not exist.")
+        return redirect(url_for('login'))
+
+@my_app.route('/register', methods=['GET','POST'])
+def register():
+    if 'user' in session:
+        return redirect(url_for('root'))
+    return render_template('register.html')
+
+@my_app.route('/user_creation', methods=['POST'])
+def user_creation():
+    user = request.form['username']
+    pw = request.form['password']
+    pw_confirm = request.form['confirm']
+
+    if db.look_for(user):
+        flash ("User already exists")
+        return redirect(url_for('register'))
+    if pw != pw_confirm:
+        flash ("Passwords must match")
+        return redirect(url_for('register'))
+    db.create_account(user, pw)
+    flash ("Account Created")
+    return redirect(url_for('login'))
+
+@my_app.route('/logout', methods=['POST'])
+def logout():
+    username = session.pop('user')
+    flash ("Logged out " + username)
+    return redirect(url_for('login'))
+
 
 def status():
     object = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + str(lat) + "," + str(long) + "&key=AIzaSyCUg-iqhEm80I79bL5wCQ-_qB5bJxE76ro")
