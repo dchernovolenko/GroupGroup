@@ -17,15 +17,60 @@ def root():
     print "latitude: ", lat, "longitude: ", long
     return render_template("game.html", latitude = lat, longitude = long, dictionary = status())
 
-@my_app.route('/login', methods=['GET','POST']))
+@my_app.route('/login', methods=['GET','POST'])
 def login():
     if "user" in session:
         return redirect(url_for('root'))
     return render_template('login.html')
 
-@my_app.route('/welcome', methods=['GET','POST'])
-def welcome():
-    print request.form
+@my_app.route('/authenticate', methods=['GET','POST'])
+def authenticate():
+    user = request.form['username']
+    pw = request.form['password']
+
+    print "[app] user is " + user
+    print "[app] pw is " + pw
+
+    if db.look_for(user):
+        #authenticate pass
+        print "hi"
+        if db.check_pass(user, pw):
+            session['user'] = user
+            return redirect(url_for('root'))
+        else:
+            flash ("Incorrect Password.")
+            return redirect(url_for('login'))
+    else:
+        flash ("User does not exist.")
+        return redirect(url_for('login'))
+
+@my_app.route('/register', methods=['GET','POST'])
+def register():
+    if 'user' in session:
+        return redirect(url_for('root'))
+    return render_template('register.html')
+
+@my_app.route('/user_creation', methods=['POST'])
+def user_creation():
+    user = request.form['username']
+    pw = request.form['password']
+    pw_confirm = request.form['confirm']
+
+    if db.look_for(user):
+        flash ("User already exists")
+        return redirect(url_for('register'))
+    if pw != pw_confirm:
+        flash ("Passwords must match")
+        return redirect(url_for('register'))
+    db.create_account(user, pw)
+    flash ("Account Created")
+    return redirect(url_for('login'))
+
+@my_app.route('/logout', methods=['POST'])
+def logout():
+    username = session.pop('user')
+    flash ("Logged out " + username)
+    return redirect(url_for('login'))
 
 
 def status():
