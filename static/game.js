@@ -26,7 +26,7 @@
         // });
 
         // Set the initial Street View camera to the center of the map
-        panorama.set('addressControl', false);
+        // panorama.set('addressControl', false);
         sv.getPanorama({location: berkeley, radius: 1400000}, processSVData);
 
         // Look for a nearby Street View panorama when the map is clicked.
@@ -35,7 +35,6 @@
         // map.addListener('click', function(event) {
         //   sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
         // });
-        // panorama.set('addressControl', false);
       }
 
       function processSVData(data, status) {
@@ -52,6 +51,7 @@
         //     pitch: 0
         //   });
           panorama.setVisible(true);
+          panorama.set('addressControl', false);
 
         //   marker.addListener('click', function() {
         //     var markerPanoID = data.location.pano;
