@@ -22,6 +22,16 @@ Roster: chernovolenkoD, freudenbergJ, keY, taradachukA
 freudenbergJ -- 2018-01-02 13:59:21
 added login database
 
+keY -- 2018-01-03 13:55:48
+goes to a random street view at every refresh, though the location is still displayed, gotta fix that
+
 freudenbergJ -- 2018-01-04 16:02:30
 added login flask stuff
+
+keY -- 2018-01-04 15:24:48
+does not display location of random street view anymore!
+
+keY -- 2018-01-04 23:10:20
+drops marker to wherever the user clicks on the map
+distance is calculated from goal to user click
 
