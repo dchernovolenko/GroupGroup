@@ -74,8 +74,8 @@
             marker.setAnimation(google.maps.Animation.DROP);
             marker.setPosition(event.latLng);
         }
-          console.log( event.latLng.lat() + ', ' + event.latLng.lng() );
-          console.log( distance(event.latLng.lat(), event.latLng.lng(), latitude, longitude) );
+          console.log( 'latitude: ' + event.latLng.lat() + ', longitude: ' + event.latLng.lng() );
+          console.log( distance(event.latLng.lat(), event.latLng.lng(), latitude, longitude) + ' km to goal' );
         });
       }
 
