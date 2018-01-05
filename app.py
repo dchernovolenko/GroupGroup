@@ -20,7 +20,7 @@ def root():
 def login():
     if "user" in session:
         return redirect(url_for('root'))
-    return render_template('login.html')
+    return render_template('game.html')
 
 @my_app.route('/authenticate', methods=['GET','POST'])
 def authenticate():
