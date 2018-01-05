@@ -12,8 +12,6 @@ my_app.secret_key = os.urandom(64)
 
 @my_app.route('/')
 def root():
-    lat = uniform(-65,65) # random floats; avoiding the arctic circles
-    long = uniform(-180,180)
     return render_template("game.html")
 
 @my_app.route('/login', methods=['GET','POST'])
