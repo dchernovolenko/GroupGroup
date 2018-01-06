@@ -41,6 +41,9 @@
       var panorama;
       var marker;
 
+      var landed_lat;
+      var landed_lng;
+
       function initMap() {
         var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
         var longitude = getRandomFloat(-180,180);
@@ -58,7 +61,6 @@
           streetViewControl: false
         });
 
-        // Set the initial Street View camera to the center of the map
         sv.getPanorama({location: place, radius: 1400000}, processSVData);
 
         //when the user clicks on the map
@@ -74,32 +76,18 @@
             marker.setAnimation(google.maps.Animation.DROP);
             marker.setPosition(event.latLng);
         }
-          console.log( 'latitude: ' + event.latLng.lat() + ', longitude: ' + event.latLng.lng() );
-          console.log( distance(event.latLng.lat(), event.latLng.lng(), latitude, longitude) + ' km to goal' );
+          console.log( 'user click latitude: ' + event.latLng.lat() + ', longitude: ' + event.latLng.lng() );
+          console.log( distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng) + ' km to goal' );
         });
       }
 
       function processSVData(data, status) {
         if (status === 'OK') {
-          // var marker = new google.maps.Marker({
-          //   position: data.location.latLng,
-          //   map: map,
-          //   title: data.location.description
-          // });
-
           panorama.setPano(data.location.pano);
+          landed_lat = data.location.latLng.lat();
+          landed_lng = data.location.latLng.lng();
           panorama.setVisible(true);
           panorama.set('addressControl', false);
-
-          // marker.addListener('click', function(event) {
-          //   // var markerPanoID = data.location.pano;
-          //   // // Set the Pano to use the passed panoID.
-          //   // panorama.setPano(markerPanoID);
-          //   // panorama.setVisible(true);
-            // var latitude = event.latLng.lat();
-            // var longitude = event.latLng.lng();
-            // console.log( latitude + ', ' + longitude );
-          // });
         } else {
           console.error('Street View data not found for this location.');
         }
