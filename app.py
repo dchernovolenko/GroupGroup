@@ -66,9 +66,12 @@ def user_creation():
 
 @my_app.route('/logout', methods=['GET', 'POST'])
 def logout():
-    username = session.pop('user')
-    flash ("Logged out " + username)
-    return redirect(url_for('login'))
+    if "user" in session:
+        username = session.pop('user')
+        flash ("Logged out " + username)
+        return redirect(url_for('login'))
+    else:
+        return redirect(url_for('root'))
 
 
 def status():
