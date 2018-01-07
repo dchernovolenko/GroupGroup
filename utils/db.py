@@ -4,16 +4,16 @@ def create_table():
     dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
-    command = "CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT);"
+    command = "CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT, points INTEGER);"
     c.execute(command)
     db.commit()
     db.close()
 
-def create_account(user, pw):
+def create_account(user, pw, points=0):
     dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
-    command = "INSERT INTO users VALUES ('%s', '%s');" % (user, pw)
+    command = "INSERT INTO users VALUES ('%s', '%s', '%s');" % (user, pw, points)
     c.execute(command)
     db.commit()
     db.close()
@@ -56,6 +56,21 @@ def check_pass(user, pw):
     db.close()
     return False
 
+
+def add_points(user, points):
+    dbf = "data/accounts.db"
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "UPDATE users SET points = points + '%d' WHERE username = \"" % (points) + user + "\";"
+    c.execute(command)
+    db.commit()
+    db.close()
+    return points #returns points added
+
+
+
+
 if __name__ == "__main__":
     create_table()
-    create_account("normal_force", "m1*g")
+    create_account("normal_force", "m1*g", 10)
+    add_points("normal_force", 10)
