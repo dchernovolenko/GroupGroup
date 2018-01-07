@@ -35,3 +35,6 @@ keY -- 2018-01-04 23:10:20
 drops marker to wherever the user clicks on the map
 distance is calculated from goal to user click
 
+freudenbergJ -- 2018-01-07 13:05:23
+added points column to db
+added datasets for map themes
