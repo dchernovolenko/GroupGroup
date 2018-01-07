@@ -67,10 +67,21 @@ def add_points(user, points):
     db.close()
     return points #returns points added
 
-
+def leaderboard():
+    lb = []
+    dbf = "data/accounts.db"
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "SELECT username, points FROM users ORDER BY points DESC;"
+    order_list = c.execute(command)
+    for entry in order_list:
+        lb.append((entry[0], entry[1]))
+        #lb.append()
+    return lb
 
 
 if __name__ == "__main__":
-    create_table()
-    create_account("normal_force", "m1*g", 10)
-    add_points("normal_force", 10)
+    # create_table()
+    # create_account("normal_force", "m1*g", 10)
+    # add_points("normal_force", 10)
+    print leaderboard()

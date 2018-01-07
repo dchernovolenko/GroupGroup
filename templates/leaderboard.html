@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Leaderboard </title>
+  </head>
+  <body>
+    <center>
+      {% set messages = get_flashed_messages() %}
+      {% for message in messages %}
+      {{ message }}
+      {% endfor %}
+
+      <table border = "1">
+        <tr>
+          <th> Username </th>
+          <th> Points </th>
+        </tr>
+        {% for ranking in lb %}
+        <tr>
+          <td> {{ ranking[0] }} </td>
+          <td> {{ ranking[1] }} </td>
+        </tr>
+        {% endfor %}
+      </table>

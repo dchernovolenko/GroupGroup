@@ -15,6 +15,14 @@ def root():
     return render_template("game.html")
 
 
+@my_app.route('/leaderboard')
+def leaderboard():
+    lb = db.leaderboard()
+    return render_template("leaderboard.html", lb = lb)
+
+
+
+
 @my_app.route('/login', methods=['GET','POST'])
 def login():
     if "user" in session:
