@@ -26,14 +26,14 @@ var marker;
 
 var landed_lat;
 var landed_lng;
-
+var place;
 var user_score;
 
 function initMap() {
   var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   var longitude = getRandomFloat(-180,180);
 
-  var place = {lat: latitude, lng: longitude};
+  place = {lat: latitude, lng: longitude};
   var place2 = {lat: 0, lng: 0}; // for the map        
   var sv = new google.maps.StreetViewService();
 
@@ -79,6 +79,11 @@ $( "button" ).click(function() {
   // so they can't submit again
   $( "button" ).remove();
   // so the player can't put mark the map anymore
+  var endMark = new google.maps.Marker({
+	position: {lat: landed_lat, lng: landed_lng},
+	map:map,
+	label: "B",
+});
   google.maps.event.clearInstanceListeners(map);
 
   // determining the score
