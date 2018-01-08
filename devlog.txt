@@ -35,3 +35,9 @@ keY -- 2018-01-04 23:10:20
 drops marker to wherever the user clicks on the map
 distance is calculated from goal to user click
 
+keY -- 2018-01-07 20:50:36
+distance is now only calculated when player submits
+the submit button is only enabled when the player clicks on the map (and thus a marker is dropped)
+the submit button is gone after submitting once so the player can't cheat
+when the player submits, points are added to their account
+

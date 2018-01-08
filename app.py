@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
 from random import *
 import json, urllib2, sys, os
+import sqlite3, os
 from utils import db
 
 my_app = Flask(__name__)
@@ -11,11 +12,12 @@ my_app.secret_key = os.urandom(64)
 def root():
     return render_template("game.html")
 
+
 @my_app.route('/login', methods=['GET','POST'])
 def login():
     if "user" in session:
         return redirect(url_for('root'))
-    return render_template('game.html')
+    return render_template('login.html')
 
 @my_app.route('/authenticate', methods=['GET','POST'])
 def authenticate():
@@ -56,11 +58,11 @@ def user_creation():
     if pw != pw_confirm:
         flash ("Passwords must match")
         return redirect(url_for('register'))
-    db.create_account(user, pw)
+    db.create_account(user, pw, 0)
     flash ("Account Created")
     return redirect(url_for('login'))
 
-@my_app.route('/logout', methods=['POST'])
+@my_app.route('/logout', methods=['GET', 'POST'])
 def logout():
     username = session.pop('user')
     flash ("Logged out " + username)
@@ -68,10 +70,13 @@ def logout():
 
 @my_app.route('/addScore', methods=['GET'])
 def addScore():
-    data = request.args.get("score")
-    data = float(data)
-    add_points(session['user'], data)
-    response = json.dumps({"success": data})
+    if ('user' in session):
+        data = request.args.get("score")
+        data = float(data)
+        add_points(session['user'], data)
+        response = json.dumps({"success": "yesss"})
+    else:
+        response = json.dumps({"failed because not logged in": "nooooo"})
 
     return response
 
