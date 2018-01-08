@@ -19,12 +19,15 @@ return d;
 function deg2rad(deg) {
 return deg * (Math.PI/180)
 }
+
 var map;
 var panorama;
 var marker;
 
 var landed_lat;
 var landed_lng;
+
+var user_score;
 
 function initMap() {
   var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
@@ -46,35 +49,42 @@ function initMap() {
   sv.getPanorama({location: place, radius: 1400000}, processSVData);
 
   //when the user clicks on the map
-  map.addListener('click', function marking(event) {
-    if (marker == undefined){
-      marker = new google.maps.Marker({
-          position: event.latLng,
-          map: map, 
-          animation: google.maps.Animation.DROP, // just to be extra
-      });
-  }
-  else{
-      marker.setAnimation(google.maps.Animation.DROP);
-      marker.setPosition(event.latLng);
-  }
+  map.addListener('click', marking);
+}
 
-    // distance from user click to actual place
-    var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
-    // scoring (half of Earth's circumference in km minus user click distance)
-    var user_score = 20037.5 - distance_to_goal;
-    var score = document.getElementById("score");
-    console.log( '\nscore: ' + user_score );
-    score.innerHTML = 'score: ' + user_score;
+// putting the marker down at where the user clicks
+function marking(event) {
+  if (marker == undefined){
+    marker = new google.maps.Marker({
+        position: event.latLng,
+        map: map, 
+        animation: google.maps.Animation.DROP, // just to be extra
+    });
+}
+else{
+    marker.setAnimation(google.maps.Animation.DROP);
+    marker.setPosition(event.latLng);
+}
 
-    // putting a marker down activates the submit button
-    document.getElementById("submit").disabled = false;
-  });
+  // distance from user click to actual place
+  var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
+  // scoring (half of Earth's circumference in km minus user click distance)
+  user_score = 20037.5 - distance_to_goal;
+
+  // putting a marker down activates the submit button
+  document.getElementById("submit").disabled = false;
 }
 
 $( "button" ).click(function() {
+  // so they can't submit again
   $( "button" ).remove();
-  target.removeEventListener('click', marking);
+  // so the player can't put mark the map anymore
+  google.maps.event.clearInstanceListeners(map);
+
+  // determining the score
+  var score = document.getElementById("score");
+  console.log( '\nscore: ' + user_score );
+  score.innerHTML = 'score: ' + user_score;
 });
 
 function processSVData(data, status) {
