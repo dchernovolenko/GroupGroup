@@ -46,7 +46,7 @@ function initMap() {
   sv.getPanorama({location: place, radius: 1400000}, processSVData);
 
   //when the user clicks on the map
-  map.addListener('click', function(event) {
+  map.addListener('click', function marking(event) {
     if (marker == undefined){
       marker = new google.maps.Marker({
           position: event.latLng,
@@ -58,10 +58,24 @@ function initMap() {
       marker.setAnimation(google.maps.Animation.DROP);
       marker.setPosition(event.latLng);
   }
-    console.log( 'user click latitude: ' + event.latLng.lat() + ', longitude: ' + event.latLng.lng() );
-    console.log( distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng) + ' km to goal' );
+
+    // distance from user click to actual place
+    var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
+    // scoring (half of Earth's circumference in km minus user click distance)
+    var user_score = 20037.5 - distance_to_goal;
+    var score = document.getElementById("score");
+    console.log( '\nscore: ' + user_score );
+    score.innerHTML = 'score: ' + user_score;
+
+    // putting a marker down activates the submit button
+    document.getElementById("submit").disabled = false;
   });
 }
+
+$( "button" ).click(function() {
+  $( "button" ).remove();
+  target.removeEventListener('click', marking);
+});
 
 function processSVData(data, status) {
   if (status === 'OK') {

@@ -3,9 +3,6 @@ from random import *
 import json, urllib2, sys, os
 from utils import db
 
-lat = 0
-long = 0
-
 my_app = Flask(__name__)
 my_app.secret_key = os.urandom(64)
 
@@ -68,13 +65,6 @@ def logout():
     username = session.pop('user')
     flash ("Logged out " + username)
     return redirect(url_for('login'))
-
-
-def status():
-    object = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + str(lat) + "," + str(long) + "&key=AIzaSyCUg-iqhEm80I79bL5wCQ-_qB5bJxE76ro")
-    string = object.read()
-    return string
-    # d = json.loads(string)
 
 if __name__ == "__main__":
     my_app.debug = True
