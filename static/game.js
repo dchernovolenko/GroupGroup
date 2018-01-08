@@ -83,8 +83,22 @@ $( "button" ).click(function() {
 
   // determining the score
   var score = document.getElementById("score");
-  console.log( '\nscore: ' + user_score );
-  score.innerHTML = 'score: ' + user_score;
+  console.log( 'score: ' + user_score );
+  score.innerHTML = 'you scored ' + user_score;
+
+  // sending how much score to add to the user
+  $.ajax({
+    url: '/addScore',
+    type: 'GET',
+    data: {"score": user_score},
+    success: function(response){
+      console.log(response);
+    },
+    error: function(error){
+      console.log(error);
+    }
+  });
+
 });
 
 function processSVData(data, status) {

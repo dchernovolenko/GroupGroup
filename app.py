@@ -66,6 +66,25 @@ def logout():
     flash ("Logged out " + username)
     return redirect(url_for('login'))
 
+@my_app.route('/addScore', methods=['GET'])
+def addScore():
+    data = request.args.get("score")
+    data = float(data)
+    add_points(session['user'], data)
+    response = json.dumps({"success": data})
+
+    return response
+
+def add_points(user, points):
+    dbf = "data/accounts.db"
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "UPDATE users SET points = points + '%d' WHERE username = \"" % (points) + user + "\";"
+    c.execute(command)
+    db.commit()
+    db.close()
+    return points #returns points added
+
 if __name__ == "__main__":
     my_app.debug = True
     my_app.run()
