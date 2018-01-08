@@ -1,7 +1,8 @@
 import json, sqlite3
 
+dbf = "data/accounts.db"
+
 def create_table():
-    dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
     command = "CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT, points INTEGER);"
@@ -10,7 +11,6 @@ def create_table():
     db.close()
 
 def create_account(user, pw, points=0):
-    dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
     command = "INSERT INTO users VALUES ('%s', '%s', '%s');" % (user, pw, points)
@@ -19,7 +19,6 @@ def create_account(user, pw, points=0):
     db.close()
 
 def look_for(user):
-    dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
     command = "SELECT username FROM users;"
@@ -38,7 +37,6 @@ def look_for(user):
     return False
 
 def check_pass(user, pw):
-    dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
     command = "SELECT password FROM users WHERE username = \"" + user + "\";"
@@ -58,7 +56,6 @@ def check_pass(user, pw):
 
 
 def add_points(user, points):
-    dbf = "data/accounts.db"
     db = sqlite3.connect(dbf)
     c = db.cursor()
     command = "UPDATE users SET points = points + '%d' WHERE username = \"" % (points) + user + "\";"

@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
 from random import *
 import json, urllib2, sys, os
+import sqlite3, os
 from utils import db
-
-lat = 0
-long = 0
 
 my_app = Flask(__name__)
 my_app.secret_key = os.urandom(64)
@@ -68,7 +66,7 @@ def user_creation():
     if pw != pw_confirm:
         flash ("Passwords must match")
         return redirect(url_for('register'))
-    db.create_account(user, pw)
+    db.create_account(user, pw, 0)
     flash ("Account Created")
     return redirect(url_for('login'))
 
@@ -81,12 +79,17 @@ def logout():
     else:
         return redirect(url_for('root'))
 
+@my_app.route('/addScore', methods=['GET'])
+def addScore():
+    if ('user' in session):
+        data = request.args.get("score")
+        data = float(data)
+        db.add_points(session['user'], data)
+        response = json.dumps({"success": data })
+    else:
+        response = json.dumps({"failed because not logged in": "nooooo"})
 
-def status():
-    object = urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + str(lat) + "," + str(long) + "&key=AIzaSyCUg-iqhEm80I79bL5wCQ-_qB5bJxE76ro")
-    string = object.read()
-    return string
-    # d = json.loads(string)
+    return response
 
 if __name__ == "__main__":
     my_app.debug = True
