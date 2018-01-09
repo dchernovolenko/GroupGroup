@@ -26,14 +26,28 @@ var marker;
 
 var landed_lat;
 var landed_lng;
-var place;
 var user_score;
+var place;
+
+var on_land; // to know if the random coordinate is a land coordinate
 
 function initMap() {
   var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   var longitude = getRandomFloat(-180,180);
 
   place = {lat: latitude, lng: longitude};
+  console.log("the beginning: " + place.lat + ", " + place.lng);
+  var geocoder = new google.maps.Geocoder;
+  geocoder.geocode({'location': place}, function(results, status){
+    if (status != 'OK'){
+      //redirec to some place in Eurasia
+      console.log("redirecting to Eurasia bc I landed in water");
+      place.lng = getRandomFloat(60, 130);
+      place.lat = getRandomFloat(20, 70);
+    }
+  }
+  )
+
   var place2 = {lat: 0, lng: 0}; // for the map        
   var sv = new google.maps.StreetViewService();
 
@@ -46,7 +60,7 @@ function initMap() {
     streetViewControl: false
   });
 
-  sv.getPanorama({location: place, radius: 1400000}, processSVData);
+  sv.getPanorama({location: place, radius: 8800000}, processSVData);
 
   //when the user clicks on the map
   map.addListener('click', marking);
@@ -78,7 +92,7 @@ else{
 $( "button" ).click(function() {
   // so they can't submit again
   $( "button" ).remove();
-  // so the player can't put mark the map anymore
+  // making a marker at the correct spot, marked "B"
   var endMark = new google.maps.Marker({
 	position: {lat: landed_lat, lng: landed_lng},
 	map:map,
@@ -113,7 +127,10 @@ function processSVData(data, status) {
     landed_lng = data.location.latLng.lng();
     panorama.setVisible(true);
     panorama.set('addressControl', false);
+
+    var on_land = true;
   } else {
     console.error('Street View data not found for this location.');
+    var on_land = false;
   }
 }
