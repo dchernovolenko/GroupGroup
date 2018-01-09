@@ -103,7 +103,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score;
+  score.innerHTML = 'you scored ' + user_score + "out of 20037.5";
 
   // sending how much score to add to the user
   $.ajax({

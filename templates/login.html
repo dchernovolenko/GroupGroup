@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <title> Login </title>
-  </head>
+{% extends "uniTemp.html" %}
+{% block content1 %}
   <body>
     <center>
       {% set messages = get_flashed_messages() %}
@@ -24,5 +21,4 @@
       <br><br>
       Water tastes good.
     </center>
-  </body>
-</html>
+{% endblock %}

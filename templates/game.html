@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
+{% extends "uniTemp.html" %}
+{% block content1 %}
   <head>
-    <meta charset="utf-8">
-    <title>Geopardy</title>
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body>
@@ -30,5 +21,4 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mIp5CiUGgspmP4WYqijELDBFv-7CUc8&callback=initMap">
     </script>
-  </body>
-</html>
+{% endblock %}
