@@ -10,7 +10,7 @@ my_app.secret_key = os.urandom(64)
 
 @my_app.route('/')
 def root():
-    return render_template("game.html")
+    return render_template("home.html")
 
 
 @my_app.route('/leaderboard')
@@ -19,6 +19,9 @@ def leaderboard():
     return render_template("leaderboard.html", lb = lb)
 
 
+@my_app.route('/game')
+def home():
+        return render_template('game.html')
 
 
 @my_app.route('/login', methods=['GET','POST'])

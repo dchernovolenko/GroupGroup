@@ -48,3 +48,6 @@ when the player submits, points are added to their account
 danielC -- 2018-01-10 21:34:30
 added (working) CSS for navbar
 
+danielC -- 2018-01-11 09:22:17
+added home page and more css
+
