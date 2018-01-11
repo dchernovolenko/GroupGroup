@@ -50,8 +50,6 @@
     -2px 2px 0 #000,
     2px 2px 0 #000;
   }
-
-
   .btn-primary{
     color: #44FFD1;
     background-color: #005C69;
@@ -182,11 +180,10 @@
     color: #b2b3cc;
     background-color: #3d4498;
   }
-  div.map {
+  .map {
     position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 3px solid #73AD21;
+    top: 0px;
+    right: 15px;
+    z-index: 999;
+    padding-bottom: 15px;
 }

@@ -45,3 +45,6 @@ the submit button is only enabled when the player clicks on the map (and thus a 
 the submit button is gone after submitting once so the player can't cheat
 when the player submits, points are added to their account
 
+danielC -- 2018-01-10 21:34:30
+added (working) CSS for navbar
+
