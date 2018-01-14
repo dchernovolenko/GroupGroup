@@ -51,3 +51,5 @@ added (working) CSS for navbar
 danielC -- 2018-01-11 09:22:17
 added home page and more css
 
+freudenbergJ -- 2018-01-14 17:40:45
+added function to get coordinates of random major us city
