@@ -2,15 +2,9 @@ function getRandomFloat(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function get_us_coord() {
-  $.ajax({
-    type: "POST",
-    url: "/us_coord",
-  }).done(function(response) {
-     console.log(response)
-  });
-
-}
+// function get_us_coord() {
+//
+// }
 
 function distance(lat1,lon1,lat2,lon2) {
 var R = 6371; // Radius of the earth in km
@@ -42,10 +36,26 @@ var place;
 var on_land; // to know if the random coordinate is a land coordinate
 
 function initMap() {
-  var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-  var longitude = getRandomFloat(-180,180);
+  // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
+  // var longitude = getRandomFloat(-180,180);
+  var latitude;
+  var longitude;
 
-  get_us_coord()
+  //================Random US city code ============
+  $.ajax({
+    type: "POST",
+    url: "/us_coord",
+    async: false,
+  }).done(function(response) {
+     console.log(response);
+     var obj = JSON.parse(response);
+     console.log(typeof(obj));
+     latitude = obj.lat;
+     longitude = obj.long * -1;
+  });
+  console.log('hello')
+  console.log(latitude)
+  console.log(longitude)
 
   place = {lat: latitude, lng: longitude};
   console.log("the beginning: " + place.lat + ", " + place.lng);
@@ -137,6 +147,9 @@ function processSVData(data, status) {
     panorama.setPano(data.location.pano);
     landed_lat = data.location.latLng.lat();
     landed_lng = data.location.latLng.lng();
+    console.log("landed")
+    console.log(landed_lat)
+    console.log(landed_lng)
     panorama.setVisible(true);
     panorama.set('addressControl', false);
 
