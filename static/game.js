@@ -40,7 +40,7 @@ var place;
 
 var count = 0; // to see how many API calls I wasted lmao
 var on_land; // to know if the random coordinate is a land coordinate
-var us_city = 1;
+var us_city = 0;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
@@ -93,7 +93,9 @@ function initMap() {
 }
 
 function TryRandomLocation(callback) {
-  // Try to find a panorama within 50 metres 
+  // Try to find a panorama within 15000 metres 
+  latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
+  longitude = getRandomFloat(-180,180);
   sv.getPanorama({
       location: new google.maps.LatLng(latitude, longitude),
       radius: 15000
@@ -186,7 +188,7 @@ function processSVData(data, status) {
     console.log("took " + count + " tries");
     count = 0;
   } else {
-    longitude++;
+    // longitude++;
     count++;
     console.log("getting a good location...");
     TryRandomLocation(processSVData);
