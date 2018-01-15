@@ -33,8 +33,6 @@ var user_score;
 var count = 0;
 var place;
 
-var on_land; // to know if the random coordinate is a land coordinate
-
 function initMap() {
   latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   longitude = getRandomFloat(-180,180);
