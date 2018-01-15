@@ -29,15 +29,29 @@ var latitude;
 var longitude;
 var landed_lat;
 var landed_lng;
-
 var user_score;
 var count = 0;
+var place;
+
+var on_land; // to know if the random coordinate is a land coordinate
 
 function initMap() {
   latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   longitude = getRandomFloat(-180,180);
 
-  var place = {lat: latitude, lng: longitude};
+  place = {lat: latitude, lng: longitude};
+  console.log("the beginning: " + place.lat + ", " + place.lng);
+  var geocoder = new google.maps.Geocoder;
+  geocoder.geocode({'location': place}, function(results, status){
+    if (status != 'OK'){
+      //redirec to some place in Eurasia
+      console.log("redirecting to Eurasia bc I landed in water");
+      place.lng = getRandomFloat(60, 130);
+      place.lat = getRandomFloat(20, 70);
+    }
+  }
+  )
+
   var place2 = {lat: 0, lng: 0}; // for the map        
   sv = new google.maps.StreetViewService();
 
@@ -90,7 +104,12 @@ else{
 $( "button" ).click(function() {
   // so they can't submit again
   $( "button" ).remove();
-  // so the player can't put mark the map anymore
+  // making a marker at the correct spot, marked "B"
+  var endMark = new google.maps.Marker({
+	position: {lat: landed_lat, lng: landed_lng},
+	map:map,
+	label: "B",
+});
   google.maps.event.clearInstanceListeners(map);
 
   // determining the score

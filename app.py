@@ -13,6 +13,14 @@ def root():
     return render_template("game.html")
 
 
+@my_app.route('/leaderboard')
+def leaderboard():
+    lb = db.leaderboard()
+    return render_template("leaderboard.html", lb = lb)
+
+
+
+
 @my_app.route('/login', methods=['GET','POST'])
 def login():
     if "user" in session:
@@ -64,31 +72,24 @@ def user_creation():
 
 @my_app.route('/logout', methods=['GET', 'POST'])
 def logout():
-    username = session.pop('user')
-    flash ("Logged out " + username)
-    return redirect(url_for('login'))
+    if "user" in session:
+        username = session.pop('user')
+        flash ("Logged out " + username)
+        return redirect(url_for('login'))
+    else:
+        return redirect(url_for('root'))
 
 @my_app.route('/addScore', methods=['GET'])
 def addScore():
     if ('user' in session):
         data = request.args.get("score")
         data = float(data)
-        add_points(session['user'], data)
-        response = json.dumps({"success": "yesss"})
+        db.add_points(session['user'], data)
+        response = json.dumps({"success": data })
     else:
         response = json.dumps({"failed because not logged in": "nooooo"})
 
     return response
-
-def add_points(user, points):
-    dbf = "data/accounts.db"
-    db = sqlite3.connect(dbf)
-    c = db.cursor()
-    command = "UPDATE users SET points = points + '%d' WHERE username = \"" % (points) + user + "\";"
-    c.execute(command)
-    db.commit()
-    db.close()
-    return points #returns points added
 
 if __name__ == "__main__":
     my_app.debug = True
