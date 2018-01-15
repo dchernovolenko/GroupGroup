@@ -38,7 +38,7 @@ var place;
 
 var count = 0; // to see how many API calls I wasted lmao
 var on_land; // to know if the random coordinate is a land coordinate
-var us_city = 0;
+var us_city = 1;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
@@ -160,8 +160,9 @@ function processSVDataTheme(data, status) {
     console.log("landed")
     console.log(landed_lat)
     console.log(landed_lng)
-    panorama.setVisible(true);
     panorama.set('addressControl', false);
+    panorama.set('showRoadLabels', false);
+    panorama.setVisible(true);
 
     on_land = 1;
   } else {
@@ -175,11 +176,13 @@ function processSVData(data, status) {
     panorama.setPano(data.location.pano);
     landed_lat = data.location.latLng.lat();
     landed_lng = data.location.latLng.lng();
-    panorama.setVisible(true);
+    panorama.set('showRoadLabels', false);
     panorama.set('addressControl', false);
+    panorama.setVisible(true);
 
     console.log("YAY! " + data.location.latLng.lat() + ", " + data.location.latLng.lng());
     console.log("took " + count + " tries");
+    count = 0;
   } else {
     longitude++;
     count++;
