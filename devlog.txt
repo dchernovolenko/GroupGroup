@@ -41,3 +41,5 @@ the submit button is only enabled when the player clicks on the map (and thus a 
 the submit button is gone after submitting once so the player can't cheat
 when the player submits, points are added to their account
 
+keY -- 2018-01-015 13:04:30
+doesn't land on water anymore by recursively finding a place on land

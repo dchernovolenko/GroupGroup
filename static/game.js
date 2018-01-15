@@ -20,22 +20,26 @@ function deg2rad(deg) {
 return deg * (Math.PI/180)
 }
 
+var sv;
 var map;
 var panorama;
 var marker;
 
+var latitude;
+var longitude;
 var landed_lat;
 var landed_lng;
 
 var user_score;
+var count = 0;
 
 function initMap() {
-  var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-  var longitude = getRandomFloat(-180,180);
+  latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
+  longitude = getRandomFloat(-180,180);
 
   var place = {lat: latitude, lng: longitude};
   var place2 = {lat: 0, lng: 0}; // for the map        
-  var sv = new google.maps.StreetViewService();
+  sv = new google.maps.StreetViewService();
 
   panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
 
@@ -46,10 +50,18 @@ function initMap() {
     streetViewControl: false
   });
 
-  sv.getPanorama({location: place, radius: 1400000}, processSVData);
+  TryRandomLocation(processSVData);
 
   //when the user clicks on the map
   map.addListener('click', marking);
+}
+
+function TryRandomLocation(callback) {
+  // Try to find a panorama within 50 metres 
+  sv.getPanorama({
+      location: new google.maps.LatLng(latitude, longitude),
+      radius: 15000
+  }, callback);
 }
 
 // putting the marker down at where the user clicks
@@ -108,7 +120,13 @@ function processSVData(data, status) {
     landed_lng = data.location.latLng.lng();
     panorama.setVisible(true);
     panorama.set('addressControl', false);
+
+    console.log("YAY! " + data.location.latLng.lat() + ", " + data.location.latLng.lng());
+    console.log("took " + count + " tries");
   } else {
-    console.error('Street View data not found for this location.');
+    longitude++;
+    count++;
+    console.log("getting a good location...");
+    TryRandomLocation(processSVData);
   }
 }
