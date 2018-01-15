@@ -1,806 +1,805 @@
 ALABAMA,LATITUDE,LONGITUDE
-Alexander City,32°,57' N,85°,57' W
-Anniston AP,33°,35' N,85°,51' W
-Auburn,32°,36' N,85°,30' W
-Birmingham AP,33°,34' N,86°,45' W
-Decatur,34°,37' N,86°,59' W
-Dothan AP,31°,19' N,85°,27' W
-Florence AP,34°,48' N,87°,40' W
-Gadsden,34°,1' N,86°,0' W
-Huntsville AP,34°,42' N,86°,35' W
-Mobile AP,30°,41' N,88°,15' W
-Mobile Co,30°,40' N,88°,15' W
-Montgomery AP,32°,23' N,86°,22' W
-Selma-Craig AFB,32°,20' N,87°,59' W
-Talladega,33°,27' N,86°,6' W
-Tuscaloosa AP,33°,13' N,87°,37' W
+Alexander City,32,57,85,57
+Anniston AP,33,35,85,51
+Auburn,32,36,85,30
+Birmingham AP,33,34,86,45
+Decatur,34,37,86,59
+Dothan AP,31,19,85,27
+Florence AP,34,48,87,40
+Gadsden,34,1,86,0
+Huntsville AP,34,42,86,35
+Mobile AP,30,41,88,15
+Mobile Co,30,40,88,15
+Montgomery AP,32,23,86,22
+Selma-Craig AFB,32,20,87,59
+Talladega,33,27,86,6
+Tuscaloosa AP,33,13,87,37
 ALASKA,LATITUDE,LONGITUDE,
-Anchorage AP,61°,10' N,150°,1' W
-Barrow (S),71°,18' N,156°,47' W
-Fairbanks AP (S),64°,49' N,147°,52' W
-Juneau AP,58°,22' N,134°,35' W
-Kodiak,57°,45' N,152°,29' W
-Nome AP,64°,30' N,165°,26' W
+Anchorage AP,61,10,150,1
+Barrow (S),71,18,156,47
+Fairbanks AP (S),64,49,147,52
+Juneau AP,58,22,134,35
+Kodiak,57,45,152,29
+Nome AP,64,30,165,26
 ARIZONA,LATITUDE,LONGITUDE,
-Douglas AP,31°,27' N,109°,36' W
-Flagstaff AP,35°,8' N,111°,40' W
-Fort Huachuca AP (S),31°,35' N,110°,20' W
-Kingman AP,35°,12' N,114°,1' W
-Nogales,31°,21' N,110°,55' W
-Phoenix AP (S),33°,26' N,112°,1' W
-Prescott AP,34°,39' N,112°,26' W
-Tucson AP (S),32°,7' N,110°,56' W
-Winslow AP,35°,1' N,110°,44' W
-Yuma AP,32°,39' N,114°,37' W
+Douglas AP,31,27,109,36
+Flagstaff AP,35,8,111,40
+Fort Huachuca AP (S),31,35,110,20
+Kingman AP,35,12,114,1
+Nogales,31,21,110,55
+Phoenix AP (S),33,26,112,1
+Prescott AP,34,39,112,26
+Tucson AP (S),32,7,110,56
+Winslow AP,35,1,110,44
+Yuma AP,32,39,114,37
 ARKANSAS,LATITUDE,LONGITUDE,
-Blytheville AFB,35°,57' N,89°,57' W
-Camden,33°,36' N,92°,49' W
-El Dorado AP,33°,13' N,92°,49' W
-Fayetteville AP,36°,0' N,94°,10' W
-Fort Smith AP,35°,20' N,94°,22' W
-Hot Springs,34°,29' N,93°,6' W
-Jonesboro,35°,50' N,90°,42' W
-Little Rock AP (S),34°,44' N,92°,14' W
-Pine Bluff AP,34°,18' N,92°,5' W
-Texarkana AP,33°,27' N,93°,59' W
+Blytheville AFB,35,57,89,57
+Camden,33,36,92,49
+El Dorado AP,33,13,92,49
+Fayetteville AP,36,0,94,10
+Fort Smith AP,35,20,94,22
+Hot Springs,34,29,93,6
+Jonesboro,35,50,90,42
+Little Rock AP (S),34,44,92,14
+Pine Bluff AP,34,18,92,5
+Texarkana AP,33,27,93,59
 CALIFORNIA,LATITUDE,LONGITUDE,
-Bakersfield AP,35°,25' N,119°,3' W
-Barstow AP,34°,51' N,116°,47' W
-Blythe AP,33°,37' N,114°,43' W
-Burbank AP,34°,12' N,118°,21' W
-Chico,39°,48' N,121°,51' W
-Concord,37°,58' N,121°,59' W
-Covina,34°,5' N,117°,52' W
-Crescent City AP,41°,46' N,124°,12' W
-Downey,33°,56' N,118°,8' W
-El Cajon,32°,49' N,116°,58' W
-El Cerrito AP (S),32°,49' N,115°,40' W
-Escondido,33°,7' N,117°,5' W
-Eureka/Arcata AP,40°,59' N,124°,6' W
-Fairfield-Trafis AFB,38°,16' N,121°,56' W
-Fresno AP (S),36°,46' N,119°,43' W
-Hamilton AFB,38°,4' N,122°,30' W
-Laguna Beach,33°,33' N,117°,47' W
-Livermore,37°,42' N,121°,57' W
-"Lompoc, Vandenberg AFB",34°,43' N,120°,34' W
-Long Beach AP,33°,49' N,118°,9' W
-Los Angeles AP (S),33°,56' N,118°,24' W
-Los Angeles CO (S),34°,3' N,118°,14' W
-Merced-Castle AFB,37°,23' N,120°,34' W
-Modesto,37°,39' N,121°,0' W
-Monterey,36°,36' N,121°,54' W
-Napa,38°,13' N,122°,17' W
-Needles AP,34°,36' N,114°,37' W
-Oakland AP,37°,49' N,122°,19' W
-Oceanside,33°,14' N,117°,25' W
-Ontario,34°,3' N,117°,36' W
-Oxnard,34°,12' N,119°,11' W
-Palmdale AP,34°,38' N,118°,6' W
-Palm Springs,33°,49' N,116°,32' W
-Pasadena,34°,9' N,118°,9' W
-Petaluma,38°,14' N,122°,38' W
-Pomona Co,34°,3' N,117°,45' W
-Redding AP,40°,31' N,122°,18' W
-Redlands,34°,3' N,117°,11' W
-Richmond,37°,56' N,122°,21' W
-Riverside-March AFB (S),33°,54' N,117°,15' W
-Sacramento AP,38°,31' N,121°,30' W
-Salinas AP,36°,40' N,121°,36' W
-"San Bernadino, Norton AFB",34°,8' N,117°,16' W
-San Diego AP,32°,44' N,117°,10' W
-San Fernando,34°,17' N,118°,28' W
-San Francisco AP,37°,37' N,122°,23' W
-San Francisco Co,37°,46' N,122°,26' W
-San Jose AP,37°,22' N,121°,56' W
-San Louis Obispo,35°,20' N,120°,43' W
-Santa Ana AP,33°,45' N,117°,52' W
-Santa Barbara MAP,34°,26' N,119°,50' W
-Santa Cruz,36°,59' N,122°,1' W
-Santa Maria AP (S),34°,54' N,120°,27' W
-Santa Monica CIC,34°,1' N,118°,29' W
-Santa Paula,34°,21' N,119°,5' W
-Santa Rosa,38°,31' N,122°,49' W
-Stockton AP,37°,54' N,121°,15' W
-Ukiah,39°,9' N,123°,12' W
-Visalia,36°,20' N,119°,18' W
-Yreka,41°,43' N,122°,38' W
-Yuba City,39°,8' N,121°,36' W
+Bakersfield AP,35,25,119,3
+Barstow AP,34,51,116,47
+Blythe AP,33,37,114,43
+Burbank AP,34,12,118,21
+Chico,39,48,121,51
+Concord,37,58,121,59
+Covina,34,5,117,52
+Crescent City AP,41,46,124,12
+Downey,33,56,118,8
+El Cajon,32,49,116,58
+El Cerrito AP (S),32,49,115,40
+Escondido,33,7,117,5
+Eureka/Arcata AP,40,59,124,6
+Fairfield-Trafis AFB,38,16,121,56
+Fresno AP (S),36,46,119,43
+Hamilton AFB,38,4,122,30
+Laguna Beach,33,33,117,47
+Livermore,37,42,121,57
+"Lompoc Vandenberg AFB",34,43,120,34
+Long Beach AP,33,49,118,9
+Los Angeles AP (S),33,56,118,24
+Los Angeles CO (S),34,3,118,14
+Merced-Castle AFB,37,23,120,34
+Modesto,37,39,121,0
+Monterey,36,36,121,54
+Napa,38,13,122,17
+Needles AP,34,36,114,37
+Oakland AP,37,49,122,19
+Oceanside,33,14,117,25
+Ontario,34,3,117,36
+Oxnard,34,12,119,11
+Palmdale AP,34,38,118,6
+Palm Springs,33,49,116,32
+Pasadena,34,9,118,9
+Petaluma,38,14,122,38
+Pomona Co,34,3,117,45
+Redding AP,40,31,122,18
+Redlands,34,3,117,11
+Richmond,37,56,122,21
+Riverside-March AFB (S),33,54,117,15
+Sacramento AP,38,31,121,30
+Salinas AP,36,40,121,36
+"San Bernadino Norton AFB",34,8,117,16
+San Diego AP,32,44,117,10
+San Fernando,34,17,118,28
+San Francisco AP,37,37,122,23
+San Francisco Co,37,46,122,26
+San Jose AP,37,22,121,56
+San Louis Obispo,35,20,120,43
+Santa Ana AP,33,45,117,52
+Santa Barbara MAP,34,26,119,50
+Santa Cruz,36,59,122,1
+Santa Maria AP (S),34,54,120,27
+Santa Monica CIC,34,1,118,29
+Santa Paula,34,21,119,5
+Santa Rosa,38,31,122,49
+Stockton AP,37,54,121,15
+Ukiah,39,9,123,12
+Visalia,36,20,119,18
+Yreka,41,43,122,38
+Yuba City,39,8,121,36
 COLORADO,LATITUDE,LONGITUDE,
-Alamosa AP,37°,27' N,105°,52' W
-Boulder,40°,0' N,105°,16' W
-Colorado Springs AP,38°,49' N,104°,43' W
-Denver AP,39°,45' N,104°,52' W
-Durango,37°,17' N,107°,53' W
-Fort Collins,40°,45' N,105°,5' W
-Grand Junction AP (S),39°,7' N,108°,32' W
-Greeley,40°,26' N,104°,38' W
-Lajunta AP,38°,3' N,103°,30' W
-Leadville,39°,15' N,106°,18' W
-Pueblo AP,38°,18' N,104°,29' W
-Sterling,40°,37' N,103°,12' W
-Trinidad,37°,15' N,104°,20' W
+Alamosa AP,37,27,105,52
+Boulder,40,0,105,16
+Colorado Springs AP,38,49,104,43
+Denver AP,39,45,104,52
+Durango,37,17,107,53
+Fort Collins,40,45,105,5
+Grand Junction AP (S),39,7,108,32
+Greeley,40,26,104,38
+Lajunta AP,38,3,103,30
+Leadville,39,15,106,18
+Pueblo AP,38,18,104,29
+Sterling,40,37,103,12
+Trinidad,37,15,104,20
 CONNECTICUT,LATITUDE,LONGITUDE,
-Bridgeport AP,41°,11' N,73°,11' W
-"Hartford, Brainard Field",41°,44' N,72°,39' W
-New Haven AP,41°,19' N,73°,55' W
-New London,41°,21' N,72°,6' W
-Norwalk,41°,7' N,73°,25' W
-Norwick,41°,32' N,72°,4' W
-Waterbury,41°,35' N,73°,4' W
-"Widsor Locks, Bradley Fld",41°,56' N,72°,41' W
+Bridgeport AP,41,11,73,11
+"Hartford Brainard Field",41,44,72,39
+New Haven AP,41,19,73,55
+New London,41,21,72,6
+Norwalk,41,7,73,25
+Norwick,41,32,72,4
+Waterbury,41,35,73,4
+"Widsor Locks Bradley Fld",41,56,72,41
 DELAWARE,LATITUDE,LONGITUDE
-Dover AFB,39°,8' N,75°,28' W
-Wilmington AP,39°,40' N,75°,36' W
+Dover AFB,39,8,75,28
+Wilmington AP,39,40,75,36
 DISTRICT OF COLUMBIA,LATITUDE,LONGITUDE,
-Andrews AFB,38°,5' N,76°,5' W
-"Washington, National AP",38°,51' N,77°,2' W
+Andrews AFB,38,5,76,5
+"Washington National AP",38,51,77,2
 FLORIDA,LATITUDE,LONGITUDE,
-Belle Glade,26°,39' N,80°,39' W
-Cape Kennedy AP,28°,29' N,80°,34' W
-Daytona Beach AP,29°,11' N,81°,3' W
-E Fort Lauderdale,26°,4' N,80°,9' W
-Fort Myers AP,26°,35' N,81°,52' W
-Fort Pierce,27°,28' N,80°,21' W
-Gainesville AP (S),29°,41' N,82°,16' W
-Jacksonville AP,30°,30' N,81°,42' W
-Key West AP,24°,33' N,81°,45' W
-Lakeland Co (S),28°,2' N,81°,57' W
-Miami AP (S),25°,48' N,80°,16' W
-Miami Beach Co,25°,47' N,80°,17' W
-Ocala,29°,11' N,82°,8' W
-Orlando AP,28°,33' N,81°,23' W
-"Panama City, Tyndall AFB",30°,4' N,85°,35' W
-Pensacola Co,30°,25' N,87°,13' W
-St. Augustine,29°,58' N,81°,20' W
-St. Petersburg,27°,46' N,82°,80' W
-Stanford,28°,46' N,81°,17' W
-Sarasota,27°,23' N,82°,33' W
-Tallahassee AP (S),30°,23' N,84°,22' W
-Tampa AP (S),27°,58' N,82°,32' W
-West Palm Beach AP,26°,41' N,80°,6' W
+Belle Glade,26,39,80,39
+Cape Kennedy AP,28,29,80,34
+Daytona Beach AP,29,11,81,3
+E Fort Lauderdale,26,4,80,9
+Fort Myers AP,26,35,81,52
+Fort Pierce,27,28,80,21
+Gainesville AP (S),29,41,82,16
+Jacksonville AP,30,30,81,42
+Key West AP,24,33,81,45
+Lakeland Co (S),28,2,81,57
+Miami AP (S),25,48,80,16
+Miami Beach Co,25,47,80,17
+Ocala,29,11,82,8
+Orlando AP,28,33,81,23
+"Panama City Tyndall AFB",30,4,85,35
+Pensacola Co,30,25,87,13
+St. Augustine,29,58,81,20
+St. Petersburg,27,46,82,80
+Stanford,28,46,81,17
+Sarasota,27,23,82,33
+Tallahassee AP (S),30,23,84,22
+Tampa AP (S),27,58,82,32
+West Palm Beach AP,26,41,80,6
 GEORGIA,LATITUDE,LONGITUDE,
-"Albany, Turner AFB",31°,36' N,84°,5' W
-Americus,32°,3' N,84°,14' W
-Athens,33°,57' N,83°,19' W
-Atlanta AP (S),33°,39' N,84°,26' W
-Augusta AP,33°,22' N,81°,58' W
-Brunswick,31°,15' N,81°,29' W
-"Columbus, Lawson AFB",32°,31' N,84°,56' W
-Dalton,34°,34' N,84°,57' W
-Dublin,32°,20' N,82°,54' W
-Gainesville,34°,11' N,83°,41' W
-Griffin,33°,13' N,84°,16' W
-LaGrange,33°,1' N,85°,4' W
-Macon AP,32°,42' N,83°,39' W
-"Marietta, Dobbins AFB",33°,55' N,84°,31' W
-Savannah,32°,8' N,81°,12' W
-Valdosta-Moody AFB,30°,58' N,83°,12' W
-Waycross,31°,15' N,82°,24' W
+"Albany Turner AFB",31,36,84,5
+Americus,32,3,84,14
+Athens,33,57,83,19
+Atlanta AP (S),33,39,84,26
+Augusta AP,33,22,81,58
+Brunswick,31,15,81,29
+"Columbus Lawson AFB",32,31,84,56
+Dalton,34,34,84,57
+Dublin,32,20,82,54
+Gainesville,34,11,83,41
+Griffin,33,13,84,16
+LaGrange,33,1,85,4
+Macon AP,32,42,83,39
+"Marietta Dobbins AFB",33,55,84,31
+Savannah,32,8,81,12
+Valdosta-Moody AFB,30,58,83,12
+Waycross,31,15,82,24
 HAWAII,LATITUDE,LONGITUDE,
-Hilo AP (S),19°,43' N,155°,5' W
-Honolulu AP,21°,20' N,157°,55' W
-Kaneohe Bay MCAS,21°,27' N,157°,46' W
-Wahiawa,21°,3' N,158°,2' W
+Hilo AP (S),19,43,155,5
+Honolulu AP,21,20,157,55
+Kaneohe Bay MCAS,21,27,157,46
+Wahiawa,21,3,158,2
 IDAHO,LATITUDE,LONGITUDE,
-Boise AP (S),43°,34' N,116°,13' W
-Burley,42°,32' N,113°,46' W
-Coeur D'Alene AP,47°,46' N,116°,49' W
-Idaho Falls AP,43°,31' N,112°,4' W
-Lewiston AP,46°,23' N,117°,1' W
-Moscow,46°,44' N,116°,58' W
-Mountain Home AFB,43°,2' N,115°,54' W
-Pocatello AP,42°,55' N,112°,36' W
-Twin Falls AP (S),42°,29' N,114°,29' W
+Boise AP (S),43,34,116,13
+Burley,42,32,113,46
+Coeur DAlene AP,47,46,116,49
+Idaho Falls AP,43,31,112,4
+Lewiston AP,46,23,117,1
+Moscow,46,44,116,58
+Mountain Home AFB,43,2,115,54
+Pocatello AP,42,55,112,36
+Twin Falls AP (S),42,29,114,29
 ILLINOIS,LATITUDE,LONGITUDE,
-Aurora,41°,45' N,88°,20' W
-"Belleville, Scott AFB",38°,33' N,89°,51' W
-Bloomington,40°,29' N,88°,57' W
-Carbondale,37°,47' N,89°,15' W
-Champaign/Urbana,40°,2' N,88°,17' W
-"Chicago, Midway AP",41°,47' N,87°,45' W
-"Chicago, O'Hare AP",41°,59' N,87°,54' W
-Chicago Co,41°,53' N,87°,38' W
-Danville,40°,12' N,87°,36' W
-Decatur,39°,50' N,88°,52' W
-Dixon,41°,50' N,89°,29' W
-Elgin,42°,2' N,88°,16' W
-Freeport,42°,18' N,89°,37' W
-Galesburg,40°,56' N,90°,26' W
-Greenville,38°,53' N,89°,24' W
-Joliet,41°,31' N,88°,10' W
-Kankakee,41°,5' N,87°,55' W
-La Salle/Peru,41°,19' N,89°,6' W
-Macomb,40°,28' N,90°,40' W
-Moline AP,41°,27' N,90°,31' W
-Mt Vernon,38°,19' N,88°,52' W
-Peoria AP,40°,40' N,89°,41' W
-Quincy AP,39°,57' N,91°,12' W
-"Rantoul, Chanute AFB",40°,18' N,88°,8' W
-Rockford,42°,21' N,89°,3' W
-Springfield AP,39°,50' N,89°,40' W
-Waukegan,42°,21' N,87°,53' W
+Aurora,41,45,88,20
+"Belleville Scott AFB",38,33,89,51
+Bloomington,40,29,88,57
+Carbondale,37,47,89,15
+Champaign/Urbana,40,2,88,17
+"Chicago Midway AP",41,47,87,45
+"Chicago OHare AP",41,59,87,54
+Chicago Co,41,53,87,38
+Danville,40,12,87,36
+Decatur,39,50,88,52
+Dixon,41,50,89,29
+Elgin,42,2,88,16
+Freeport,42,18,89,37
+Galesburg,40,56,90,26
+Greenville,38,53,89,24
+Joliet,41,31,88,10
+Kankakee,41,5,87,55
+La Salle/Peru,41,19,89,6
+Macomb,40,28,90,40
+Moline AP,41,27,90,31
+Mt Vernon,38,19,88,52
+Peoria AP,40,40,89,41
+Quincy AP,39,57,91,12
+"Rantoul Chanute AFB",40,18,88,8
+Rockford,42,21,89,3
+Springfield AP,39,50,89,40
+Waukegan,42,21,87,53
 INDIANA,LATITUDE,LONGITUDE,
-Anderson,40°,6' N,85°,37' W
-Bedford,38°,51' N,86°,30' W
-Bloomington,39°,8' N,86°,37' W
-"Columbus, Bakalar AFB",39°,16' N,85°,54' W
-Crawfordsville,40°,3' N,86°,54' W
-Evansville AP,38°,3' N,87°,32' W
-Fort Wayne AP,41°,0' N,85°,12' W
-Goshen AP,41°,32' N,85°,48' W
-Hobart,41°,32' N,87°,15' W
-Huntington,40°,53' N,85°,30' W
-Indianapolis AP,39°,44' N,86°,17' W
-Jeffersonville,38°,17' N,85°,45' W
-Kokomo,40°,25' N,86°,3' W
-Lafayette,40°,2' N,86°,5' W
-La Porte,41°,36' N,86°,43' W
-Marion,40°,29' N,85°,41' W
-Muncie,40°,11' N,85°,21' W
-"Peru, Grissom AFB",40°,39' N,86°,9' W
-Richmond AP,39°,46' N,84°,50' W
-Shelbyville,39°,31' N,85°,47' W
-South Bend AP,41°,42' N,86°,19' W
-Terre Haute AP,39°,27' N,87°,18' W
-Valparaiso,41°,31' N,87°,2' W
-Vincennes,38°,41' N,87°,32' W
+Anderson,40,6,85,37
+Bedford,38,51,86,30
+Bloomington,39,8,86,37
+"Columbus Bakalar AFB",39,16,85,54
+Crawfordsville,40,3,86,54
+Evansville AP,38,3,87,32
+Fort Wayne AP,41,0,85,12
+Goshen AP,41,32,85,48
+Hobart,41,32,87,15
+Huntington,40,53,85,30
+Indianapolis AP,39,44,86,17
+Jeffersonville,38,17,85,45
+Kokomo,40,25,86,3
+Lafayette,40,2,86,5
+La Porte,41,36,86,43
+Marion,40,29,85,41
+Muncie,40,11,85,21
+"Peru Grissom AFB",40,39,86,9
+Richmond AP,39,46,84,50
+Shelbyville,39,31,85,47
+South Bend AP,41,42,86,19
+Terre Haute AP,39,27,87,18
+Valparaiso,41,31,87,2
+Vincennes,38,41,87,32
 IOWA,LATITUDE,LONGITUDE,
-Ames (S),42°,2' N,93°,48' W
-Burlington AP,40°,47' N,91°,7' W
-Cedar Rapids AP,41°,53' N,91°,42' W
-Clinton,41°,50' N,90°,13' W
-Council Bluffs,41°,20' N,95°,49' W
-Des Moines AP,41°,32' N,93°,39' W
-Dubuque,42°,24' N,90°,42' W
-Fort Dodge,42°,33' N,94°,11' W
-Iowa City,41°,38' N,91°,33' W
-Keokuk,40°,24' N,91°,24' W
-Marshalltown,42°,4' N,92°,56' W
-Mason City AP,43°,9' N,93°,20' W
-Newton,41°,41' N,93°,2' W
-Ottumwa AP,41°,6' N,92°,27' W
-Sioux City AP,42°,24' N,96°,23' W
-Waterloo,42°,33' N,92°,24' W
+Ames (S),42,2,93,48
+Burlington AP,40,47,91,7
+Cedar Rapids AP,41,53,91,42
+Clinton,41,50,90,13
+Council Bluffs,41,20,95,49
+Des Moines AP,41,32,93,39
+Dubuque,42,24,90,42
+Fort Dodge,42,33,94,11
+Iowa City,41,38,91,33
+Keokuk,40,24,91,24
+Marshalltown,42,4,92,56
+Mason City AP,43,9,93,20
+Newton,41,41,93,2
+Ottumwa AP,41,6,92,27
+Sioux City AP,42,24,96,23
+Waterloo,42,33,92,24
 KANSAS,LATITUDE,LONGITUDE,
-Atchison,39°,34' N,95°,7' W
-Chanute AP,37°,40' N,95°,29' W
-Dodge City AP (S),37°,46' N,99°,58' W
-El Dorado,37°,49' N,96°,50' W
-Emporia,38°,20' N,96°,12' W
-Garden City AP,37°,56' N,100°,44' W
-Goodland AP,39°,22' N,101°,42' W
-Great Bend,38°,21' N,98°,52' W
-Hutchinson AP,38°,4' N,97°,52' W
-Liberal,37°,3' N,100°,58' W
-"Manhattan, Ft Riley (S)",39°,3' N,96°,46' W
-Parsons,37°,20' N,95°,31' W
-Russell AP,38°,52' N,98°,49' W
-Salina,38°,48' N,97°,39' W
-Topeka AP,39°,4' N,95°,38' W
-Wichita AP,37°,39' N,97°,25' W
+Atchison,39,34,95,7
+Chanute AP,37,40,95,29
+Dodge City AP (S),37,46,99,58
+El Dorado,37,49,96,50
+Emporia,38,20,96,12
+Garden City AP,37,56,100,44
+Goodland AP,39,22,101,42
+Great Bend,38,21,98,52
+Hutchinson AP,38,4,97,52
+Liberal,37,3,100,58
+"Manhattan Ft Riley (S)",39,3,96,46
+Parsons,37,20,95,31
+Russell AP,38,52,98,49
+Salina,38,48,97,39
+Topeka AP,39,4,95,38
+Wichita AP,37,39,97,25
 KENTUCKY,LATITUDE,LONGITUDE,
-Ashland,38°,33' N,82°,44' W
-Bowling Green AP,35°,58' N,86°,28' W
-Corbin AP,36°,57' N,84°,6' W
-Covington AP,39°,3' N,84°,40' W
-"Hopkinsville, Ft Campbell",36°,40' N,87°,29' W
-Lexington AP (S),38°,2' N,84°,36' W
-Louisville AP,38°,11' N,85°,44' W
-Madisonville,37°,19' N,87°,29' W
-Owensboro,37°,45' N,87°,10' W
-Paducah AP,37°,4' N,88°,46' W
+Ashland,38,33,82,44
+Bowling Green AP,35,58,86,28
+Corbin AP,36,57,84,6
+Covington AP,39,3,84,40
+"Hopkinsville Ft Campbell",36,40,87,29
+Lexington AP (S),38,2,84,36
+Louisville AP,38,11,85,44
+Madisonville,37,19,87,29
+Owensboro,37,45,87,10
+Paducah AP,37,4,88,46
 LOUISIANA,LATITUDE,LONGITUDE,
-Alexandria AP,31°,24' N,92°,18' W
-Baton Rouge AP,30°,32' N,91°,9' W
-Bogalusa,30°,47' N,89°,52' W
-Houma,29°,31' N,90°,40' W
-Lafayette AP,30°,12' N,92°,0' W
-Lake Charles AP (S),30°,7' N,93°,13' W
-Minden,32°,36' N,93°,18' W
-Monroe AP,32°,31' N,92°,2' W
-Natchitoches,31°,46' N,93°,5' W
-New Orleans AP,29°,59' N,90°,15' W
-Shreveport AP (S),32°,28' N,93°,49' W
+Alexandria AP,31,24,92,18
+Baton Rouge AP,30,32,91,9
+Bogalusa,30,47,89,52
+Houma,29,31,90,40
+Lafayette AP,30,12,92,0
+Lake Charles AP (S),30,7,93,13
+Minden,32,36,93,18
+Monroe AP,32,31,92,2
+Natchitoches,31,46,93,5
+New Orleans AP,29,59,90,15
+Shreveport AP (S),32,28,93,49
 MAINE,LATITUDE,LONGITUDE,
-Augusta AP,44°,19' N,69°,48' W
-"Bangor, Dow AFB",44°,48' N,68°,50' W
-Caribou AP (S),46°,52' N,68°,1' W
-Lewiston,44°,2' N,70°,15' W
-Millinocket AP,45°,39' N,68°,42' W
-Portland (S),43°,39' N,70°,19' W
-Waterville,44°,32' N,69°,40' W
+Augusta AP,44,19,69,48
+"Bangor Dow AFB",44,48,68,50
+Caribou AP (S),46,52,68,1
+Lewiston,44,2,70,15
+Millinocket AP,45,39,68,42
+Portland (S),43,39,70,19
+Waterville,44,32,69,40
 MARYLAND,LATITUDE,LONGITUDE,
-Baltimore AP,39°,11' N,76°,40' W
-Baltimore Co,39°,20' N,76°,25' W
-Cumberland,39°,37' N,78°,46' W
-Frederick AP,39°,27' N,77°,25' W
-Hagerstown,39°,42' N,77°,44' W
-Salisbury (S),38°,20' N,75°,30' W
+Baltimore AP,39,11,76,40
+Baltimore Co,39,20,76,25
+Cumberland,39,37,78,46
+Frederick AP,39,27,77,25
+Hagerstown,39,42,77,44
+Salisbury (S),38,20,75,30
 MASSACHUSETTS,LATITUDE,LONGITUDE,
-Boston AP,42°,22' N,71°,2' W
-Clinton,42°,24' N,71°,41' W
-Fall River,41°,43' N,71°,8' W
-Framingham,42°,17' N,71°,25' W
-Gloucester,42°,35' N,70°,41' W
-Greenfield,42°,3' N,72°,4' W
-Lawrence,42°,42' N,71°,10' W
-Lowell,42°,39' N,71°,19' W
-New Bedford,41°,41' N,70°,58' W
-Pittsfield AP,42°,26' N,73°,18' W
-"Springfield, Westover AFB",42°,12' N,72°,32' W
-Taunton,41°,54' N,71°,4' W
-Worcester AP,42°,16' N,71°,52' W
+Boston AP,42,22,71,2
+Clinton,42,24,71,41
+Fall River,41,43,71,8
+Framingham,42,17,71,25
+Gloucester,42,35,70,41
+Greenfield,42,3,72,4
+Lawrence,42,42,71,10
+Lowell,42,39,71,19
+New Bedford,41,41,70,58
+Pittsfield AP,42,26,73,18
+"Springfield Westover AFB",42,12,72,32
+Taunton,41,54,71,4
+Worcester AP,42,16,71,52
 MICHIGAN,LATITUDE,LONGITUDE,
-Adrian,41°,55' N,84°,1' W
-Alpena AP,45°,4' N,83°,26' W
-Battle Creek AP,42°,19' N,85°,15' W
-Benton Harbor AP,42°,8' N,86°,26' W
-Detroit,42°,25' N,83°,1' W
-Escanaba,45°,44' N,87°,5' W
-Flint AP,42°,58' N,83°,44' W
-Grand Rapids AP,42°,53' N,85°,31' W
-Holland,42°,42' N,86°,6' W
-Jackson AP,42°,16' N,84°,28' W
-Kalamazoo,42°,17' N,85°,36' W
-Lansing AP,42°,47' N,84°,36' W
-Marquette Co,46°,34' N,87°,24' W
-Mt Pleasant,43°,35' N,84°,46' W
-Muskegon AP,43°,10' N,86°,14' W
-Pontiac,42°,40' N,83°,25' W
-Port Huron,42°,59' N,82°,25' W
-Saginaw AP,43°,32' N,84°,5' W
-Sault Ste. Marie AP (S),46°,28' N,84°,22' W
-Traverse City AP,44°,45' N,85°,35' W
-Ypsilanti,42°,14' N,83°,32' W
+Adrian,41,55,84,1
+Alpena AP,45,4,83,26
+Battle Creek AP,42,19,85,15
+Benton Harbor AP,42,8,86,26
+Detroit,42,25,83,1
+Escanaba,45,44,87,5
+Flint AP,42,58,83,44
+Grand Rapids AP,42,53,85,31
+Holland,42,42,86,6
+Jackson AP,42,16,84,28
+Kalamazoo,42,17,85,36
+Lansing AP,42,47,84,36
+Marquette Co,46,34,87,24
+Mt Pleasant,43,35,84,46
+Muskegon AP,43,10,86,14
+Pontiac,42,40,83,25
+Port Huron,42,59,82,25
+Saginaw AP,43,32,84,5
+Sault Ste. Marie AP (S),46,28,84,22
+Traverse City AP,44,45,85,35
+Ypsilanti,42,14,83,32
 MINNESOTA,LATITUDE,LONGITUDE,
-Albert Lea,43°,39' N,93°,21' W
-Alexandria AP,45°,52' N,95°,23' W
-Bemidji AP,47°,31' N,94°,56' W
-Brainerd,46°,24' N,94°,8' W
-Duluth AP,46°,50' N,92°,11' W
-Fairbault,44°,18' N,93°,16' W
-Fergus Falls,46°,16' N,96°,4' W
-International Falls AP,48°,34' N,93°,23' W
-Mankato,44°,9' N,93°,59' W
-Minneapolis/St. Paul AP,44°,53' N,93°,13' W
-Rochester AP,43°,55' N,92°,30' W
-St. Cloud AP (S),45°,35' N,94°,11' W
-Virginia,47°,30' N,92°,33' W
-Willmar,45°,7' N,95°,5' W
-Winona,44°,3' N,91°,38' W
+Albert Lea,43,39,93,21
+Alexandria AP,45,52,95,23
+Bemidji AP,47,31,94,56
+Brainerd,46,24,94,8
+Duluth AP,46,50,92,11
+Fairbault,44,18,93,16
+Fergus Falls,46,16,96,4
+International Falls AP,48,34,93,23
+Mankato,44,9,93,59
+Minneapolis/St. Paul AP,44,53,93,13
+Rochester AP,43,55,92,30
+St. Cloud AP (S),45,35,94,11
+Virginia,47,30,92,33
+Willmar,45,7,95,5
+Winona,44,3,91,38
 MISSISSIPPI,LATITUDE,LONGITUDE,
-Biloxi--Keesler AFB,30°,25' N,88°,55' W
-Clarksdale,34°,12' N,90°,34' W
-Columbus AFB,33°,39' N,88°,27' W
-Greenville AFB,33°,29' N,90°,59' W
-Greenwood,33°,30' N,90°,5' W
-Hattiesburg,31°,16' N,89°,15' W
-Jackson AP,32°,19' N,90°,5' W
-Laurel,31°,40' N,89°,10' W
-Mccomb AP,31°,15' N,90°,28' W
-Meridian AP,32°,20' N,88°,45' W
-Natchez,31°,33' N,91°,23' W
-Tupelo,34°,16' N,88°,46' W
-Vicksburg Co,32°,24' N,90°,47' W
+Biloxi--Keesler AFB,30,25,88,55
+Clarksdale,34,12,90,34
+Columbus AFB,33,39,88,27
+Greenville AFB,33,29,90,59
+Greenwood,33,30,90,5
+Hattiesburg,31,16,89,15
+Jackson AP,32,19,90,5
+Laurel,31,40,89,10
+Mccomb AP,31,15,90,28
+Meridian AP,32,20,88,45
+Natchez,31,33,91,23
+Tupelo,34,16,88,46
+Vicksburg Co,32,24,90,47
 MISSOURI,LATITUDE,LONGITUDE,
-Cape Girardeau,37°,14' N,89°,35' W
-Columbia AP (S),38°,58' N,92°,22' W
-Farmington AP,37°,46' N,90°,24' W
-Hannibal,39°,42' N,91°,21' W
-Jefferson City,38°,34' N,92°,11' W
-Joplin AP,37°,9' N,94°,30' W
-Kansas City AP,39°,7' N,94°,35' W
-Kirksville AP,40°,6' N,92°,33' W
-Mexico,39°,11' N,91°,54' W
-Moberly,39°,24' N,92°,26' W
-Poplar Bluff,36°,46' N,90°,25' W
-Rolla,37°,59' N,91°,43' W
-St. Joseph AP,39°,46' N,94°,55' W
-St. Louis AP,38°,45' N,90°,23' W
-St. Louis CO,38°,39' N,90°,38' W
-Sikeston,36°,53' N,89°,36' W
-Sedalia--Whiteman AFB,38°,43' N,93°,33' W
-Sikeston,36°,53' N,89°,36' W
-Springfield AP,37°,14' N,93°,23' W
+Cape Girardeau,37,14,89,35
+Columbia AP (S),38,58,92,22
+Farmington AP,37,46,90,24
+Hannibal,39,42,91,21
+Jefferson City,38,34,92,11
+Joplin AP,37,9,94,30
+Kansas City AP,39,7,94,35
+Kirksville AP,40,6,92,33
+Mexico,39,11,91,54
+Moberly,39,24,92,26
+Poplar Bluff,36,46,90,25
+Rolla,37,59,91,43
+St. Joseph AP,39,46,94,55
+St. Louis AP,38,45,90,23
+St. Louis CO,38,39,90,38
+Sikeston,36,53,89,36
+Sedalia--Whiteman AFB,38,43,93,33
+Sikeston,36,53,89,36
+Springfield AP,37,14,93,23
 MONTANA,LATITUDE,LONGITUDE,
-Billings AP,45°,48' N,108°,32' W
-Bozeman,45°,47' N,111°,9' W
-Butte AP,45°,57' N,112°,30' W
-Cut Bank AP,48°,37' N,112°,22' W
-Glasgow AP (S),48°,25' N,106°,32' W
-Glendive,47°,8' N,104°,48' W
-Great Falls AP (S),47°,29' N,111°,22' W
-Havre,48°,34' N,109°,40' W
-Helena AP,46°,36' N,112°,0' W
-Kalispell AP,48°,18' N,114°,16' W
-Lewiston AP,47°,4' N,109°,27' W
-Livingstown AP,45°,42' N,110°,26' W
-Miles City AP,46°,26' N,105°,52' W
-Missoula AP,46°,55' N,114°,5' W
+Billings AP,45,48,108,32
+Bozeman,45,47,111,9
+Butte AP,45,57,112,30
+Cut Bank AP,48,37,112,22
+Glasgow AP (S),48,25,106,32
+Glendive,47,8,104,48
+Great Falls AP (S),47,29,111,22
+Havre,48,34,109,40
+Helena AP,46,36,112,0
+Kalispell AP,48,18,114,16
+Lewiston AP,47,4,109,27
+Livingstown AP,45,42,110,26
+Miles City AP,46,26,105,52
+Missoula AP,46,55,114,5
 NEBRASKA,LATITUDE,LONGITUDE,
-Beatrice,40°,16' N,96°,45' W
-Chadron AP,42°,50' N,103°,5' W
-Columbus,41°,28' N,97°,20' W
-Fremont,41°,26' N,96°,29' W
-Grand Island AP,40°,59' N,98°,19' W
-Hastings,40°,36' N,98°,26' W
-Kearney,40°,44' N,99°,1' W
-Lincoln Co (S),40°,51' N,96°,45' W
-McCook,40°,12' N,100°,38' W
-Norfolk,41°,59' N,97°,26' W
-North Platte AP (S),41°,8' N,100°,41' W
-Omaha AP,41°,18' N,95°,54' W
-Scottsbluff AP,41°,52' N,103°,36' W
-Sidney AP,41°,13' N,103°,6' W
+Beatrice,40,16,96,45
+Chadron AP,42,50,103,5
+Columbus,41,28,97,20
+Fremont,41,26,96,29
+Grand Island AP,40,59,98,19
+Hastings,40,36,98,26
+Kearney,40,44,99,1
+Lincoln Co (S),40,51,96,45
+McCook,40,12,100,38
+Norfolk,41,59,97,26
+North Platte AP (S),41,8,100,41
+Omaha AP,41,18,95,54
+Scottsbluff AP,41,52,103,36
+Sidney AP,41,13,103,6
 NEVADA,LATITUDE,LONGITUDE,
-Carson City,39°,10' N,119°,46' W
-Elko AP,40°,50' N,115°,47' W
-Ely AP (S),39°,17' N,114°,51' W
-Las Vegas AP (S),36°,5' N,115°,10' W
-Lovelock AP,40°,4' N,118°,33' W
-Reno AP (S),39°,30' N,119°,47' W
-Reno Co,39°,30' N,119°,47' W
-Tonopah AP,38°,4' N,117°,5' W
-Winnemucca AP,40°,54' N,117°,48' W
+Carson City,39,10,119,46
+Elko AP,40,50,115,47
+Ely AP (S),39,17,114,51
+Las Vegas AP (S),36,5,115,10
+Lovelock AP,40,4,118,33
+Reno AP (S),39,30,119,47
+Reno Co,39,30,119,47
+Tonopah AP,38,4,117,5
+Winnemucca AP,40,54,117,48
 NEW HAMPSHIRE,LATITUDE,LONGITUDE,
-Berlin,44°,3' N,71°,1' W
-Claremont,43°,2' N,72°,2' W
-Concord AP,43°,12' N,71°,30' W
-Keene,42°,55' N,72°,17' W
-Laconia,43°,3' N,71°,3' W
-"Manchester, Grenier AFB",42°,56' N,71°,26' W
-"Portsmouth, Pease AFB",43°,4' N,70°,49' W
+Berlin,44,3,71,1
+Claremont,43,2,72,2
+Concord AP,43,12,71,30
+Keene,42,55,72,17
+Laconia,43,3,71,3
+"Manchester Grenier AFB",42,56,71,26
+"Portsmouth Pease AFB",43,4,70,49
 NEW JERSEY,LATITUDE,LONGITUDE,
-Atlantic City CO,39°,23' N,74°,26' W
-Long Branch,40°,19' N,74°,1' W
-Newark AP,40°,42' N,74°,10' W
-New Brunswick,40°,29' N,74°,26' W
-Paterson,40°,54' N,74°,9' W
-Phillipsburg,40°,41' N,75°,11' W
-Trenton Co,40°,13' N,74°,46' W
-Vineland,39°,29' N,75°,0' W
+Atlantic City CO,39,23,74,26
+Long Branch,40,19,74,1
+Newark AP,40,42,74,10
+New Brunswick,40,29,74,26
+Paterson,40,54,74,9
+Phillipsburg,40,41,75,11
+Trenton Co,40,13,74,46
+Vineland,39,29,75,0
 NEW MEXICO,LATITUDE,LONGITUDE,
-Holloman AFB,32°,51' N,106°,6' W
-Albuquerque AP (S),35°,3' N,106°,37' W
-Artesia,32°,46' N,104°,23' W
-Carlsbad AP,32°,20' N,104°,16' W
-Clovis AP,34°,23' N,103°,19' W
-Farmington AP,36°,44' N,108°,14' W
-Gallup,35°,31' N,108°,47' W
-Grants,35°,10' N,107°,54' W
-Hobbs AP,32°,45' N,103°,13' W
-Las Cruces,32°,18' N,106°,55' W
-Los Alamos,35°,52' N,106°,19' W
-Raton AP,36°,45' N,104°,30' W
-"Roswell, Walker AFB",33°,18' N,104°,32' W
-Santa Fe CO,35°,37' N,106°,5' W
-Silver City AP,32°,38' N,108°,10' W
-Socorro AP,34°,3' N,106°,53' W
-Tucumcari AP,35°,11' N,103°,36' W
+Holloman AFB,32,51,106,6
+Albuquerque AP (S),35,3,106,37
+Artesia,32,46,104,23
+Carlsbad AP,32,20,104,16
+Clovis AP,34,23,103,19
+Farmington AP,36,44,108,14
+Gallup,35,31,108,47
+Grants,35,10,107,54
+Hobbs AP,32,45,103,13
+Las Cruces,32,18,106,55
+Los Alamos,35,52,106,19
+Raton AP,36,45,104,30
+"Roswell Walker AFB",33,18,104,32
+Santa Fe CO,35,37,106,5
+Silver City AP,32,38,108,10
+Socorro AP,34,3,106,53
+Tucumcari AP,35,11,103,36
 NEW YORK,LATITUDE,LONGITUDE,
-Albany AP (S),42°,45' N,73°,48' W
-Albany Co,42°,39' N,73°,45' W
-Auburn,42°,54' N,76°,32' W
-Batavia,43°,0' N,78°,11' W
-Binghamton AP,42°,13' N,75°,59' W
-Buffalo AP,42°,56' N,78°,44' W
-Cortland,42°,36' N,76°,11' W
-Dunkirk,42°,29' N,79°,16' W
-Elmira AP,42°,10' N,76°,54' W
-Geneva (S),42°,45' N,76°,54' W
-Glens Falls,43°,20' N,73°,37' W
-Gloversville,43°,2' N,74°,21' W
-Hornell,42°,21' N,77°,42' W
-Ithaca (S),42°,27' N,76°,29' W
-Jamestown,42°,7' N,79°,14' W
-Kingston,41°,56' N,74°,0' W
-Lockport,43°,9' N,79°,15' W
-Massena AP,44°,56' N,74°,51' W
-"Newburgh, Stewart AFB",41°,30' N,74°,6' W
-NYC-Central Park (S),40°,47' N,73°,58' W
-NYC-Kennedy AP,40°,39' N,73°,47' W
-NYC-La Guardia AP,40°,46' N,73°,54' W
-Niagara Falls AP,43°,6' N,79°,57' W
-Olean,42°,14' N,78°,22' W
-Oneonta,42°,31' N,75°,4' W
-Oswego Co,43°,28' N,76°,33' W
-Plattsburg AFB,44°,39' N,73°,28' W
-Poughkeepsie,41°,38' N,73°,55' W
-Rochester AP,43°,7' N,77°,40' W
-"Rome, Griffiss AFB",43°,14' N,75°,25' W
-Schenectady (S),42°,51' N,73°,57' W
-Suffolk County AFB,40°,51' N,72°,38' W
-Syracuse AP,43°,7' N,76°,7' W
-Utica,43°,9' N,75°,23' W
-Watertown,43°,59' N,76°,1' W
+Albany AP (S),42,45,73,48
+Albany Co,42,39,73,45
+Auburn,42,54,76,32
+Batavia,43,0,78,11
+Binghamton AP,42,13,75,59
+Buffalo AP,42,56,78,44
+Cortland,42,36,76,11
+Dunkirk,42,29,79,16
+Elmira AP,42,10,76,54
+Geneva (S),42,45,76,54
+Glens Falls,43,20,73,37
+Gloversville,43,2,74,21
+Hornell,42,21,77,42
+Ithaca (S),42,27,76,29
+Jamestown,42,7,79,14
+Kingston,41,56,74,0
+Lockport,43,9,79,15
+Massena AP,44,56,74,51
+"Newburgh Stewart AFB",41,30,74,6
+NYC-Central Park (S),40,47,73,58
+NYC-Kennedy AP,40,39,73,47
+NYC-La Guardia AP,40,46,73,54
+Niagara Falls AP,43,6,79,57
+Olean,42,14,78,22
+Oneonta,42,31,75,4
+Oswego Co,43,28,76,33
+Plattsburg AFB,44,39,73,28
+Poughkeepsie,41,38,73,55
+Rochester AP,43,7,77,40
+"Rome Griffiss AFB",43,14,75,25
+Schenectady (S),42,51,73,57
+Suffolk County AFB,40,51,72,38
+Syracuse AP,43,7,76,7
+Utica,43,9,75,23
+Watertown,43,59,76,1
 NORTH CAROLINA,LATITUDE,LONGITUDE,
-Asheville AP,35°,26' N,82°,32' W
-Charlotte AP,35°,13' N,80°,56' W
-Durham,35°,52' N,78°,47' W
-Elizabeth City AP,36°,16' N,76°,11' W
-"Fayetteville, Pope AFB",35°,10' N,79°,1' W
-"Goldsboro,Seymour-Johnson",35°,20' N,77°,58' W
-Greensboro AP (S),36°,5' N,79°,57' W
-Greenville,35°,37' N,77°,25' W
-Henderson,36°,22' N,78°,25' W
-Hickory,35°,45' N,81°,23' W
-Jacksonville,34°,50' N,77°,37' W
-Lumberton,34°,37' N,79°,4' W
-New Bern AP,35°,5' N,77°,3' W
-Raleigh/Durham AP (S),35°,52' N,78°,47' W
-Rocky Mount,35°,58' N,77°,48' W
-Wilmington AP,34°,16' N,77°,55' W
-Winston-Salem AP,36°,8' N,80°,13' W
+Asheville AP,35,26,82,32
+Charlotte AP,35,13,80,56
+Durham,35,52,78,47
+Elizabeth City AP,36,16,76,11
+"Fayetteville Pope AFB",35,10,79,1
+"Goldsboro Seymour-Johnson",35,20,77,58
+Greensboro AP (S),36,5,79,57
+Greenville,35,37,77,25
+Henderson,36,22,78,25
+Hickory,35,45,81,23
+Jacksonville,34,50,77,37
+Lumberton,34,37,79,4
+New Bern AP,35,5,77,3
+Raleigh/Durham AP (S),35,52,78,47
+Rocky Mount,35,58,77,48
+Wilmington AP,34,16,77,55
+Winston-Salem AP,36,8,80,13
 NORTH DAKOTA,LATITUDE,LONGITUDE,
-Bismarck AP (S),46°,46' N,100°,45' W
-Devils Lake,48°,7' N,98°,54' W
-Dickinson AP,46°,48' N,102°,48' W
-Fargo AP,46°,54' N,96°,48' W
-Grand Forks AP,47°,57' N,97°,24' W
-Jamestown AP,46°,55' N,98°,41' W
-Minot AP,48°,25' N,101°,21' W
-Williston,48°,9' N,103°,35' W
+Bismarck AP (S),46,46,100,45
+Devils Lake,48,7,98,54
+Dickinson AP,46,48,102,48
+Fargo AP,46,54,96,48
+Grand Forks AP,47,57,97,24
+Jamestown AP,46,55,98,41
+Minot AP,48,25,101,21
+Williston,48,9,103,35
 OHIO,LATITUDE,LONGITUDE,
-Akron-Canton AP,40°,55' N,81°,26' W
-Ashtabula,41°,51' N,80°,48' W
-Athens,39°,20' N,82°,6' W
-Bowling Green,41°,23' N,83°,38' W
-Cambridge,40°,4' N,81°,35' W
-Chillicothe,39°,21' N,83°,0' W
-Cincinnati Co,39°,9' N,84°,31' W
-Cleveland AP (S),41°,24' N,81°,51' W
-Columbus AP (S),40°,0' N,82°,53' W
-Dayton AP,39°,54' N,84°,13' W
-Defiance,41°,17' N,84°,23' W
-Findlay AP,41°,1' N,83°,40' W
-Fremont,41°,20' N,83°,7' W
-Hamilton,39°,24' N,84°,35' W
-Lancaster,39°,44' N,82°,38' W
-Lima,40°,42' N,84°,2' W
-Mansfield AP,40°,49' N,82°,31' W
-Marion,40°,36' N,83°,10' W
-Middletown,39°,31' N,84°,25' W
-Newark,40°,1' N,82°,28' W
-Norwalk,41°,16' N,82°,37' W
-Portsmouth,38°,45' N,82°,55' W
-Sandusky Co,41°,27' N,82°,43' W
-Springfield,39°,50' N,83°,50' W
-Steubenville,40°,23' N,80°,38' W
-Toledo AP,41°,36' N,83°,48' W
-Warren,41°,20' N,80°,51' W
-Wooster,40°,47' N,81°,55' W
-Youngstown AP,41°,16' N,80°,40' W
-Zanesville AP,39°,57' N,81°,54' W
+Akron-Canton AP,40,55,81,26
+Ashtabula,41,51,80,48
+Athens,39,20,82,6
+Bowling Green,41,23,83,38
+Cambridge,40,4,81,35
+Chillicothe,39,21,83,0
+Cincinnati Co,39,9,84,31
+Cleveland AP (S),41,24,81,51
+Columbus AP (S),40,0,82,53
+Dayton AP,39,54,84,13
+Defiance,41,17,84,23
+Findlay AP,41,1,83,40
+Fremont,41,20,83,7
+Hamilton,39,24,84,35
+Lancaster,39,44,82,38
+Lima,40,42,84,2
+Mansfield AP,40,49,82,31
+Marion,40,36,83,10
+Middletown,39,31,84,25
+Newark,40,1,82,28
+Norwalk,41,16,82,37
+Portsmouth,38,45,82,55
+Sandusky Co,41,27,82,43
+Springfield,39,50,83,50
+Steubenville,40,23,80,38
+Toledo AP,41,36,83,48
+Warren,41,20,80,51
+Wooster,40,47,81,55
+Youngstown AP,41,16,80,40
+Zanesville AP,39,57,81,54
 OKLAHOMA,LATITUDE,LONGITUDE,
-Ada,34°,47' N,96°,41' W
-Altus AFB,34°,39' N,99°,16' W
-Ardmore,34°,18' N,97°,1' W
-Bartlesville,36°,45' N,96°,0' W
-Chickasha,35°,3' N,97°,55' W
-"Enid, Vance AFB",36°,21' N,97°,55' W
-Lawton AP,34°,34' N,98°,25' W
-McAlester,34°,50' N,95°,55' W
-Muskogee AP,35°,40' N,95°,22' W
-Norman,35°,15' N,97°,29' W
-Oklahoma City AP (S),35°,24' N,97°,36' W
-Ponca City,36°,44' N,97°,6' W
-Seminole,35°,14' N,96°,40' W
-Stillwater (S),36°,10' N,97°,5' W
-Tulsa AP,36°,12' N,95°,54' W
-Woodward,36°,36' N,99°,31' W
+Ada,34,47,96,41
+Altus AFB,34,39,99,16
+Ardmore,34,18,97,1
+Bartlesville,36,45,96,0
+Chickasha,35,3,97,55
+"Enid Vance AFB",36,21,97,55
+Lawton AP,34,34,98,25
+McAlester,34,50,95,55
+Muskogee AP,35,40,95,22
+Norman,35,15,97,29
+Oklahoma City AP (S),35,24,97,36
+Ponca City,36,44,97,6
+Seminole,35,14,96,40
+Stillwater (S),36,10,97,5
+Tulsa AP,36,12,95,54
+Woodward,36,36,99,31
 OREGON,LATITUDE,LONGITUDE,
-Albany,44°,38' N,123°,7' W
-Astoria AP (S),46°,9' N,123°,53' W
-Baker AP,44°,50' N,117°,49' W
-Bend,44°,4' N,121°,19' W
-Corvallis (S),44°,30' N,123°,17' W
-Eugene AP,44°,7' N,123°,13' W
-Grants Pass,42°,26' N,123°,19' W
-Klamath Falls AP,42°,9' N,121°,44' W
-Medford AP (S),42°,22' N,122°,52' W
-Pendleton AP,45°,41' N,118°,51' W
-Portland AP,45°,36' N,122°,36' W
-Portland Co,45°,32' N,122°,40' W
-Roseburg AP,43°,14' N,123°,22' W
-Salem AP,44°,55' N,123°,1' W
-The Dalles,45°,36' N,121°,12' W
+Albany,44,38,123,7
+Astoria AP (S),46,9,123,53
+Baker AP,44,50,117,49
+Bend,44,4,121,19
+Corvallis (S),44,30,123,17
+Eugene AP,44,7,123,13
+Grants Pass,42,26,123,19
+Klamath Falls AP,42,9,121,44
+Medford AP (S),42,22,122,52
+Pendleton AP,45,41,118,51
+Portland AP,45,36,122,36
+Portland Co,45,32,122,40
+Roseburg AP,43,14,123,22
+Salem AP,44,55,123,1
+The Dalles,45,36,121,12
 PENNSYLVANIA,LATITUDE,LONGITUDE,
-Allentown AP,40°,39' N,75°,26' W
-Altoona Co,40°,18' N,78°,19' W
-Butler,40°,52' N,79°,54' W
-Chambersburg,39°,56' N,77°,38' W
-Erie AP,42°,5' N,80°,11' W
-Harrisburg AP,40°,12' N,76°,46' W
-Johnstown,40°,19' N,78°,50' W
-Lancaster,40°,7' N,76°,18' W
-Meadville,41°,38' N,80°,10' W
-New Castle,41°,1' N,80°,22' W
-Philadelphia AP,39°,53' N,75°,15' W
-Pittsburgh AP,40°,30' N,80°,13' W
-Pittsburgh Co,40°,27' N,80°,0' W
-Reading Co,40°,20' N,75°,38' W
-Scranton/Wilkes-Barre,41°,20' N,75°,44' W
-State College (S),40°,48' N,77°,52' W
-Sunbury,40°,53' N,76°,46' W
-Uniontown,39°,55' N,79°,43' W
-Warren,41°,51' N,79°,8' W
-West Chester,39°,58' N,75°,38' W
-Williamsport AP,41°,15' N,76°,55' W
-York,39°,55' N,76°,45' W
+Allentown AP,40,39,75,26
+Altoona Co,40,18,78,19
+Butler,40,52,79,54
+Chambersburg,39,56,77,38
+Erie AP,42,5,80,11
+Harrisburg AP,40,12,76,46
+Johnstown,40,19,78,50
+Lancaster,40,7,76,18
+Meadville,41,38,80,10
+New Castle,41,1,80,22
+Philadelphia AP,39,53,75,15
+Pittsburgh AP,40,30,80,13
+Pittsburgh Co,40,27,80,0
+Reading Co,40,20,75,38
+Scranton/Wilkes-Barre,41,20,75,44
+State College (S),40,48,77,52
+Sunbury,40,53,76,46
+Uniontown,39,55,79,43
+Warren,41,51,79,8
+West Chester,39,58,75,38
+Williamsport AP,41,15,76,55
+York,39,55,76,45
 RHODE ISLAND,LATITUDE,LONGITUDE,
-Newport (S),41°,30' N,71°,20' W
-Providence AP,41°,44' N,71°,26' W
+Newport (S),41,30,71,20
+Providence AP,41,44,71,26
 SOUTH Carolina,LATITUDE,LONGITUDE,
-Anderson,34°,30' N,82°,43' W
-Charleston AFB (S),32°,54' N,80°,2' W
-Charleston Co,32°,54' N,79°,58' W
-Columbia AP,33°,57' N,81°,7' W
-Florence AP,34°,11' N,79°,43' W
-Georgetown,33°,23' N,79°,17' W
-Greenville AP,34°,54' N,82°,13' W
-Greenwood,34°,10' N,82°,7' W
-Orangeburg,33°,30' N,80°,52' W
-Rock Hill,34°,59' N,80°,58' W
-Spartanburg AP,34°,58' N,82°,0' W
-"Sumter, Shaw AFB",33°,54' N,80°,22' W
+Anderson,34,30,82,43
+Charleston AFB (S),32,54,80,2
+Charleston Co,32,54,79,58
+Columbia AP,33,57,81,7
+Florence AP,34,11,79,43
+Georgetown,33,23,79,17
+Greenville AP,34,54,82,13
+Greenwood,34,10,82,7
+Orangeburg,33,30,80,52
+Rock Hill,34,59,80,58
+Spartanburg AP,34,58,82,0
+"Sumter Shaw AFB",33,54,80,22
 SOUTH DAKOTA,LATITUDE,LONGITUDE,
-Aberdeen AP,45°,27' N,98°,26' W
-Brookings,44°,18' N,96°,48' W
-Huron AP,44°,23' N,98°,13' W
-Mitchell,43°,41' N,98°,1' W
-Pierre AP,44°,23' N,100°,17' W
-Rapid City AP (S),44°,3' N,103°,4' W
-Sioux Falls AP,43°,34' N,96°,44' W
-Watertown AP,44°,55' N,97°,9' W
-Yankton,42°,55' N,97°,23' W
+Aberdeen AP,45,27,98,26
+Brookings,44,18,96,48
+Huron AP,44,23,98,13
+Mitchell,43,41,98,1
+Pierre AP,44,23,100,17
+Rapid City AP (S),44,3,103,4
+Sioux Falls AP,43,34,96,44
+Watertown AP,44,55,97,9
+Yankton,42,55,97,23
 TENNESSEE,LATITUDE,LONGITUDE,
-Athens,35°,26' N,84°,35' W
-Bristol-Tri City AP,36°,29' N,82°,24' W
-Chattanooga AP,35°,2' N,85°,12' W
-Clarksville,36°,33' N,87°,22' W
-Columbia,35°,38' N,87°,2' W
-Dyersburg,36°,1' N,89°,24' W
-Greenville,36°,4' N,82°,50' W
-Jackson AP,35°,36' N,88°,55' W
-Knoxville AP,35°,49' N,83°,59' W
-Memphis AP,35°,3' N,90°,0' W
-Murfreesboro,34°,55' N,86°,28' W
-Nashville AP (S),36°,7' N,86°,41' W
-Tullahoma,35°,23' N,86°,5' W
+Athens,35,26,84,35
+Bristol-Tri City AP,36,29,82,24
+Chattanooga AP,35,2,85,12
+Clarksville,36,33,87,22
+Columbia,35,38,87,2
+Dyersburg,36,1,89,24
+Greenville,36,4,82,50
+Jackson AP,35,36,88,55
+Knoxville AP,35,49,83,59
+Memphis AP,35,3,90,0
+Murfreesboro,34,55,86,28
+Nashville AP (S),36,7,86,41
+Tullahoma,35,23,86,5
 TEXAS,LATITUDE,LONGITUDE,
-Abilene AP,32°,25' N,99°,41' W
-Alice AP,27°,44' N,98°,2' W
-Amarillo AP,35°,14' N,100°,42' W
-Austin AP,30°,18' N,97°,42' W
-Bay City,29°,0' N,95°,58' W
-Beaumont,29°,57' N,94°,1' W
-Beeville,28°,22' N,97°,40' W
-Big Spring AP (S),32°,18' N,101°,27' W
-Brownsville AP (S),25°,54' N,97°,26' W
-Brownwood,31°,48' N,98°,57' W
-Bryan AP,30°,40' N,96°,33' W
-Corpus Christi AP,27°,46' N,97°,30' W
-Corsicana,32°,5' N,96°,28' W
-Dallas AP,32°,51' N,96°,51' W
-"Del Rio, Laughlin AFB",29°,22' N,100°,47' W
-Denton,33°,12' N,97°,6' W
-Eagle Pass,28°,52' N,100°,32' W
-El Paso AP (S),31°,48' N,106°,24' W
-Fort Worth AP (S),32°,50' N,97°,3' W
-Galveston AP,29°,18' N,94°,48' W
-Greenville,33°,4' N,96°,3' W
-Harlingen,26°,14' N,97°,39' W
-Houston AP,29°,58' N,95°,21' W
-Houston Co,29°,59' N,95°,22' W
-Huntsville,30°,43' N,95°,33' W
-"Killeen, Robert Gray AAF",31°,5' N,97°,41' W
-Lamesa,32°,42' N,101°,56' W
-Laredo AFB,27°,32' N,99°,27' W
-Longview,32°,28' N,94°,44' W
-Lubbock AP,33°,39' N,101°,49' W
-Lufkin AP,31°,25' N,94°,48' W
-Mcallen,26°,12' N,98°,13' W
-Midland AP (S),31°,57' N,102°,11' W
-Mineral Wells AP,32°,47' N,98°,4' W
-Palestine Co,31°,47' N,95°,38' W
-Pampa,35°,32' N,100°,59' W
-Pecos,31°,25' N,103°,30' W
-Plainview,34°,11' N,101°,42' W
-Port Arthur AP,29°,57' N,94°,1' W
-San Angelo°,,,,
-Goodfellow AFB,31°,26' N,100°,24' W
-San Antonio AP (S),29°,32' N,98°,28' W
-"Sherman, Perrin AFB",33°,43' N,96°,40' W
-Snyder,32°,43' N,100°,55' W
-Temple,31°,6' N,97°,21' W
-Tyler AP,32°,21' N,95°,16' W
-Vernon,34°,10' N,99°,18' W
-Victoria AP,28°,51' N,96°,55' W
-Waco AP,31°,37' N,97°,13' W
-Wichita Falls AP,33°,58' N,98°,29' W
+Abilene AP,32,25,99,41
+Alice AP,27,44,98,2
+Amarillo AP,35,14,100,42
+Austin AP,30,18,97,42
+Bay City,29,0,95,58
+Beaumont,29,57,94,1
+Beeville,28,22,97,40
+Big Spring AP (S),32,18,101,27
+Brownsville AP (S),25,54,97,26
+Brownwood,31,48,98,57
+Bryan AP,30,40,96,33
+Corpus Christi AP,27,46,97,30
+Corsicana,32,5,96,28
+Dallas AP,32,51,96,51
+"Del Rio Laughlin AFB",29,22,100,47
+Denton,33,12,97,6
+Eagle Pass,28,52,100,32
+El Paso AP (S),31,48,106,24
+Fort Worth AP (S),32,50,97,3
+Galveston AP,29,18,94,48
+Greenville,33,4,96,3
+Harlingen,26,14,97,39
+Houston AP,29,58,95,21
+Houston Co,29,59,95,22
+Huntsville,30,43,95,33
+"Killeen Robert Gray AAF",31,5,97,41
+Lamesa,32,42,101,56
+Laredo AFB,27,32,99,27
+Longview,32,28,94,44
+Lubbock AP,33,39,101,49
+Lufkin AP,31,25,94,48
+Mcallen,26,12,98,13
+Midland AP (S),31,57,102,11
+Mineral Wells AP,32,47,98,4
+Palestine Co,31,47,95,38
+Pampa,35,32,100,59
+Pecos,31,25,103,30
+Plainview,34,11,101,42
+Port Arthur AP,29,57,94,1
+Goodfellow AFB,31,26,100,24
+San Antonio AP (S),29,32,98,28
+"Sherman Perrin AFB",33,43,96,40
+Snyder,32,43,100,55
+Temple,31,6,97,21
+Tyler AP,32,21,95,16
+Vernon,34,10,99,18
+Victoria AP,28,51,96,55
+Waco AP,31,37,97,13
+Wichita Falls AP,33,58,98,29
 UTAH,LATITUDE,LONGITUDE,
-Cedar City AP,37°,42' N,113°,6' W
-Logan,41°,45' N,111°,49' W
-Moab,38°,36' N,109°,36' W
-Ogden AP,41°,12' N,112°,1' W
-Price,39°,37' N,110°,50' W
-Provo,40°,13' N,111°,43' W
-Richfield,38°,46' N,112°,5' W
-St George Co,37°,2' N,113°,31' W
-Salt Lake City AP (S),40°,46' N,111°,58' W
-Vernal AP,40°,27' N,109°,31' W
+Cedar City AP,37,42,113,6
+Logan,41,45,111,49
+Moab,38,36,109,36
+Ogden AP,41,12,112,1
+Price,39,37,110,50
+Provo,40,13,111,43
+Richfield,38,46,112,5
+St George Co,37,2,113,31
+Salt Lake City AP (S),40,46,111,58
+Vernal AP,40,27,109,31
 VERMONT,LATITUDE,LONGITUDE,
-Barre,44°,12' N,72°,31' W
-Burlington AP (S),44°,28' N,73°,9' W
-Rutland,43°,36' N,72°,58' W
+Barre,44,12,72,31
+Burlington AP (S),44,28,73,9
+Rutland,43,36,72,58
 VIRGINIA,LATITUDE,LONGITUDE,
-Charlottesville,38°,2' N,78°,31' W
-Danville AP,36°,34' N,79°,20' W
-Fredericksburg,38°,18' N,77°,28' W
-Harrisonburg,38°,27' N,78°,54' W
-Lynchburg AP,37°,20' N,79°,12' W
-Norfolk AP,36°,54' N,76°,12' W
-Petersburg,37°,11' N,77°,31' W
-Richmond AP,37°,30' N,77°,20' W
-Roanoke AP,37°,19' N,79°,58' W
-Staunton,38°,16' N,78°,54' W
-Winchester,39°,12' N,78°,10' W
+Charlottesville,38,2,78,31
+Danville AP,36,34,79,20
+Fredericksburg,38,18,77,28
+Harrisonburg,38,27,78,54
+Lynchburg AP,37,20,79,12
+Norfolk AP,36,54,76,12
+Petersburg,37,11,77,31
+Richmond AP,37,30,77,20
+Roanoke AP,37,19,79,58
+Staunton,38,16,78,54
+Winchester,39,12,78,10
 WASHINGTON,LATITUDE,LONGITUDE,
-Aberdeen,46°,59' N,123°,49' W
-Bellingham AP,48°,48' N,122°,32' W
-Bremerton,47°,34' N,122°,40' W
-Ellensburg AP,47°,2' N,120°,31' W
-"Everett, Paine AFB",47°,55' N,122°,17' W
-Kennewick,46°,13' N,119°,8' W
-Longview,46°,10' N,122°,56' W
-"Moses Lake, Larson AFB",47°,12' N,119°,19' W
-Olympia AP,46°,58' N,122°,54' W
-Port Angeles,48°,7' N,123°,26' W
-Seattle-Boeing Field,47°,32' N,122°,18' W
-Seattle Co (S),47°,39' N,122°,18' W
-Seattle-Tacoma AP (S),47°,27' N,122°,18' W
-Spokane AP (S),47°,38' N,117°,31' W
-"Tacoma, McChord AFB",47°,15' N,122°,30' W
-Walla Walla AP,46°,6' N,118°,17' W
-Wenatchee,47°,25' N,120°,19' W
-Yakima AP,46°,34' N,120°,32' W
+Aberdeen,46,59,123,49
+Bellingham AP,48,48,122,32
+Bremerton,47,34,122,40
+Ellensburg AP,47,2,120,31
+"Everett Paine AFB",47,55,122,17
+Kennewick,46,13,119,8
+Longview,46,10,122,56
+"Moses Lake Larson AFB",47,12,119,19
+Olympia AP,46,58,122,54
+Port Angeles,48,7,123,26
+Seattle-Boeing Field,47,32,122,18
+Seattle Co (S),47,39,122,18
+Seattle-Tacoma AP (S),47,27,122,18
+Spokane AP (S),47,38,117,31
+"Tacoma McChord AFB",47,15,122,30
+Walla Walla AP,46,6,118,17
+Wenatchee,47,25,120,19
+Yakima AP,46,34,120,32
 WEST VIRGINIA,LATITUDE,LONGITUDE,
-Beckley,37°,47' N,81°,7' W
-Bluefield AP,37°,18' N,81°,13' W
-Charleston AP,38°,22' N,81°,36' W
-Clarksburg,39°,16' N,80°,21' W
-Elkins AP,38°,53' N,79°,51' W
-Huntington Co,38°,25' N,82°,30' W
-Martinsburg AP,39°,24' N,77°,59' W
-Morgantown AP,39°,39' N,79°,55' W
-Parkersburg Co,39°,16' N,81°,34' W
-Wheeling,40°,7' N,80°,42' W
+Beckley,37,47,81,7
+Bluefield AP,37,18,81,13
+Charleston AP,38,22,81,36
+Clarksburg,39,16,80,21
+Elkins AP,38,53,79,51
+Huntington Co,38,25,82,30
+Martinsburg AP,39,24,77,59
+Morgantown AP,39,39,79,55
+Parkersburg Co,39,16,81,34
+Wheeling,40,7,80,42
 WISCONSIN,LATITUDE,LONGITUDE,
-Appleton,44°,15' N,88°,23' W
-Ashland,46°,34' N,90°,58' W
-Beloit,42°,30' N,89°,2' W
-Eau Claire AP,44°,52' N,91°,29' W
-Fond Du Lac,43°,48' N,88°,27' W
-Green Bay AP,44°,29' N,88°,8' W
-La Crosse AP,43°,52' N,91°,15' W
-Madison AP (S),43°,8' N,89°,20' W
-Manitowoc,44°,6' N,87°,41' W
-Marinette,45°,6' N,87°,38' W
-Milwaukee AP,42°,57' N,87°,54' W
-Racine,42°,43' N,87°,51' W
-Sheboygan,43°,45' N,87°,43' W
-Stevens Point,44°,30' N,89°,34' W
-Waukesha,43°,1' N,88°,14' W
-Wausau AP,44°,55' N,89°,37' W
+Appleton,44,15,88,23
+Ashland,46,34,90,58
+Beloit,42,30,89,2
+Eau Claire AP,44,52,91,29
+Fond Du Lac,43,48,88,27
+Green Bay AP,44,29,88,8
+La Crosse AP,43,52,91,15
+Madison AP (S),43,8,89,20
+Manitowoc,44,6,87,41
+Marinette,45,6,87,38
+Milwaukee AP,42,57,87,54
+Racine,42,43,87,51
+Sheboygan,43,45,87,43
+Stevens Point,44,30,89,34
+Waukesha,43,1,88,14
+Wausau AP,44,55,89,37
 WYOMING,LATITUDE,LONGITUDE,
-Casper AP,42°,55' N,106°,28' W
-Cheyenne,41°,9' N,104°,49' W
-Cody AP,44°,33' N,109°,4' W
-Evanston,41°,16' N,110°,57' W
-Lander AP (S),42°,49' N,108°,44' W
-Laramie AP (S),41°,19' N,105°,41' W
-Newcastle,43°,51' N,104°,13' W
-Rawlins,41°,48' N,107°,12' W
-Rock Springs AP,41°,36' N,109°,0' W
-Sheridan AP,44°,46' N,106°,58' W
-Torrington,42°,5' N,104°,13' W
+Casper AP,42,55,106,28
+Cheyenne,41,9,104,49
+Cody AP,44,33,109,4
+Evanston,41,16,110,57
+Lander AP (S),42,49,108,44
+Laramie AP (S),41,19,105,41
+Newcastle,43,51,104,13
+Rawlins,41,48,107,12
+Rock Springs AP,41,36,109,0
+Sheridan AP,44,46,106,58
+Torrington,42,5,104,13

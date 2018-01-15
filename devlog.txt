@@ -59,5 +59,7 @@ freudenbergJ -- 2018-01-15 11:12:23
 changed us city file to database
 reduced search radius so it lands within the city
 
-keY -- 2018-01-015 13:04:30
+keY -- 2018-01-015 13:57:30
 doesn't land on water anymore by recursively finding a place on land
+incorporated this stuff into Jerome's US theme stuff (my stuff is only for non-theme)
+road label on the floor is removed so players can't cheat by looking up the road name

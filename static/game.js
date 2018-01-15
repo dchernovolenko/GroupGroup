@@ -2,16 +2,20 @@ function getRandomFloat(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+// function get_us_coord() {
+//
+// }
+
 function distance(lat1,lon1,lat2,lon2) {
 var R = 6371; // Radius of the earth in km
 var dLat = deg2rad(lat2-lat1);  // deg2rad below
-var dLon = deg2rad(lon2-lon1); 
-var a = 
+var dLon = deg2rad(lon2-lon1);
+var a =
   Math.sin(dLat/2) * Math.sin(dLat/2) +
-  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
   Math.sin(dLon/2) * Math.sin(dLon/2)
-  ; 
-var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+  ;
+var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 var d = R * c; // Distance in km
 return d;
 }
@@ -23,6 +27,7 @@ return deg * (Math.PI/180)
 var sv;
 var map;
 var panorama;
+var sv;
 var marker;
 
 var latitude;
@@ -33,14 +38,34 @@ var user_score;
 var count = 0;
 var place;
 
+var count = 0; // to see how many API calls I wasted lmao
+var on_land; // to know if the random coordinate is a land coordinate
+var us_city = 1;
+
 function initMap() {
-  latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-  longitude = getRandomFloat(-180,180);
+  // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
+  // var longitude = getRandomFloat(-180,180);
+
+  //================Random US city code ============
+  $.ajax({
+    type: "POST",
+    url: "/us_coord",
+    async: false,
+  }).done(function(response) {
+     console.log(response);
+     var obj = JSON.parse(response);
+     console.log(typeof(obj));
+     latitude = obj.lat;
+     longitude = obj.long * -1;
+  });
+  console.log('hello')
+  console.log(latitude)
+  console.log(longitude)
 
   place = {lat: latitude, lng: longitude};
   console.log("the beginning: " + place.lat + ", " + place.lng);
 
-  var place2 = {lat: 0, lng: 0}; // for the map        
+  var place2 = {lat: 0, lng: 0}; // for the map
   sv = new google.maps.StreetViewService();
 
   panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
@@ -52,8 +77,17 @@ function initMap() {
     streetViewControl: false
   });
 
-  TryRandomLocation(processSVData);
-
+  if (us_city) {
+    sv.getPanorama({location: place, radius: 300}, processSVDataTheme);
+    if (!on_land) {
+      sv.getPanorama({location: place, radius: 1500}, processSVDataTheme);
+    }
+  }
+  else {
+    latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
+    longitude = getRandomFloat(-180,180);
+    TryRandomLocation(processSVData);
+  }
   //when the user clicks on the map
   map.addListener('click', marking);
 }
@@ -71,7 +105,7 @@ function marking(event) {
   if (marker == undefined){
     marker = new google.maps.Marker({
         position: event.latLng,
-        map: map, 
+        map: map,
         animation: google.maps.Animation.DROP, // just to be extra
     });
 }
@@ -103,7 +137,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score;
+  score.innerHTML = 'you scored ' + user_score + "out of 20037.5";
 
   // sending how much score to add to the user
   $.ajax({
@@ -120,16 +154,37 @@ $( "button" ).click(function() {
 
 });
 
+function processSVDataTheme(data, status) {
+  if (status === 'OK') {
+    panorama.setPano(data.location.pano);
+    landed_lat = data.location.latLng.lat();
+    landed_lng = data.location.latLng.lng();
+    console.log("landed")
+    console.log(landed_lat)
+    console.log(landed_lng)
+    panorama.set('addressControl', false);
+    panorama.set('showRoadLabels', false);
+    panorama.setVisible(true);
+
+    on_land = 1;
+  } else {
+    console.error('Street View data not found for this location.');
+    on_land = 0;
+  }
+}
+
 function processSVData(data, status) {
   if (status === 'OK') {
     panorama.setPano(data.location.pano);
     landed_lat = data.location.latLng.lat();
     landed_lng = data.location.latLng.lng();
-    panorama.setVisible(true);
+    panorama.set('showRoadLabels', false);
     panorama.set('addressControl', false);
+    panorama.setVisible(true);
 
     console.log("YAY! " + data.location.latLng.lat() + ", " + data.location.latLng.lng());
     console.log("took " + count + " tries");
+    count = 0;
   } else {
     longitude++;
     count++;

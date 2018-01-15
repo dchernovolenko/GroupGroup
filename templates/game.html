@@ -1,34 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Geopardy</title>
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  </head>
+{% extends "uniTemp.html" %}
+{% block content1 %}
+
   <body>
-    <form method = "GET" action = "/login">
-      <input type = "submit" value = "login"></input>
-    </form>
-    <form method = "GET" action = "/logout">
-      <input type = "submit" value = "logout"></input>
-    </form>
-    <form method = "GET" action = "/leaderboard">
-      <input type = "submit" value = "leaderboard"></input>
-    </form>
     <div id="pano" style="width: 100%; height: 100%"></div>
     <div id="map" style="width: 100%; height: 100%"></div>
     <div id="score">score</div>
     <button id = "submit" disabled>Submit</button>
+    <div id="streetview">
     <script src = "../static/game.js"></script>
+    </div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mIp5CiUGgspmP4WYqijELDBFv-7CUc8&callback=initMap">
     </script>
-  </body>
-</html>
+{% endblock %}

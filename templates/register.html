@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <title> Make an Account </title>
-  </head>
+{% extends "uniTemp.html" %}
+{% block content1 %}
   <body>
     <center>
       {% set messages = get_flashed_messages() %}
       {% for message in messages %}
       {{ message }}
       {% endfor %}
+      <br><br><br>
       <form method = "POST" action = "/user_creation">
         <b> Input your user </b>
         <input type = "text" name = "username"> <br>
@@ -21,5 +19,5 @@
       <br><br>
       Water will taste better.
     </center>
-  </body>
-</html>
+{% endblock %}
+    

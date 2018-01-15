@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session, redirect, url_for, f
 from random import *
 import json, urllib2, sys, os
 import sqlite3, os
-from utils import db
+from utils import db, themes
 
 my_app = Flask(__name__)
 my_app.secret_key = os.urandom(64)
@@ -10,7 +10,7 @@ my_app.secret_key = os.urandom(64)
 
 @my_app.route('/')
 def root():
-    return render_template("game.html")
+    return render_template("home.html")
 
 
 @my_app.route('/leaderboard')
@@ -19,6 +19,9 @@ def leaderboard():
     return render_template("leaderboard.html", lb = lb)
 
 
+@my_app.route('/game')
+def home():
+        return render_template('game.html')
 
 
 @my_app.route('/login', methods=['GET','POST'])
@@ -89,6 +92,13 @@ def addScore():
     else:
         response = json.dumps({"failed because not logged in": "nooooo"})
 
+    return response
+
+
+@my_app.route('/us_coord', methods = ['POST'])
+def us_coord():
+    coordinates = db.get_us()
+    response = json.dumps({"lat": coordinates[0], "long": coordinates[1]})
     return response
 
 if __name__ == "__main__":
