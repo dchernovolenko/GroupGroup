@@ -34,6 +34,7 @@ var user_score;
 var place;
 
 var on_land; // to know if the random coordinate is a land coordinate
+var us_city = 1;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
@@ -83,7 +84,15 @@ function initMap() {
   });
 
   // sv.getPanorama({location: place, radius: 8800000}, processSVData);
-  sv.getPanorama({location: place, radius: 500}, processSVData);
+  if (us_city) {
+    sv.getPanorama({location: place, radius: 300}, processSVData);
+    if (!on_land) {
+      sv.getPanorama({location: place, radius: 1500}, processSVData);
+    }
+  }
+  else {
+    sv.getPanorama({location: place, radius: 8800000}, processSVData);
+  }
   //when the user clicks on the map
   map.addListener('click', marking);
 }
@@ -153,9 +162,9 @@ function processSVData(data, status) {
     panorama.setVisible(true);
     panorama.set('addressControl', false);
 
-    var on_land = true;
+    on_land = 1;
   } else {
     console.error('Street View data not found for this location.');
-    var on_land = false;
+    on_land = 0;
   }
 }
