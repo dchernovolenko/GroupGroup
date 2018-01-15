@@ -54,3 +54,7 @@ added home page and more css
 freudenbergJ -- 2018-01-14 17:40:45
 added function to get coordinates of random major us city
 ajax call to display said coordinates
+
+freudenbergJ -- 2018-01-15 11:12:23
+changed us city file to database
+reduced search radius so it lands within the city

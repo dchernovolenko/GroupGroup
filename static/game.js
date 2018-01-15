@@ -82,8 +82,8 @@ function initMap() {
     streetViewControl: false
   });
 
-  sv.getPanorama({location: place, radius: 8800000}, processSVData);
-
+  // sv.getPanorama({location: place, radius: 8800000}, processSVData);
+  sv.getPanorama({location: place, radius: 500}, processSVData);
   //when the user clicks on the map
   map.addListener('click', marking);
 }

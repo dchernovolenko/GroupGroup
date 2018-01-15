@@ -97,7 +97,7 @@ def addScore():
 
 @my_app.route('/us_coord', methods = ['POST'])
 def us_coord():
-    coordinates = themes.get_us_coord()
+    coordinates = db.get_us()
     response = json.dumps({"lat": coordinates[0], "long": coordinates[1]})
     return response
 

@@ -10,6 +10,43 @@ def create_table():
     db.commit()
     db.close()
 
+def us_table():
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "CREATE TABLE IF NOT EXISTS us_cities (latitude INTEGER, longitude INTEGER);"
+    c.execute(command)
+    db.commit()
+    db.close()
+
+def populate_us():
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    us_file = open("data/themes/us_cities.csv")
+    line = us_file.readline()
+    while line:
+        if "LATITUDE" in line:
+            line = us_file.readline()
+        else:
+            parts = line.split(",")
+            latitude = int(parts[1]) + int(parts[2]) / 60.0
+            longitude = int(parts[3]) + int(parts[4]) / 60.0
+            command = "INSERT INTO us_cities VALUES ('%s', '%s');" % (latitude, longitude)
+            c.execute(command)
+            line = us_file.readline()
+    us_file.close()
+    db.commit()
+    db.close()
+
+def get_us():
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "SELECT * FROM us_cities ORDER BY RANDOM() LIMIT 1;"
+    coord = c.execute(command)
+    for entry in coord:
+        latitude = entry[0]
+        longitude = entry[1]
+    return (latitude, longitude)
+
 def create_account(user, pw, points=0):
     db = sqlite3.connect(dbf)
     c = db.cursor()
@@ -85,4 +122,7 @@ if __name__ == "__main__":
     # create_table()
     # create_account("normal_force", "m1*g", 10)
     # add_points("normal_force", 10)
-    print leaderboard()
+    # print leaderboard()
+    us_table()
+    populate_us()
+    get_us()
