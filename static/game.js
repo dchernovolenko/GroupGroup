@@ -41,16 +41,6 @@ function initMap() {
 
   place = {lat: latitude, lng: longitude};
   console.log("the beginning: " + place.lat + ", " + place.lng);
-  var geocoder = new google.maps.Geocoder;
-  geocoder.geocode({'location': place}, function(results, status){
-    if (status != 'OK'){
-      //redirec to some place in Eurasia
-      console.log("redirecting to Eurasia bc I landed in water");
-      place.lng = getRandomFloat(60, 130);
-      place.lat = getRandomFloat(20, 70);
-    }
-  }
-  )
 
   var place2 = {lat: 0, lng: 0}; // for the map        
   sv = new google.maps.StreetViewService();
