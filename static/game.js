@@ -32,6 +32,7 @@ var marker;
 
 var latitude;
 var longitude;
+var theme_radius = 50;
 var landed_lat;
 var landed_lng;
 var user_score;
@@ -39,8 +40,8 @@ var count = 0;
 var place;
 
 var count = 0; // to see how many API calls I wasted lmao
-var on_land; // to know if the random coordinate is a land coordinate
-var us_city = 0;
+// var on_land; // to know if the random coordinate is a land coordinate
+var us_city = 1;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
@@ -78,14 +79,9 @@ function initMap() {
   });
 
   if (us_city) {
-    sv.getPanorama({location: place, radius: 300}, processSVDataTheme);
-    if (!on_land) {
-      sv.getPanorama({location: place, radius: 1500}, processSVDataTheme);
-    }
+    increasingRadius(processSVDataTheme);
   }
   else {
-    latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-    longitude = getRandomFloat(-180,180);
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
@@ -100,6 +96,16 @@ function TryRandomLocation(callback) {
       location: new google.maps.LatLng(latitude, longitude),
       radius: 15000
   }, callback);
+}
+
+function increasingRadius(callback) {
+  // find a street view with increasing radius
+  sv.getPanorama({
+      location: new google.maps.LatLng(latitude, longitude),
+      radius: theme_radius
+  }, callback);
+  console.log("theme radius: " + theme_radius);
+  theme_radius+=100;
 }
 
 // putting the marker down at where the user clicks
@@ -139,7 +145,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score + "out of 20037.5";
+  score.innerHTML = 'you scored ' + user_score + " out of 20037.5";
 
   // sending how much score to add to the user
   $.ajax({
@@ -168,10 +174,12 @@ function processSVDataTheme(data, status) {
     panorama.set('showRoadLabels', false);
     panorama.setVisible(true);
 
-    on_land = 1;
+    console.log("yay landed on a theme street view!");
+    // on_land = 1;
   } else {
-    console.error('Street View data not found for this location.');
-    on_land = 0;
+    console.log("increasing radius...");
+    increasingRadius(processSVDataTheme)
+    // on_land = 0;
   }
 }
 
