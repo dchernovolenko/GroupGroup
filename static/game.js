@@ -82,8 +82,6 @@ function initMap() {
     increasingRadius(processSVDataTheme);
   }
   else {
-    latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-    longitude = getRandomFloat(-180,180);
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
@@ -106,8 +104,8 @@ function increasingRadius(callback) {
       location: new google.maps.LatLng(latitude, longitude),
       radius: theme_radius
   }, callback);
-  theme_radius+=100;
   console.log("theme radius: " + theme_radius);
+  theme_radius+=100;
 }
 
 // putting the marker down at where the user clicks
