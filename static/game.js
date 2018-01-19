@@ -25,6 +25,7 @@ return deg * (Math.PI/180)
 }
 
 var sv;
+var geocoder;
 var map;
 var panorama;
 var sv;
@@ -79,7 +80,8 @@ function initMap() {
   });
 
   if (us_city) {
-    increasingRadius(processSVDataTheme);
+    // increasingRadius(processSVDataTheme);
+    geocodeAddress('lincoln memorial');
   }
   else {
     TryRandomLocation(processSVData);
@@ -161,6 +163,22 @@ $( "button" ).click(function() {
   });
 
 });
+
+function geocodeAddress(location) {
+  geocoder = new google.maps.Geocoder()
+  geocoder.geocode({'address': location}, function(results, status) {
+    if (status === 'OK') {
+      latitude = results[0].geometry.location.lat();
+      longitude = results[0].geometry.location.lng();
+      console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
+      increasingRadius(processSVDataTheme);
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
+
 
 function processSVDataTheme(data, status) {
   if (status === 'OK') {
