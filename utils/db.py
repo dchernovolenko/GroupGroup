@@ -48,6 +48,15 @@ def get_us():
         longitude = entry[1]
     return (latitude, longitude)
 
+def get_locations(table):
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    command = "SELECT * FROM %s ORDER BY RANDOM() LIMIT 1;" % (table)
+    location = c.execute(command)
+    for entry in location:
+        place = entry[0]
+    return place[:-1] #remove newline at end
+
 def datify(filename):
     file_obj = open("data/themes/" + filename, "rU")
     db = sqlite3.connect(dbf)
@@ -147,4 +156,5 @@ if __name__ == "__main__":
     # us_table()
     # populate_us()
     # get_us()
-    datify("uni.csv")
+    # datify("uni.csv")
+    print get_locations("uni")
