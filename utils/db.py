@@ -56,9 +56,10 @@ def datify(filename):
     print tbl_name
     command = "CREATE TABLE IF NOT EXISTS %s (place TEXT);" % (tbl_name)
     c.execute(command)
-    line = file_obj.readline().replace("'", "")
+    line = file_obj.readline()
     while line:
         print line
+        line = line.replace("'","")
         command = "INSERT INTO %s VALUES ('%s');" % (tbl_name, line)
         c.execute(command)
         line = file_obj.readline()
