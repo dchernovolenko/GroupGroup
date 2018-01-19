@@ -95,10 +95,12 @@ def addScore():
     return response
 
 
-@my_app.route('/us_coord', methods = ['POST'])
-def us_coord():
-    coordinates = db.get_us()
-    response = json.dumps({"lat": coordinates[0], "long": coordinates[1]})
+@my_app.route('/theme/<table>', methods = ['POST'])
+def theme(table):
+    place = db.get_locations(table)
+    print place
+    response = json.dumps({"place": place})
+    print response
     return response
 
 if __name__ == "__main__":
