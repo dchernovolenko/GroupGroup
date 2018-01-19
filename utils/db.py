@@ -4,6 +4,7 @@ dbf = "data/accounts.db"
 
 def create_table():
     db = sqlite3.connect(dbf)
+    
     c = db.cursor()
     command = "CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT, points INTEGER);"
     c.execute(command)
@@ -46,6 +47,25 @@ def get_us():
         latitude = entry[0]
         longitude = entry[1]
     return (latitude, longitude)
+
+def datify(filename):
+    file_obj = open("data/themes/" + filename, "rU")
+    db = sqlite3.connect(dbf)
+    c = db.cursor()
+    tbl_name = filename[:-4]
+    print tbl_name
+    command = "CREATE TABLE IF NOT EXISTS %s (place TEXT);" % (tbl_name)
+    c.execute(command)
+    line = file_obj.readline().replace("'", "")
+    while line:
+        print line
+        command = "INSERT INTO %s VALUES ('%s');" % (tbl_name, line)
+        c.execute(command)
+        line = file_obj.readline()
+    file_obj.close()
+    db.commit()
+    db.close()
+    
 
 def create_account(user, pw, points=0):
     db = sqlite3.connect(dbf)
@@ -123,6 +143,7 @@ if __name__ == "__main__":
     # create_account("normal_force", "m1*g", 10)
     # add_points("normal_force", 10)
     # print leaderboard()
-    us_table()
-    populate_us()
-    get_us()
+    # us_table()
+    # populate_us()
+    # get_us()
+    datify("uni.csv")
