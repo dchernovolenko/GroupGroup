@@ -36,29 +36,33 @@ var longitude;
 var theme_radius = 50;
 var landed_lat;
 var landed_lng;
+var init_location;
+var landed_location;
 var user_score;
 var count = 0;
 var place;
+var theme = "uni";
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
-var us_city = 1;
+var theme_toggle = 1;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-  //================Random US city code ============
+  //================Random Theme Based Location Code ============
   $.ajax({
     type: "POST",
-    url: "/us_coord",
+    url: "/theme/" + theme,
     async: false,
   }).done(function(response) {
      console.log(response);
      var obj = JSON.parse(response);
      console.log(typeof(obj));
-     latitude = obj.lat;
-     longitude = obj.long * -1;
+     init_location = obj.place;
+     console.log(init_location);
+     throw ''; 
   });
   console.log('hello')
   console.log(latitude)
