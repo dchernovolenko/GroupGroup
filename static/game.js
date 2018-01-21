@@ -24,6 +24,24 @@ function deg2rad(deg) {
 return deg * (Math.PI/180)
 }
 
+//================Random Theme Based Location Code ============
+function theme_locate() {
+  $.ajax({
+    type: "POST",
+    url: "/theme/" + theme,
+    async: false,
+  }).done(function(response) {
+     console.log(response);
+     var obj = JSON.parse(response);
+     console.log(typeof(obj));
+     init_location = obj.place;
+     if (theme == "us_cities") {
+       init_location += ", US";
+     }
+     console.log(init_location);
+  });
+}
+
 var sv;
 var geocoder;
 var map;
@@ -41,7 +59,7 @@ var landed_location;
 var user_score;
 var count = 0;
 var place;
-var theme = "uni";
+var theme = "amusement"; //options are uni, us_cities, amusement (may not always work)
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
@@ -51,19 +69,8 @@ function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-  //================Random Theme Based Location Code ============
-  $.ajax({
-    type: "POST",
-    url: "/theme/" + theme,
-    async: false,
-  }).done(function(response) {
-     console.log(response);
-     var obj = JSON.parse(response);
-     console.log(typeof(obj));
-     init_location = obj.place;
-     console.log(init_location);
-     throw ''; 
-  });
+
+  theme_locate() //defined up there, sets init_location to random theme location
   console.log('hello')
   console.log(latitude)
   console.log(longitude)
@@ -83,9 +90,9 @@ function initMap() {
     streetViewControl: false
   });
 
-  if (us_city) {
+  if (theme_toggle) {
     // increasingRadius(processSVDataTheme);
-    geocodeAddress('lincoln memorial');
+      geocodeAddress(init_location);
   }
   else {
     TryRandomLocation(processSVData);
@@ -95,7 +102,7 @@ function initMap() {
 }
 
 function TryRandomLocation(callback) {
-  // Try to find a panorama within 15000 metres 
+  // Try to find a panorama within 15000 metres
   latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   longitude = getRandomFloat(-180,180);
   sv.getPanorama({
