@@ -70,3 +70,6 @@ better algorithm for themed games
 freudenbergJ -- 2018-01-20 20:34:16
 added function to turn dataset of locations into db table
 changed us_cities to using geocoding
+
+keY -- 2018-01-20 21:12:40
+now always lands on a themed place by keeping on trying until it lands

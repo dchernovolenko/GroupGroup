@@ -183,8 +183,13 @@ function geocodeAddress(location) {
       longitude = results[0].geometry.location.lng();
       console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
       increasingRadius(processSVDataTheme);
+      count = 0;
+      console.log("took " + count + " tries");
     } else {
-      alert('Geocode was not successful for the following reason: ' + status);
+      theme_locate();
+      geocodeAddress(init_location);
+      console.log("finding another place in theme...");
+      count++;
     }
   });
 }
