@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import os, json, codecs, subprocess, sys
-import unicodedata
-
-string_list = """[
+[
          {
             "Id": "6255146",
             "Name": "Africa",
@@ -31801,15 +31796,4 @@ string_list = """[
             "LocalNameEN": "South America",
             "LocalNameES": "Sudamérica"
          }
-    ]"""
-
-convertjson = json.loads(string_list)
-
-fd = open('south_america.csv', 'w')
-for country in convertjson[5]['Children']['SimpleGeoName']:
-    for state in country['Children']['SimpleGeoName']:
-        normal_state = unicodedata.normalize('NFKD', state['Name']).encode('ascii', 'ignore')
-        normal_country = unicodedata.normalize('NFKD', country['Name']).encode('ascii', 'ignore')
-        fd.write(normal_state + ', ' + normal_country + '\n')
-        # print normal_country
-fd.close()
+    ]
