@@ -131,6 +131,7 @@ else{
   document.getElementById("submit").disabled = false;
 }
 
+
 $( "button" ).click(function() {
   // so they can't submit again
   $( "button" ).remove();
@@ -145,7 +146,19 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score + " out of 20037.5";
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
+
+  //resizing map
+  document.getElementById("controls").style.width = "100vw";
+  document.getElementById("controls").style.height = "100vh";
+  console.log( 'xd');
+  document.getElementById("map").style.cssText = null;
+  document.getElementById("map").style.height = "100vh";
+  document.getElementById("map").style.width = "100vw";
+  google.maps.event.trigger(map, 'resize');
+  console.log( 'xd');
+  map.setCenter(new google.maps.LatLng(0,0));
+  map.setZoom(16);
 
   // sending how much score to add to the user
   $.ajax({
@@ -161,6 +174,7 @@ $( "button" ).click(function() {
   });
 
 });
+
 
 function processSVDataTheme(data, status) {
   if (status === 'OK') {
