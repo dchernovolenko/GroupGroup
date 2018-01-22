@@ -24,7 +24,26 @@ function deg2rad(deg) {
 return deg * (Math.PI/180)
 }
 
+//================Random Theme Based Location Code ============
+function theme_locate() {
+  $.ajax({
+    type: "POST",
+    url: "/theme/" + theme,
+    async: false,
+  }).done(function(response) {
+     console.log(response);
+     var obj = JSON.parse(response);
+     console.log(typeof(obj));
+     init_location = obj.place;
+     if (theme == "us_cities") {
+       init_location += ", US";
+     }
+     console.log(init_location);
+  });
+}
+
 var sv;
+var geocoder;
 var map;
 var panorama;
 var sv;
@@ -35,30 +54,23 @@ var longitude;
 var theme_radius = 50;
 var landed_lat;
 var landed_lng;
+var init_location;
+var landed_location;
 var user_score;
 var count = 0;
 var place;
+var theme = "amusement"; //options are uni, us_cities, amusement (may not always work)
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
-var us_city = 1;
+var theme_toggle = 1;
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-  //================Random US city code ============
-  $.ajax({
-    type: "POST",
-    url: "/us_coord",
-    async: false,
-  }).done(function(response) {
-     console.log(response);
-     var obj = JSON.parse(response);
-     console.log(typeof(obj));
-     latitude = obj.lat;
-     longitude = obj.long * -1;
-  });
+
+  theme_locate() //defined up there, sets init_location to random theme location
   console.log('hello')
   console.log(latitude)
   console.log(longitude)
@@ -78,8 +90,9 @@ function initMap() {
     streetViewControl: false
   });
 
-  if (us_city) {
-    increasingRadius(processSVDataTheme);
+  if (theme_toggle) {
+    // increasingRadius(processSVDataTheme);
+      geocodeAddress(init_location);
   }
   else {
     TryRandomLocation(processSVData);
@@ -89,7 +102,7 @@ function initMap() {
 }
 
 function TryRandomLocation(callback) {
-  // Try to find a panorama within 15000 metres 
+  // Try to find a panorama within 15000 metres
   latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   longitude = getRandomFloat(-180,180);
   sv.getPanorama({
@@ -148,17 +161,6 @@ $( "button" ).click(function() {
   console.log( 'score: ' + user_score );
   score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
 
-  //resizing map
-  document.getElementById("controls").style.width = "100vw";
-  document.getElementById("controls").style.height = "100vh";
-  console.log( 'xd');
-  document.getElementById("map").style.cssText = null;
-  document.getElementById("map").style.height = "100vh";
-  document.getElementById("map").style.width = "100vw";
-  google.maps.event.trigger(map, 'resize');
-  console.log( 'xd');
-  map.setCenter(new google.maps.LatLng(0,0));
-  map.setZoom(16);
 
   // sending how much score to add to the user
   $.ajax({
@@ -175,6 +177,29 @@ $( "button" ).click(function() {
 
 });
 
+<<<<<<< HEAD
+=======
+function geocodeAddress(location) {
+  geocoder = new google.maps.Geocoder()
+  geocoder.geocode({'address': location}, function(results, status) {
+    if (status === 'OK') {
+      latitude = results[0].geometry.location.lat();
+      longitude = results[0].geometry.location.lng();
+      console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
+      increasingRadius(processSVDataTheme);
+      count = 0;
+      console.log("took " + count + " tries");
+    } else {
+      theme_locate();
+      geocodeAddress(init_location);
+      console.log("finding another place in theme...");
+      count++;
+    }
+  });
+}
+
+
+>>>>>>> 8337ae4dc639330cb6f1bedf3dba591ae6ec34d1
 
 function processSVDataTheme(data, status) {
   if (status === 'OK') {
