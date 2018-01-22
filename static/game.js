@@ -160,7 +160,13 @@ $( "button" ).click(function() {
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
   score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
-
+  //resizing map
+  document.getElementById("controls").style.width = "100vw";
+  document.getElementById("controls").style.height = "100vh";
+  document.getElementById("map").style.cssText = null;
+  document.getElementById("map").style.height = "100vh";
+  document.getElementById("map").style.width = "100vw";
+  google.maps.event.trigger(map, 'resize');
 
   // sending how much score to add to the user
   $.ajax({
@@ -177,8 +183,6 @@ $( "button" ).click(function() {
 
 });
 
-<<<<<<< HEAD
-=======
 function geocodeAddress(location) {
   geocoder = new google.maps.Geocoder()
   geocoder.geocode({'address': location}, function(results, status) {
@@ -199,7 +203,6 @@ function geocodeAddress(location) {
 }
 
 
->>>>>>> 8337ae4dc639330cb6f1bedf3dba591ae6ec34d1
 
 function processSVDataTheme(data, status) {
   if (status === 'OK') {
