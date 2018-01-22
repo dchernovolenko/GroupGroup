@@ -69,7 +69,8 @@ function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-
+  console.log(localStorage.getItem("theme"));
+  // console.log("po")
   theme_locate() //defined up there, sets init_location to random theme location
   console.log('hello')
   console.log(latitude)
