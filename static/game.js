@@ -59,25 +59,26 @@ var landed_location;
 var user_score;
 var count = 0;
 var place;
-var theme = "amusement"; //options are uni, us_cities, amusement (may not always work)
+var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
-var theme_toggle = 1;
+var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-  console.log(localStorage.getItem("theme"));
-  // console.log("po")
-  theme_locate() //defined up there, sets init_location to random theme location
-  console.log('hello')
-  console.log(latitude)
-  console.log(longitude)
+  console.log(theme);
+  console.log("theme IO:")
+  console.log(theme_toggle);
+  theme_locate(); //defined up there, sets init_location to random theme location
+  console.log('hello');
+  // console.log(latitude);
+  // console.log(longitude);
 
   place = {lat: latitude, lng: longitude};
-  console.log("the beginning: " + place.lat + ", " + place.lng);
+  // console.log("the beginning: " + place.lat + ", " + place.lng);
 
   var place2 = {lat: 0, lng: 0}; // for the map
   sv = new google.maps.StreetViewService();
@@ -96,6 +97,7 @@ function initMap() {
       geocodeAddress(init_location);
   }
   else {
+    console.log("RANDOM");
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
