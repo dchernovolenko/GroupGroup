@@ -120,8 +120,14 @@ function increasingRadius(callback) {
       location: new google.maps.LatLng(latitude, longitude),
       radius: theme_radius
   }, callback);
+  console.log("theme");
   console.log("theme radius: " + theme_radius);
-  theme_radius+=100;
+  if (theme == "africa") {
+    theme_radius += 1000;
+  }
+  else {
+    theme_radius += 100;
+  }
 }
 
 // putting the marker down at where the user clicks

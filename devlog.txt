@@ -80,3 +80,6 @@ linked buttons to theme toggling using localStorage
 keY -- 2018-01-22 11:32:26
 csv's for every continent
 ran into a lot of trouble with non ascii characters but fixed it by normalizing them yay
+
+freudenbergJ -- 2018-01-23 12:52:31
+linked margaret's csvs to db and added buttons
