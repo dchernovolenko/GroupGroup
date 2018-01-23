@@ -4,6 +4,7 @@ DATABASE CHANGES
 =================================
 -added leaderboard points tracked through accounts table
 -added table for every theme
+-passwords are not hashed
 
 GAMEPLAY CHANGES
 =================================
