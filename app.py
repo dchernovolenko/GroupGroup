@@ -24,7 +24,8 @@ def leaderboard():
 
 @my_app.route('/game')
 def home():
-        return render_template('game.html')
+    fd = open('data/key.csv', 'r')
+    return render_template('game.html', key = fd.read())
 
 
 @my_app.route('/login', methods=['GET','POST'])
