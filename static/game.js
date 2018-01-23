@@ -145,7 +145,8 @@ else{
   // distance from user click to actual place
   var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
   // scoring (half of Earth's circumference in km minus user click distance)
-  user_score = 20037.5 - distance_to_goal;
+  // user_score = 20037.5 - distance_to_goal;
+  user_score = Math.pow(5000, (20037.5-distance_to_goal)/20037.5);
 
   // putting a marker down activates the submit button
   document.getElementById("submit").disabled = false;
@@ -166,7 +167,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 5000</h1>";
   //resizing map
   document.getElementById("controls").style.width = "100vw";
   document.getElementById("controls").style.height = "100vh";
