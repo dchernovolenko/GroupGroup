@@ -1,0 +1,21 @@
+Changes from Design Document
+
+DATABASE CHANGES
+=================================
+-added leaderboard points tracked through accounts table
+-added table for every theme
+-passwords are not hashed
+
+GAMEPLAY CHANGES
+=================================
+-removed ip location checking as theme
+-added many more themes than originally planned
+-removed user profiles
+-removed challenge mode
+-removed create your own map mode
+-removed rounds and friend system
+
+WEB LAYOUT CHANGES
+=================================
+-added home page with theme selection
+-added leaderboard page

@@ -43,7 +43,7 @@ body {
 		border-color: #FFF;
 		color: #fff;
 	  }
-	  .card:hover{
+	  .active, .card:hover{
 		transition: all, 0.5s;
 		color: #000;
 		border-color: #000;
