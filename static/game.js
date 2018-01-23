@@ -57,12 +57,11 @@ var landed_lng;
 var init_location;
 var landed_location;
 var user_score;
-var count = 0;
+var count = 0; // to see how many API calls I wasted lmao
 var place;
 var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
 var mapResized = false;
 
-var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
 var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
@@ -130,7 +129,12 @@ function increasingRadius(callback) {
       radius: theme_radius
   }, callback);
   console.log("theme radius: " + theme_radius);
-  theme_radius+=100;
+  if (theme == "africa") {
+    theme_radius += 1000;
+  }
+  else {
+    theme_radius += 100;
+  }
 }
 
 // putting the marker down at where the user clicks
@@ -152,7 +156,35 @@ else{
   longitude = event.latLng.lng();
   var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
   // scoring (half of Earth's circumference in km minus user click distance)
-  user_score = 20037.5 - distance_to_goal;
+  // user_score = 20037.5 - distance_to_goal;
+  var max_dist = 20037.5;
+  if (theme_toggle == 0 || theme == "amusement" || theme == "world_capitals") {
+    max_dist = 20037.5;
+  }
+  else if (theme == "us_cities" || theme == "uni"){
+    max_dist = 4654; //thanks quora
+    max_dist = distance(34, -117, 47.3, -68.5);
+  }
+  else if (theme == "africa") {
+    max_dist = distance(35.8, -5.8, -32.8, 26.7); //dist between northeasternmost and southwesternmost places in africa
+  }
+  else if (theme == "asia") {
+    max_dist = distance(13.4, 43.8, 68, 175.8); //southernwestermost to northerneastern most
+  }
+  else if (theme == "north_america") {
+    max_dist = distance(70.8, -159.9, 8.12, -77.7);
+  }
+  else if (theme == "oceania") {
+    max_dist = distance(-21.7, 114.3, -46.3, 169.9);
+  }
+  else if (theme == "europe") {
+    max_dist = 5342.6; //thanks quora
+  }
+
+
+
+  user_score = Math.pow(5000, (max_dist - distance_to_goal) / max_dist);
+  user_score = Math.round (user_score * 10) / 10;
 
   // putting a marker down activates the submit button
   document.getElementById("submit").disabled = false;
@@ -172,7 +204,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 5000</h1>";
   //resizing map
   document.getElementById("wrpr").style.top = "56px";
   document.getElementById("wrpr").style.width = "100%";
@@ -215,13 +247,10 @@ function geocodeAddress(location) {
       longitude = results[0].geometry.location.lng();
       console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
       increasingRadius(processSVDataTheme);
-      count = 0;
-      console.log("took " + count + " tries");
     } else {
       theme_locate();
       geocodeAddress(init_location);
       console.log("finding another place in theme...");
-      count++;
     }
   });
 }
@@ -233,19 +262,25 @@ function processSVDataTheme(data, status) {
     panorama.setPano(data.location.pano);
     landed_lat = data.location.latLng.lat();
     landed_lng = data.location.latLng.lng();
-    console.log("landed")
-    console.log(landed_lat)
-    console.log(landed_lng)
     panorama.set('addressControl', false);
     panorama.set('showRoadLabels', false);
     panorama.setVisible(true);
 
-    console.log("yay landed on a theme street view!");
-    // on_land = 1;
+    console.log("yay landed on a theme street view! Took " + count + " tries");
+    count = 0;
   } else {
-    console.log("increasing radius...");
-    increasingRadius(processSVDataTheme)
-    // on_land = 0;
+    if (count == 30){
+      count = 0;
+      theme_radius = 50;
+      theme_locate();
+      geocodeAddress(init_location);
+      console.log("taking more than 30 tries, finding another place instead...");
+    }
+    else{
+      console.log("increasing radius...");
+      increasingRadius(processSVDataTheme)
+      count++;
+    }
   }
 }
 

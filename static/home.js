@@ -1,7 +1,16 @@
+var normal_button = document.getElementById("normal");
 var us_button = document.getElementById("theme-1-button-us");
 var uni_button = document.getElementById("theme-2-button-uni");
-var normal_button = document.getElementById("normal");
 var amuse_button = document.getElementById("theme-3-button-amusement");
+var afri_button = document.getElementById("theme-4-button-africa");
+var asia_button = document.getElementById("theme-5-button-asia");
+var noam_button = document.getElementById("theme-6-button-north-america");
+var euro_button = document.getElementById("theme-7-button-europe");
+var ocea_button = document.getElementById("theme-8-button-oceania");
+var woca_button = document.getElementById("theme-9-button-world-capitals");
+
+
+
 localStorage.setItem("theme_toggle", 0);
 
 
@@ -11,12 +20,6 @@ var setnorm = function(e) {
   console.log("turning off theme");
 }
 
-var setamus = function(e) {
-  console.log("toggling on");
-  localStorage.setItem("theme_toggle", 1);
-  console.log("setting theme to amusement parks");
-  localStorage.setItem("theme", "amusement");
-}
 var setus = function(e) {
   console.log("toggling on");
   localStorage.setItem("theme_toggle", 1);
@@ -31,7 +34,62 @@ var setuni = function(e) {
   localStorage.setItem("theme", "uni");
 }
 
+var setamus = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to amusement parks");
+  localStorage.setItem("theme", "amusement");
+}
+
+var setafri = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to africa");
+  localStorage.setItem("theme", "africa");
+}
+
+var setasia = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to asia");
+  localStorage.setItem("theme", "asia");
+}
+
+var setnoam = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to north america");
+  localStorage.setItem("theme", "north_america");
+}
+
+var seteuro = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to europe");
+  localStorage.setItem("theme", "europe");
+}
+
+var setocea = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to oceania");
+  localStorage.setItem("theme", "oceania");
+}
+
+var setwoca = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to world capitals");
+  localStorage.setItem("theme", "world_capitals");
+}
+
+normal_button.addEventListener("click", setnorm);
 us_button.addEventListener("click", setus);
 uni_button.addEventListener("click", setuni);
-normal_button.addEventListener("click", setnorm);
 amuse_button.addEventListener("click", setamus);
+afri_button.addEventListener("click", setafri);
+asia_button.addEventListener("click", setasia);
+noam_button.addEventListener("click", setnoam);
+euro_button.addEventListener("click", seteuro);
+ocea_button.addEventListener("click", setocea);
+woca_button.addEventListener("click", setwoca);
