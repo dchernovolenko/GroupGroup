@@ -146,7 +146,34 @@ else{
   var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
   // scoring (half of Earth's circumference in km minus user click distance)
   // user_score = 20037.5 - distance_to_goal;
-  user_score = Math.pow(5000, (20037.5-distance_to_goal)/20037.5);
+  var max_dist = 20037.5;
+  if (theme_toggle == 0 || theme == "amusement" || theme == "world_capitals") {
+    max_dist = 20037.5;
+  }
+  else if (theme == "us_cities" || theme == "uni"){
+    max_dist = 4654; //thanks quora
+    max_dist = distance(34, -117, 47.3, -68.5);
+  }
+  else if (theme == "africa") {
+    max_dist = distance(35.8, -5.8, -32.8, 26.7); //dist between northeasternmost and southwesternmost places in africa
+  }
+  else if (theme == "asia") {
+    max_dist = distance(13.4, 43.8, 68, 175.8); //southernwestermost to northerneastern most
+  }
+  else if (theme == "north_america") {
+    max_dist = distance(70.8, -159.9, 8.12, -77.7);
+  }
+  else if (theme == "oceania") {
+    max_dist = distance(-21.7, 114.3, -46.3, 169.9);
+  }
+  else if (theme == "europe") {
+    max_dist = 5342.6; //thanks quora
+  }
+
+
+
+  user_score = Math.pow(5000, (max_dist - distance_to_goal) / max_dist);
+  user_score = Math.round (user_score * 10) / 10;
 
   // putting a marker down activates the submit button
   document.getElementById("submit").disabled = false;
