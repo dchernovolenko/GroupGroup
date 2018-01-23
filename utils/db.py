@@ -4,7 +4,7 @@ dbf = "data/accounts.db"
 
 def create_table():
     db = sqlite3.connect(dbf)
-    
+
     c = db.cursor()
     command = "CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT, points INTEGER);"
     c.execute(command)
@@ -75,7 +75,7 @@ def datify(filename):
     file_obj.close()
     db.commit()
     db.close()
-    
+
 
 def create_account(user, pw, points=0):
     db = sqlite3.connect(dbf)
@@ -157,4 +157,8 @@ if __name__ == "__main__":
     # populate_us()
     # get_us()
     # datify("uni.csv")
-    print get_locations("uni")
+    # print get_locations("uni")
+    # datify("us_cities.csv")
+    # print get_locations("us_cities")
+    #datify("amusement.csv")
+    print get_locations("amusement")

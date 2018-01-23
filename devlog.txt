@@ -67,5 +67,12 @@ road label on the floor is removed so players can't cheat by looking up the road
 keY -- 2018-01-17 11:32:26
 better algorithm for themed games
 
-freudenbergJ -- 2018-01-19 13:29:33
+freudenbergJ -- 2018-01-20 20:34:16
 added function to turn dataset of locations into db table
+changed us_cities to using geocoding
+
+keY -- 2018-01-20 21:12:40
+now always lands on a themed place by keeping on trying until it lands
+
+freudenbergJ -- 2018-01-22 02:05:07
+linked buttons to theme toggling using localStorage

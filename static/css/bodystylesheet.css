@@ -51,36 +51,69 @@
     2px 2px 0 #000;
   }
   .btn-primary{
-    color: #44FFD1;
-    background-color: #005C69;
+    color: #020202;
+    background-color: #44FFD1;
     border-color: #004b55;
   }
   #controls {
-    height: 410px;
-    left: 10px;
+    width: 250px;
+    height: 290px;
+    bottom: 0;
+    right: 0;
     position: absolute;
-    top: 10px;
-    width: 238px;
       z-index: 200;
     color: #44FFD1;
+    transition: all, 0.5s;
   }
   #wrpr {
     height:600px;
     position: absolute;
     bottom: 10px;
-    right: 10px;
-    width: 550px;
-      z-index: 200;
+    right: 0px;
   }
   #mode {
       display: none
   }
-  btn-lg{
-    width:500px;
+  #submit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #controls:hover{
+    width: 500px;
+    height: 540px;
+  }
+  #controls:hover #map{
+      width: 500px;
+      height: 500px;
+  }
+  #score{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 201;
+  }
+  #map{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    transition: all, 0.5s;
+    float: right;
+  }
+  #submit{
+    width: 100%;
   }
 
   #controls.wrapper {
-      position: relative
+      position: relative;
+      direction: rtl;
+  }
+  #controls.wrapper > *{
+    direction: ltr;
   }
   span.input-group-addon{
     color: #44FFD1;

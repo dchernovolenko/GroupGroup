@@ -24,7 +24,26 @@ function deg2rad(deg) {
 return deg * (Math.PI/180)
 }
 
+//================Random Theme Based Location Code ============
+function theme_locate() {
+  $.ajax({
+    type: "POST",
+    url: "/theme/" + theme,
+    async: false,
+  }).done(function(response) {
+     console.log(response);
+     var obj = JSON.parse(response);
+     console.log(typeof(obj));
+     init_location = obj.place;
+     if (theme == "us_cities") {
+       init_location += ", US";
+     }
+     console.log(init_location);
+  });
+}
+
 var sv;
+var geocoder;
 var map;
 var panorama;
 var sv;
@@ -40,35 +59,26 @@ var landed_location;
 var user_score;
 var count = 0;
 var place;
-var theme = "uni";
+var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
-var theme_toggle = 1;
+var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-  //================Random Theme Based Location Code ============
-  $.ajax({
-    type: "POST",
-    url: "/theme/" + theme,
-    async: false,
-  }).done(function(response) {
-     console.log(response);
-     var obj = JSON.parse(response);
-     console.log(typeof(obj));
-     init_location = obj.place;
-     console.log(init_location);
-     throw ''; 
-  });
-  console.log('hello')
-  console.log(latitude)
-  console.log(longitude)
+  console.log(theme);
+  console.log("theme IO:")
+  console.log(theme_toggle);
+  theme_locate(); //defined up there, sets init_location to random theme location
+  console.log('hello');
+  // console.log(latitude);
+  // console.log(longitude);
 
   place = {lat: latitude, lng: longitude};
-  console.log("the beginning: " + place.lat + ", " + place.lng);
+  // console.log("the beginning: " + place.lat + ", " + place.lng);
 
   var place2 = {lat: 0, lng: 0}; // for the map
   sv = new google.maps.StreetViewService();
@@ -83,9 +93,11 @@ function initMap() {
   });
 
   if (theme_toggle) {
-    increasingRadius(processSVDataTheme);
+    // increasingRadius(processSVDataTheme);
+      geocodeAddress(init_location);
   }
   else {
+    console.log("RANDOM");
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
@@ -93,7 +105,7 @@ function initMap() {
 }
 
 function TryRandomLocation(callback) {
-  // Try to find a panorama within 15000 metres 
+  // Try to find a panorama within 15000 metres
   latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   longitude = getRandomFloat(-180,180);
   sv.getPanorama({
@@ -135,6 +147,7 @@ else{
   document.getElementById("submit").disabled = false;
 }
 
+
 $( "button" ).click(function() {
   // so they can't submit again
   $( "button" ).remove();
@@ -149,7 +162,14 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score + " out of 20037.5";
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
+  //resizing map
+  document.getElementById("controls").style.width = "100vw";
+  document.getElementById("controls").style.height = "100vh";
+  document.getElementById("map").style.cssText = null;
+  document.getElementById("map").style.height = "100vh";
+  document.getElementById("map").style.width = "100vw";
+  google.maps.event.trigger(map, 'resize');
 
   // sending how much score to add to the user
   $.ajax({
@@ -165,6 +185,27 @@ $( "button" ).click(function() {
   });
 
 });
+
+function geocodeAddress(location) {
+  geocoder = new google.maps.Geocoder()
+  geocoder.geocode({'address': location}, function(results, status) {
+    if (status === 'OK') {
+      latitude = results[0].geometry.location.lat();
+      longitude = results[0].geometry.location.lng();
+      console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
+      increasingRadius(processSVDataTheme);
+      count = 0;
+      console.log("took " + count + " tries");
+    } else {
+      theme_locate();
+      geocodeAddress(init_location);
+      console.log("finding another place in theme...");
+      count++;
+    }
+  });
+}
+
+
 
 function processSVDataTheme(data, status) {
   if (status === 'OK') {

@@ -1,805 +1,805 @@
-ALABAMA,LATITUDE,LONGITUDE
-Alexander City,32,57,85,57
-Anniston AP,33,35,85,51
-Auburn,32,36,85,30
-Birmingham AP,33,34,86,45
-Decatur,34,37,86,59
-Dothan AP,31,19,85,27
-Florence AP,34,48,87,40
-Gadsden,34,1,86,0
-Huntsville AP,34,42,86,35
-Mobile AP,30,41,88,15
-Mobile Co,30,40,88,15
-Montgomery AP,32,23,86,22
-Selma-Craig AFB,32,20,87,59
-Talladega,33,27,86,6
-Tuscaloosa AP,33,13,87,37
-ALASKA,LATITUDE,LONGITUDE,
-Anchorage AP,61,10,150,1
-Barrow (S),71,18,156,47
-Fairbanks AP (S),64,49,147,52
-Juneau AP,58,22,134,35
-Kodiak,57,45,152,29
-Nome AP,64,30,165,26
-ARIZONA,LATITUDE,LONGITUDE,
-Douglas AP,31,27,109,36
-Flagstaff AP,35,8,111,40
-Fort Huachuca AP (S),31,35,110,20
-Kingman AP,35,12,114,1
-Nogales,31,21,110,55
-Phoenix AP (S),33,26,112,1
-Prescott AP,34,39,112,26
-Tucson AP (S),32,7,110,56
-Winslow AP,35,1,110,44
-Yuma AP,32,39,114,37
-ARKANSAS,LATITUDE,LONGITUDE,
-Blytheville AFB,35,57,89,57
-Camden,33,36,92,49
-El Dorado AP,33,13,92,49
-Fayetteville AP,36,0,94,10
-Fort Smith AP,35,20,94,22
-Hot Springs,34,29,93,6
-Jonesboro,35,50,90,42
-Little Rock AP (S),34,44,92,14
-Pine Bluff AP,34,18,92,5
-Texarkana AP,33,27,93,59
-CALIFORNIA,LATITUDE,LONGITUDE,
-Bakersfield AP,35,25,119,3
-Barstow AP,34,51,116,47
-Blythe AP,33,37,114,43
-Burbank AP,34,12,118,21
-Chico,39,48,121,51
-Concord,37,58,121,59
-Covina,34,5,117,52
-Crescent City AP,41,46,124,12
-Downey,33,56,118,8
-El Cajon,32,49,116,58
-El Cerrito AP (S),32,49,115,40
-Escondido,33,7,117,5
-Eureka/Arcata AP,40,59,124,6
-Fairfield-Trafis AFB,38,16,121,56
-Fresno AP (S),36,46,119,43
-Hamilton AFB,38,4,122,30
-Laguna Beach,33,33,117,47
-Livermore,37,42,121,57
-"Lompoc Vandenberg AFB",34,43,120,34
-Long Beach AP,33,49,118,9
-Los Angeles AP (S),33,56,118,24
-Los Angeles CO (S),34,3,118,14
-Merced-Castle AFB,37,23,120,34
-Modesto,37,39,121,0
-Monterey,36,36,121,54
-Napa,38,13,122,17
-Needles AP,34,36,114,37
-Oakland AP,37,49,122,19
-Oceanside,33,14,117,25
-Ontario,34,3,117,36
-Oxnard,34,12,119,11
-Palmdale AP,34,38,118,6
-Palm Springs,33,49,116,32
-Pasadena,34,9,118,9
-Petaluma,38,14,122,38
-Pomona Co,34,3,117,45
-Redding AP,40,31,122,18
-Redlands,34,3,117,11
-Richmond,37,56,122,21
-Riverside-March AFB (S),33,54,117,15
-Sacramento AP,38,31,121,30
-Salinas AP,36,40,121,36
-"San Bernadino Norton AFB",34,8,117,16
-San Diego AP,32,44,117,10
-San Fernando,34,17,118,28
-San Francisco AP,37,37,122,23
-San Francisco Co,37,46,122,26
-San Jose AP,37,22,121,56
-San Louis Obispo,35,20,120,43
-Santa Ana AP,33,45,117,52
-Santa Barbara MAP,34,26,119,50
-Santa Cruz,36,59,122,1
-Santa Maria AP (S),34,54,120,27
-Santa Monica CIC,34,1,118,29
-Santa Paula,34,21,119,5
-Santa Rosa,38,31,122,49
-Stockton AP,37,54,121,15
-Ukiah,39,9,123,12
-Visalia,36,20,119,18
-Yreka,41,43,122,38
-Yuba City,39,8,121,36
-COLORADO,LATITUDE,LONGITUDE,
-Alamosa AP,37,27,105,52
-Boulder,40,0,105,16
-Colorado Springs AP,38,49,104,43
-Denver AP,39,45,104,52
-Durango,37,17,107,53
-Fort Collins,40,45,105,5
-Grand Junction AP (S),39,7,108,32
-Greeley,40,26,104,38
-Lajunta AP,38,3,103,30
-Leadville,39,15,106,18
-Pueblo AP,38,18,104,29
-Sterling,40,37,103,12
-Trinidad,37,15,104,20
-CONNECTICUT,LATITUDE,LONGITUDE,
-Bridgeport AP,41,11,73,11
-"Hartford Brainard Field",41,44,72,39
-New Haven AP,41,19,73,55
-New London,41,21,72,6
-Norwalk,41,7,73,25
-Norwick,41,32,72,4
-Waterbury,41,35,73,4
-"Widsor Locks Bradley Fld",41,56,72,41
-DELAWARE,LATITUDE,LONGITUDE
-Dover AFB,39,8,75,28
-Wilmington AP,39,40,75,36
-DISTRICT OF COLUMBIA,LATITUDE,LONGITUDE,
-Andrews AFB,38,5,76,5
-"Washington National AP",38,51,77,2
-FLORIDA,LATITUDE,LONGITUDE,
-Belle Glade,26,39,80,39
-Cape Kennedy AP,28,29,80,34
-Daytona Beach AP,29,11,81,3
-E Fort Lauderdale,26,4,80,9
-Fort Myers AP,26,35,81,52
-Fort Pierce,27,28,80,21
-Gainesville AP (S),29,41,82,16
-Jacksonville AP,30,30,81,42
-Key West AP,24,33,81,45
-Lakeland Co (S),28,2,81,57
-Miami AP (S),25,48,80,16
-Miami Beach Co,25,47,80,17
-Ocala,29,11,82,8
-Orlando AP,28,33,81,23
-"Panama City Tyndall AFB",30,4,85,35
-Pensacola Co,30,25,87,13
-St. Augustine,29,58,81,20
-St. Petersburg,27,46,82,80
-Stanford,28,46,81,17
-Sarasota,27,23,82,33
-Tallahassee AP (S),30,23,84,22
-Tampa AP (S),27,58,82,32
-West Palm Beach AP,26,41,80,6
-GEORGIA,LATITUDE,LONGITUDE,
-"Albany Turner AFB",31,36,84,5
-Americus,32,3,84,14
-Athens,33,57,83,19
-Atlanta AP (S),33,39,84,26
-Augusta AP,33,22,81,58
-Brunswick,31,15,81,29
-"Columbus Lawson AFB",32,31,84,56
-Dalton,34,34,84,57
-Dublin,32,20,82,54
-Gainesville,34,11,83,41
-Griffin,33,13,84,16
-LaGrange,33,1,85,4
-Macon AP,32,42,83,39
-"Marietta Dobbins AFB",33,55,84,31
-Savannah,32,8,81,12
-Valdosta-Moody AFB,30,58,83,12
-Waycross,31,15,82,24
-HAWAII,LATITUDE,LONGITUDE,
-Hilo AP (S),19,43,155,5
-Honolulu AP,21,20,157,55
-Kaneohe Bay MCAS,21,27,157,46
-Wahiawa,21,3,158,2
-IDAHO,LATITUDE,LONGITUDE,
-Boise AP (S),43,34,116,13
-Burley,42,32,113,46
-Coeur DAlene AP,47,46,116,49
-Idaho Falls AP,43,31,112,4
-Lewiston AP,46,23,117,1
-Moscow,46,44,116,58
-Mountain Home AFB,43,2,115,54
-Pocatello AP,42,55,112,36
-Twin Falls AP (S),42,29,114,29
-ILLINOIS,LATITUDE,LONGITUDE,
-Aurora,41,45,88,20
-"Belleville Scott AFB",38,33,89,51
-Bloomington,40,29,88,57
-Carbondale,37,47,89,15
-Champaign/Urbana,40,2,88,17
-"Chicago Midway AP",41,47,87,45
-"Chicago OHare AP",41,59,87,54
-Chicago Co,41,53,87,38
-Danville,40,12,87,36
-Decatur,39,50,88,52
-Dixon,41,50,89,29
-Elgin,42,2,88,16
-Freeport,42,18,89,37
-Galesburg,40,56,90,26
-Greenville,38,53,89,24
-Joliet,41,31,88,10
-Kankakee,41,5,87,55
-La Salle/Peru,41,19,89,6
-Macomb,40,28,90,40
-Moline AP,41,27,90,31
-Mt Vernon,38,19,88,52
-Peoria AP,40,40,89,41
-Quincy AP,39,57,91,12
-"Rantoul Chanute AFB",40,18,88,8
-Rockford,42,21,89,3
-Springfield AP,39,50,89,40
-Waukegan,42,21,87,53
-INDIANA,LATITUDE,LONGITUDE,
-Anderson,40,6,85,37
-Bedford,38,51,86,30
-Bloomington,39,8,86,37
-"Columbus Bakalar AFB",39,16,85,54
-Crawfordsville,40,3,86,54
-Evansville AP,38,3,87,32
-Fort Wayne AP,41,0,85,12
-Goshen AP,41,32,85,48
-Hobart,41,32,87,15
-Huntington,40,53,85,30
-Indianapolis AP,39,44,86,17
-Jeffersonville,38,17,85,45
-Kokomo,40,25,86,3
-Lafayette,40,2,86,5
-La Porte,41,36,86,43
-Marion,40,29,85,41
-Muncie,40,11,85,21
-"Peru Grissom AFB",40,39,86,9
-Richmond AP,39,46,84,50
-Shelbyville,39,31,85,47
-South Bend AP,41,42,86,19
-Terre Haute AP,39,27,87,18
-Valparaiso,41,31,87,2
-Vincennes,38,41,87,32
-IOWA,LATITUDE,LONGITUDE,
-Ames (S),42,2,93,48
-Burlington AP,40,47,91,7
-Cedar Rapids AP,41,53,91,42
-Clinton,41,50,90,13
-Council Bluffs,41,20,95,49
-Des Moines AP,41,32,93,39
-Dubuque,42,24,90,42
-Fort Dodge,42,33,94,11
-Iowa City,41,38,91,33
-Keokuk,40,24,91,24
-Marshalltown,42,4,92,56
-Mason City AP,43,9,93,20
-Newton,41,41,93,2
-Ottumwa AP,41,6,92,27
-Sioux City AP,42,24,96,23
-Waterloo,42,33,92,24
-KANSAS,LATITUDE,LONGITUDE,
-Atchison,39,34,95,7
-Chanute AP,37,40,95,29
-Dodge City AP (S),37,46,99,58
-El Dorado,37,49,96,50
-Emporia,38,20,96,12
-Garden City AP,37,56,100,44
-Goodland AP,39,22,101,42
-Great Bend,38,21,98,52
-Hutchinson AP,38,4,97,52
-Liberal,37,3,100,58
-"Manhattan Ft Riley (S)",39,3,96,46
-Parsons,37,20,95,31
-Russell AP,38,52,98,49
-Salina,38,48,97,39
-Topeka AP,39,4,95,38
-Wichita AP,37,39,97,25
-KENTUCKY,LATITUDE,LONGITUDE,
-Ashland,38,33,82,44
-Bowling Green AP,35,58,86,28
-Corbin AP,36,57,84,6
-Covington AP,39,3,84,40
-"Hopkinsville Ft Campbell",36,40,87,29
-Lexington AP (S),38,2,84,36
-Louisville AP,38,11,85,44
-Madisonville,37,19,87,29
-Owensboro,37,45,87,10
-Paducah AP,37,4,88,46
-LOUISIANA,LATITUDE,LONGITUDE,
-Alexandria AP,31,24,92,18
-Baton Rouge AP,30,32,91,9
-Bogalusa,30,47,89,52
-Houma,29,31,90,40
-Lafayette AP,30,12,92,0
-Lake Charles AP (S),30,7,93,13
-Minden,32,36,93,18
-Monroe AP,32,31,92,2
-Natchitoches,31,46,93,5
-New Orleans AP,29,59,90,15
-Shreveport AP (S),32,28,93,49
-MAINE,LATITUDE,LONGITUDE,
-Augusta AP,44,19,69,48
-"Bangor Dow AFB",44,48,68,50
-Caribou AP (S),46,52,68,1
-Lewiston,44,2,70,15
-Millinocket AP,45,39,68,42
-Portland (S),43,39,70,19
-Waterville,44,32,69,40
-MARYLAND,LATITUDE,LONGITUDE,
-Baltimore AP,39,11,76,40
-Baltimore Co,39,20,76,25
-Cumberland,39,37,78,46
-Frederick AP,39,27,77,25
-Hagerstown,39,42,77,44
-Salisbury (S),38,20,75,30
-MASSACHUSETTS,LATITUDE,LONGITUDE,
-Boston AP,42,22,71,2
-Clinton,42,24,71,41
-Fall River,41,43,71,8
-Framingham,42,17,71,25
-Gloucester,42,35,70,41
-Greenfield,42,3,72,4
-Lawrence,42,42,71,10
-Lowell,42,39,71,19
-New Bedford,41,41,70,58
-Pittsfield AP,42,26,73,18
-"Springfield Westover AFB",42,12,72,32
-Taunton,41,54,71,4
-Worcester AP,42,16,71,52
-MICHIGAN,LATITUDE,LONGITUDE,
-Adrian,41,55,84,1
-Alpena AP,45,4,83,26
-Battle Creek AP,42,19,85,15
-Benton Harbor AP,42,8,86,26
-Detroit,42,25,83,1
-Escanaba,45,44,87,5
-Flint AP,42,58,83,44
-Grand Rapids AP,42,53,85,31
-Holland,42,42,86,6
-Jackson AP,42,16,84,28
-Kalamazoo,42,17,85,36
-Lansing AP,42,47,84,36
-Marquette Co,46,34,87,24
-Mt Pleasant,43,35,84,46
-Muskegon AP,43,10,86,14
-Pontiac,42,40,83,25
-Port Huron,42,59,82,25
-Saginaw AP,43,32,84,5
-Sault Ste. Marie AP (S),46,28,84,22
-Traverse City AP,44,45,85,35
-Ypsilanti,42,14,83,32
-MINNESOTA,LATITUDE,LONGITUDE,
-Albert Lea,43,39,93,21
-Alexandria AP,45,52,95,23
-Bemidji AP,47,31,94,56
-Brainerd,46,24,94,8
-Duluth AP,46,50,92,11
-Fairbault,44,18,93,16
-Fergus Falls,46,16,96,4
-International Falls AP,48,34,93,23
-Mankato,44,9,93,59
-Minneapolis/St. Paul AP,44,53,93,13
-Rochester AP,43,55,92,30
-St. Cloud AP (S),45,35,94,11
-Virginia,47,30,92,33
-Willmar,45,7,95,5
-Winona,44,3,91,38
-MISSISSIPPI,LATITUDE,LONGITUDE,
-Biloxi--Keesler AFB,30,25,88,55
-Clarksdale,34,12,90,34
-Columbus AFB,33,39,88,27
-Greenville AFB,33,29,90,59
-Greenwood,33,30,90,5
-Hattiesburg,31,16,89,15
-Jackson AP,32,19,90,5
-Laurel,31,40,89,10
-Mccomb AP,31,15,90,28
-Meridian AP,32,20,88,45
-Natchez,31,33,91,23
-Tupelo,34,16,88,46
-Vicksburg Co,32,24,90,47
-MISSOURI,LATITUDE,LONGITUDE,
-Cape Girardeau,37,14,89,35
-Columbia AP (S),38,58,92,22
-Farmington AP,37,46,90,24
-Hannibal,39,42,91,21
-Jefferson City,38,34,92,11
-Joplin AP,37,9,94,30
-Kansas City AP,39,7,94,35
-Kirksville AP,40,6,92,33
-Mexico,39,11,91,54
-Moberly,39,24,92,26
-Poplar Bluff,36,46,90,25
-Rolla,37,59,91,43
-St. Joseph AP,39,46,94,55
-St. Louis AP,38,45,90,23
-St. Louis CO,38,39,90,38
-Sikeston,36,53,89,36
-Sedalia--Whiteman AFB,38,43,93,33
-Sikeston,36,53,89,36
-Springfield AP,37,14,93,23
-MONTANA,LATITUDE,LONGITUDE,
-Billings AP,45,48,108,32
-Bozeman,45,47,111,9
-Butte AP,45,57,112,30
-Cut Bank AP,48,37,112,22
-Glasgow AP (S),48,25,106,32
-Glendive,47,8,104,48
-Great Falls AP (S),47,29,111,22
-Havre,48,34,109,40
-Helena AP,46,36,112,0
-Kalispell AP,48,18,114,16
-Lewiston AP,47,4,109,27
-Livingstown AP,45,42,110,26
-Miles City AP,46,26,105,52
-Missoula AP,46,55,114,5
-NEBRASKA,LATITUDE,LONGITUDE,
-Beatrice,40,16,96,45
-Chadron AP,42,50,103,5
-Columbus,41,28,97,20
-Fremont,41,26,96,29
-Grand Island AP,40,59,98,19
-Hastings,40,36,98,26
-Kearney,40,44,99,1
-Lincoln Co (S),40,51,96,45
-McCook,40,12,100,38
-Norfolk,41,59,97,26
-North Platte AP (S),41,8,100,41
-Omaha AP,41,18,95,54
-Scottsbluff AP,41,52,103,36
-Sidney AP,41,13,103,6
-NEVADA,LATITUDE,LONGITUDE,
-Carson City,39,10,119,46
-Elko AP,40,50,115,47
-Ely AP (S),39,17,114,51
-Las Vegas AP (S),36,5,115,10
-Lovelock AP,40,4,118,33
-Reno AP (S),39,30,119,47
-Reno Co,39,30,119,47
-Tonopah AP,38,4,117,5
-Winnemucca AP,40,54,117,48
-NEW HAMPSHIRE,LATITUDE,LONGITUDE,
-Berlin,44,3,71,1
-Claremont,43,2,72,2
-Concord AP,43,12,71,30
-Keene,42,55,72,17
-Laconia,43,3,71,3
-"Manchester Grenier AFB",42,56,71,26
-"Portsmouth Pease AFB",43,4,70,49
-NEW JERSEY,LATITUDE,LONGITUDE,
-Atlantic City CO,39,23,74,26
-Long Branch,40,19,74,1
-Newark AP,40,42,74,10
-New Brunswick,40,29,74,26
-Paterson,40,54,74,9
-Phillipsburg,40,41,75,11
-Trenton Co,40,13,74,46
-Vineland,39,29,75,0
-NEW MEXICO,LATITUDE,LONGITUDE,
-Holloman AFB,32,51,106,6
-Albuquerque AP (S),35,3,106,37
-Artesia,32,46,104,23
-Carlsbad AP,32,20,104,16
-Clovis AP,34,23,103,19
-Farmington AP,36,44,108,14
-Gallup,35,31,108,47
-Grants,35,10,107,54
-Hobbs AP,32,45,103,13
-Las Cruces,32,18,106,55
-Los Alamos,35,52,106,19
-Raton AP,36,45,104,30
-"Roswell Walker AFB",33,18,104,32
-Santa Fe CO,35,37,106,5
-Silver City AP,32,38,108,10
-Socorro AP,34,3,106,53
-Tucumcari AP,35,11,103,36
-NEW YORK,LATITUDE,LONGITUDE,
-Albany AP (S),42,45,73,48
-Albany Co,42,39,73,45
-Auburn,42,54,76,32
-Batavia,43,0,78,11
-Binghamton AP,42,13,75,59
-Buffalo AP,42,56,78,44
-Cortland,42,36,76,11
-Dunkirk,42,29,79,16
-Elmira AP,42,10,76,54
-Geneva (S),42,45,76,54
-Glens Falls,43,20,73,37
-Gloversville,43,2,74,21
-Hornell,42,21,77,42
-Ithaca (S),42,27,76,29
-Jamestown,42,7,79,14
-Kingston,41,56,74,0
-Lockport,43,9,79,15
-Massena AP,44,56,74,51
-"Newburgh Stewart AFB",41,30,74,6
-NYC-Central Park (S),40,47,73,58
-NYC-Kennedy AP,40,39,73,47
-NYC-La Guardia AP,40,46,73,54
-Niagara Falls AP,43,6,79,57
-Olean,42,14,78,22
-Oneonta,42,31,75,4
-Oswego Co,43,28,76,33
-Plattsburg AFB,44,39,73,28
-Poughkeepsie,41,38,73,55
-Rochester AP,43,7,77,40
-"Rome Griffiss AFB",43,14,75,25
-Schenectady (S),42,51,73,57
-Suffolk County AFB,40,51,72,38
-Syracuse AP,43,7,76,7
-Utica,43,9,75,23
-Watertown,43,59,76,1
-NORTH CAROLINA,LATITUDE,LONGITUDE,
-Asheville AP,35,26,82,32
-Charlotte AP,35,13,80,56
-Durham,35,52,78,47
-Elizabeth City AP,36,16,76,11
-"Fayetteville Pope AFB",35,10,79,1
-"Goldsboro Seymour-Johnson",35,20,77,58
-Greensboro AP (S),36,5,79,57
-Greenville,35,37,77,25
-Henderson,36,22,78,25
-Hickory,35,45,81,23
-Jacksonville,34,50,77,37
-Lumberton,34,37,79,4
-New Bern AP,35,5,77,3
-Raleigh/Durham AP (S),35,52,78,47
-Rocky Mount,35,58,77,48
-Wilmington AP,34,16,77,55
-Winston-Salem AP,36,8,80,13
-NORTH DAKOTA,LATITUDE,LONGITUDE,
-Bismarck AP (S),46,46,100,45
-Devils Lake,48,7,98,54
-Dickinson AP,46,48,102,48
-Fargo AP,46,54,96,48
-Grand Forks AP,47,57,97,24
-Jamestown AP,46,55,98,41
-Minot AP,48,25,101,21
-Williston,48,9,103,35
-OHIO,LATITUDE,LONGITUDE,
-Akron-Canton AP,40,55,81,26
-Ashtabula,41,51,80,48
-Athens,39,20,82,6
-Bowling Green,41,23,83,38
-Cambridge,40,4,81,35
-Chillicothe,39,21,83,0
-Cincinnati Co,39,9,84,31
-Cleveland AP (S),41,24,81,51
-Columbus AP (S),40,0,82,53
-Dayton AP,39,54,84,13
-Defiance,41,17,84,23
-Findlay AP,41,1,83,40
-Fremont,41,20,83,7
-Hamilton,39,24,84,35
-Lancaster,39,44,82,38
-Lima,40,42,84,2
-Mansfield AP,40,49,82,31
-Marion,40,36,83,10
-Middletown,39,31,84,25
-Newark,40,1,82,28
-Norwalk,41,16,82,37
-Portsmouth,38,45,82,55
-Sandusky Co,41,27,82,43
-Springfield,39,50,83,50
-Steubenville,40,23,80,38
-Toledo AP,41,36,83,48
-Warren,41,20,80,51
-Wooster,40,47,81,55
-Youngstown AP,41,16,80,40
-Zanesville AP,39,57,81,54
-OKLAHOMA,LATITUDE,LONGITUDE,
-Ada,34,47,96,41
-Altus AFB,34,39,99,16
-Ardmore,34,18,97,1
-Bartlesville,36,45,96,0
-Chickasha,35,3,97,55
-"Enid Vance AFB",36,21,97,55
-Lawton AP,34,34,98,25
-McAlester,34,50,95,55
-Muskogee AP,35,40,95,22
-Norman,35,15,97,29
-Oklahoma City AP (S),35,24,97,36
-Ponca City,36,44,97,6
-Seminole,35,14,96,40
-Stillwater (S),36,10,97,5
-Tulsa AP,36,12,95,54
-Woodward,36,36,99,31
-OREGON,LATITUDE,LONGITUDE,
-Albany,44,38,123,7
-Astoria AP (S),46,9,123,53
-Baker AP,44,50,117,49
-Bend,44,4,121,19
-Corvallis (S),44,30,123,17
-Eugene AP,44,7,123,13
-Grants Pass,42,26,123,19
-Klamath Falls AP,42,9,121,44
-Medford AP (S),42,22,122,52
-Pendleton AP,45,41,118,51
-Portland AP,45,36,122,36
-Portland Co,45,32,122,40
-Roseburg AP,43,14,123,22
-Salem AP,44,55,123,1
-The Dalles,45,36,121,12
-PENNSYLVANIA,LATITUDE,LONGITUDE,
-Allentown AP,40,39,75,26
-Altoona Co,40,18,78,19
-Butler,40,52,79,54
-Chambersburg,39,56,77,38
-Erie AP,42,5,80,11
-Harrisburg AP,40,12,76,46
-Johnstown,40,19,78,50
-Lancaster,40,7,76,18
-Meadville,41,38,80,10
-New Castle,41,1,80,22
-Philadelphia AP,39,53,75,15
-Pittsburgh AP,40,30,80,13
-Pittsburgh Co,40,27,80,0
-Reading Co,40,20,75,38
-Scranton/Wilkes-Barre,41,20,75,44
-State College (S),40,48,77,52
-Sunbury,40,53,76,46
-Uniontown,39,55,79,43
-Warren,41,51,79,8
-West Chester,39,58,75,38
-Williamsport AP,41,15,76,55
-York,39,55,76,45
-RHODE ISLAND,LATITUDE,LONGITUDE,
-Newport (S),41,30,71,20
-Providence AP,41,44,71,26
-SOUTH Carolina,LATITUDE,LONGITUDE,
-Anderson,34,30,82,43
-Charleston AFB (S),32,54,80,2
-Charleston Co,32,54,79,58
-Columbia AP,33,57,81,7
-Florence AP,34,11,79,43
-Georgetown,33,23,79,17
-Greenville AP,34,54,82,13
-Greenwood,34,10,82,7
-Orangeburg,33,30,80,52
-Rock Hill,34,59,80,58
-Spartanburg AP,34,58,82,0
-"Sumter Shaw AFB",33,54,80,22
-SOUTH DAKOTA,LATITUDE,LONGITUDE,
-Aberdeen AP,45,27,98,26
-Brookings,44,18,96,48
-Huron AP,44,23,98,13
-Mitchell,43,41,98,1
-Pierre AP,44,23,100,17
-Rapid City AP (S),44,3,103,4
-Sioux Falls AP,43,34,96,44
-Watertown AP,44,55,97,9
-Yankton,42,55,97,23
-TENNESSEE,LATITUDE,LONGITUDE,
-Athens,35,26,84,35
-Bristol-Tri City AP,36,29,82,24
-Chattanooga AP,35,2,85,12
-Clarksville,36,33,87,22
-Columbia,35,38,87,2
-Dyersburg,36,1,89,24
-Greenville,36,4,82,50
-Jackson AP,35,36,88,55
-Knoxville AP,35,49,83,59
-Memphis AP,35,3,90,0
-Murfreesboro,34,55,86,28
-Nashville AP (S),36,7,86,41
-Tullahoma,35,23,86,5
-TEXAS,LATITUDE,LONGITUDE,
-Abilene AP,32,25,99,41
-Alice AP,27,44,98,2
-Amarillo AP,35,14,100,42
-Austin AP,30,18,97,42
-Bay City,29,0,95,58
-Beaumont,29,57,94,1
-Beeville,28,22,97,40
-Big Spring AP (S),32,18,101,27
-Brownsville AP (S),25,54,97,26
-Brownwood,31,48,98,57
-Bryan AP,30,40,96,33
-Corpus Christi AP,27,46,97,30
-Corsicana,32,5,96,28
-Dallas AP,32,51,96,51
-"Del Rio Laughlin AFB",29,22,100,47
-Denton,33,12,97,6
-Eagle Pass,28,52,100,32
-El Paso AP (S),31,48,106,24
-Fort Worth AP (S),32,50,97,3
-Galveston AP,29,18,94,48
-Greenville,33,4,96,3
-Harlingen,26,14,97,39
-Houston AP,29,58,95,21
-Houston Co,29,59,95,22
-Huntsville,30,43,95,33
-"Killeen Robert Gray AAF",31,5,97,41
-Lamesa,32,42,101,56
-Laredo AFB,27,32,99,27
-Longview,32,28,94,44
-Lubbock AP,33,39,101,49
-Lufkin AP,31,25,94,48
-Mcallen,26,12,98,13
-Midland AP (S),31,57,102,11
-Mineral Wells AP,32,47,98,4
-Palestine Co,31,47,95,38
-Pampa,35,32,100,59
-Pecos,31,25,103,30
-Plainview,34,11,101,42
-Port Arthur AP,29,57,94,1
-Goodfellow AFB,31,26,100,24
-San Antonio AP (S),29,32,98,28
-"Sherman Perrin AFB",33,43,96,40
-Snyder,32,43,100,55
-Temple,31,6,97,21
-Tyler AP,32,21,95,16
-Vernon,34,10,99,18
-Victoria AP,28,51,96,55
-Waco AP,31,37,97,13
-Wichita Falls AP,33,58,98,29
-UTAH,LATITUDE,LONGITUDE,
-Cedar City AP,37,42,113,6
-Logan,41,45,111,49
-Moab,38,36,109,36
-Ogden AP,41,12,112,1
-Price,39,37,110,50
-Provo,40,13,111,43
-Richfield,38,46,112,5
-St George Co,37,2,113,31
-Salt Lake City AP (S),40,46,111,58
-Vernal AP,40,27,109,31
-VERMONT,LATITUDE,LONGITUDE,
-Barre,44,12,72,31
-Burlington AP (S),44,28,73,9
-Rutland,43,36,72,58
-VIRGINIA,LATITUDE,LONGITUDE,
-Charlottesville,38,2,78,31
-Danville AP,36,34,79,20
-Fredericksburg,38,18,77,28
-Harrisonburg,38,27,78,54
-Lynchburg AP,37,20,79,12
-Norfolk AP,36,54,76,12
-Petersburg,37,11,77,31
-Richmond AP,37,30,77,20
-Roanoke AP,37,19,79,58
-Staunton,38,16,78,54
-Winchester,39,12,78,10
-WASHINGTON,LATITUDE,LONGITUDE,
-Aberdeen,46,59,123,49
-Bellingham AP,48,48,122,32
-Bremerton,47,34,122,40
-Ellensburg AP,47,2,120,31
-"Everett Paine AFB",47,55,122,17
-Kennewick,46,13,119,8
-Longview,46,10,122,56
-"Moses Lake Larson AFB",47,12,119,19
-Olympia AP,46,58,122,54
-Port Angeles,48,7,123,26
-Seattle-Boeing Field,47,32,122,18
-Seattle Co (S),47,39,122,18
-Seattle-Tacoma AP (S),47,27,122,18
-Spokane AP (S),47,38,117,31
-"Tacoma McChord AFB",47,15,122,30
-Walla Walla AP,46,6,118,17
-Wenatchee,47,25,120,19
-Yakima AP,46,34,120,32
-WEST VIRGINIA,LATITUDE,LONGITUDE,
-Beckley,37,47,81,7
-Bluefield AP,37,18,81,13
-Charleston AP,38,22,81,36
-Clarksburg,39,16,80,21
-Elkins AP,38,53,79,51
-Huntington Co,38,25,82,30
-Martinsburg AP,39,24,77,59
-Morgantown AP,39,39,79,55
-Parkersburg Co,39,16,81,34
-Wheeling,40,7,80,42
-WISCONSIN,LATITUDE,LONGITUDE,
-Appleton,44,15,88,23
-Ashland,46,34,90,58
-Beloit,42,30,89,2
-Eau Claire AP,44,52,91,29
-Fond Du Lac,43,48,88,27
-Green Bay AP,44,29,88,8
-La Crosse AP,43,52,91,15
-Madison AP (S),43,8,89,20
-Manitowoc,44,6,87,41
-Marinette,45,6,87,38
-Milwaukee AP,42,57,87,54
-Racine,42,43,87,51
-Sheboygan,43,45,87,43
-Stevens Point,44,30,89,34
-Waukesha,43,1,88,14
-Wausau AP,44,55,89,37
-WYOMING,LATITUDE,LONGITUDE,
-Casper AP,42,55,106,28
-Cheyenne,41,9,104,49
-Cody AP,44,33,109,4
-Evanston,41,16,110,57
-Lander AP (S),42,49,108,44
-Laramie AP (S),41,19,105,41
-Newcastle,43,51,104,13
-Rawlins,41,48,107,12
-Rock Springs AP,41,36,109,0
-Sheridan AP,44,46,106,58
-Torrington,42,5,104,13
+ALABAMA
+Alexander City
+Anniston
+Auburn
+Birmingham
+Decatur
+Dothan
+Florence
+Gadsden
+Huntsville
+Mobile
+Mobile
+Montgomery
+Selma-Craig
+Talladega
+Tuscaloosa
+ALASKA
+Anchorage
+Barrow
+Fairbanks
+Juneau
+Kodiak
+Nome
+ARIZONA
+Douglas
+Flagstaff
+Fort Huachuca
+Kingman
+Nogales
+Phoenix
+Prescott
+Tucson
+Winslow
+Yuma
+ARKANSAS
+Blytheville
+Camden
+El Dorado
+Fayetteville
+Fort Smith
+Hot Springs
+Jonesboro
+Little Rock
+Pine Bluff
+Texarkana
+CALIFORNIA
+Bakersfield
+Barstow
+Blythe
+Burbank
+Chico
+Concord
+Covina
+Crescent City
+Downey
+El Cajon
+El Cerrito
+Escondido
+Eureka/Arcata
+Fairfield-Trafis
+Fresno
+Hamilton
+Laguna Beach
+Livermore
+Lompoc Vandenberg
+Long Beach
+Los Angeles
+Los Angeles
+Merced-Castle
+Modesto
+Monterey
+Napa
+Needles
+Oakland
+Oceanside
+Ontario
+Oxnard
+Palmdale
+Palm Springs
+Pasadena
+Petaluma
+Pomona
+Redding
+Redlands
+Richmond
+Riverside-March
+Sacramento
+Salinas
+San Bernadino Norton
+San Diego
+San Fernando
+San Francisco
+San Francisco
+San Jose
+San Louis Obispo
+Santa Ana
+Santa Barbara MAP
+Santa Cruz
+Santa Maria
+Santa Monica CIC
+Santa Paula
+Santa Rosa
+Stockton
+Ukiah
+Visalia
+Yreka
+Yuba City
+COLORADO
+Alamosa
+Boulder
+Colorado Springs
+Denver
+Durango
+Fortllins
+Grand Junction
+Greeley
+Lajunta
+Leadville
+Pueblo
+Sterling
+Trinidad
+CONNECTICUT
+Bridgeport
+Hartford Brainard Field
+New Haven
+New London
+Norwalk
+Norwick
+Waterbury
+Widsor Locks Bradley Fld
+DELAWARE
+Dover
+Wilmington
+DISTRICT OFLUMBIA
+Andrews
+Washington National
+FLORIDA
+Belle Glade
+Cape Kennedy
+Daytona Beach
+E Fort Lauderdale
+Fort Myers
+Fort Pierce
+Gainesville
+Jacksonville
+Key West
+Lakeland
+Miami
+Miami Beach
+Ocala
+Orlando
+Panama City Tyndall
+Pensacola
+St. Augustine
+St. Petersburg
+Stanford
+Sarasota
+Tallahassee
+Tampa
+West Palm Beach
+GEORGIA
+Albany Turner
+Americus
+Athens
+Atlanta
+Augusta
+Brunswick
+Columbus Lawson
+Dalton
+Dublin
+Gainesville
+Griffin
+LaGrange
+Macon
+Marietta Dobbins
+Savannah
+Valdosta-Moody
+Waycross
+HAWAII
+Hilo
+Honolulu
+Kaneohe Bay MCAS
+Wahiawa
+IDAHO
+Boise
+Burley
+Coeur DAlene
+Idaho Falls
+Lewiston
+Moscow
+Mountain Home
+Pocatello
+Twin Falls
+ILLINOIS
+Aurora
+Belleville Scott
+Bloomington
+Carbondale
+Champaign/Urbana
+Chicago Midway
+Chicago OHare
+Chicago
+Danville
+Decatur
+Dixon
+Elgin
+Freeport
+Galesburg
+Greenville
+Joliet
+Kankakee
+La Salle/Peru
+Macomb
+Moline
+Mt Vernon
+Peoria
+Quincy
+Rantoul Chanute
+Rockford
+Springfield
+Waukegan
+INDIANA
+Anderson
+Bedford
+Bloomington
+Columbus Bakalar
+Crawfordsville
+Evansville
+Fort Wayne
+Goshen
+Hobart
+Huntington
+Indianapolis
+Jeffersonville
+Kokomo
+Lafayette
+La Porte
+Marion
+Muncie
+Peru Grissom
+Richmond
+Shelbyville
+South Bend
+Terre Haute
+Valparaiso
+Vincennes
+IOWA
+Ames
+Burlington
+Cedar Rapids
+Clinton
+Council Bluffs
+Des Moines
+Dubuque
+Fort Dodge
+Iowa City
+Keokuk
+Marshalltown
+Mason City
+Newton
+Ottumwa
+Sioux City
+Waterloo
+KANSAS
+Atchison
+Chanute
+Dodge City
+El Dorado
+Emporia
+Garden City
+Goodland
+Great Bend
+Hutchinson
+Liberal
+Manhattan Ft Riley
+Parsons
+Russell
+Salina
+Topeka
+Wichita
+KENTUCKY
+Ashland
+Bowling Green
+Corbin
+Covington
+Hopkinsville Ft Campbell
+Lexington
+Louisville
+Madisonville
+Owensboro
+Paducah
+LOUISIANA
+Alexandria
+Baton Rouge
+Bogalusa
+Houma
+Lafayette
+Lake Charles
+Minden
+Monroe
+Natchitoches
+New Orleans
+Shreveport
+MAINE
+Augusta
+Bangor Dow
+Caribou
+Lewiston
+Millinocket
+Portland
+Waterville
+MARYLAND
+Baltimore
+Baltimore
+Cumberland
+Frederick
+Hagerstown
+Salisbury
+MASSACHUSETTS
+Boston
+Clinton
+Fall River
+Framingham
+Gloucester
+Greenfield
+Lawrence
+Lowell
+New Bedford
+Pittsfield
+Springfield Westover
+Taunton
+Worcester
+MICHIGAN
+Adrian
+Alpena
+Battle Creek
+Benton Harbor
+Detroit
+Escanaba
+Flint
+Grand Rapids
+Holland
+Jackson
+Kalamazoo
+Lansing
+Marquette
+Mt Pleasant
+Muskegon
+Pontiac
+Port Huron
+Saginaw
+Sault Ste. Marie
+Traverse City
+Ypsilanti
+MINNESOTA
+Albert Lea
+Alexandria
+Bemidji
+Brainerd
+Duluth
+Fairbault
+Fergus Falls
+International Falls
+Mankato
+Minneapolis/St. Paul
+Rochester
+St. Cloud
+Virginia
+Willmar
+Winona
+MISSISSIPPI
+Biloxi--Keesler
+Clarksdale
+Columbus
+Greenville
+Greenwood
+Hattiesburg
+Jackson
+Laurel
+Mccomb
+Meridian
+Natchez
+Tupelo
+Vicksburg
+MISSOURI
+Cape Girardeau
+Columbia
+Farmington
+Hannibal
+Jefferson City
+Joplin
+Kansas City
+Kirksville
+Mexico
+Moberly
+Poplar Bluff
+Rolla
+St. Joseph
+St. Louis
+St. Louis
+Sikeston
+Sedalia--Whiteman
+Sikeston
+Springfield
+MONTANA
+Billings
+Bozeman
+Butte
+Cut Bank
+Glasgow
+Glendive
+Great Falls
+Havre
+Helena
+Kalispell
+Lewiston
+Livingstown
+Miles City
+Missoula
+NEBRASKA
+Beatrice
+Chadron
+Columbus
+Fremont
+Grand Island
+Hastings
+Kearney
+Lincoln
+McCook
+Norfolk
+North Platte
+Omaha
+Scottsbluff
+Sidney
+NEVADA
+Carson City
+Elko
+Ely
+Las Vegas
+Lovelock
+Reno
+Reno
+Tonopah
+Winnemucca
+NEW HAMPSHIRE
+Berlin
+Claremont
+Concord
+Keene
+Laconia
+Manchester Grenier
+Portsmouth Pease
+NEW JERSEY
+Atlantic City
+Long Branch
+Newark
+New Brunswick
+Paterson
+Phillipsburg
+Trenton
+Vineland
+NEW MEXICO
+Holloman
+Albuquerque
+Artesia
+Carlsbad
+Clovis
+Farmington
+Gallup
+Grants
+Hobbs
+Las Cruces
+Los Alamos
+Raton
+Roswell Walker
+Santa Fe
+Silver City
+Socorro
+Tucumcari
+NEW YORK
+Albany
+Albany
+Auburn
+Batavia
+Binghamton
+Buffalo
+Cortland
+Dunkirk
+Elmira
+Geneva
+Glens Falls
+Gloversville
+Hornell
+Ithaca
+Jamestown
+Kingston
+Lockport
+Massena
+Newburgh Stewart
+NYC-Central Park
+NYC-Kennedy
+NYC-La Guardia
+Niagara Falls
+Olean
+Oneonta
+Oswego
+Plattsburg
+Poughkeepsie
+Rochester
+Rome Griffiss
+Schenectady
+Suffolkunty
+Syracuse
+Utica
+Watertown
+NORTH CAROLINA
+Asheville
+Charlotte
+Durham
+Elizabeth City
+Fayetteville Pope
+Goldsboro Seymour-Johnson
+Greensboro
+Greenville
+Henderson
+Hickory
+Jacksonville
+Lumberton
+New Bern
+Raleigh/Durham
+Rocky Mount
+Wilmington
+Winston-Salem
+NORTH DAKOTA
+Bismarck
+Devils Lake
+Dickinson
+Fargo
+Grand Forks
+Jamestown
+Minot
+Williston
+OHIO
+Akron-Canton
+Ashtabula
+Athens
+Bowling Green
+Cambridge
+Chillicothe
+Cincinnati
+Cleveland
+Columbus
+Dayton
+Defiance
+Findlay
+Fremont
+Hamilton
+Lancaster
+Lima
+Mansfield
+Marion
+Middletown
+Newark
+Norwalk
+Portsmouth
+Sandusky
+Springfield
+Steubenville
+Toledo
+Warren
+Wooster
+Youngstown
+Zanesville
+OKLAHOMA
+Ada
+Altus
+Ardmore
+Bartlesville
+Chickasha
+Enid Vance
+Lawton
+McAlester
+Muskogee
+Norman
+Oklahoma City
+Ponca City
+Seminole
+Stillwater
+Tulsa
+Woodward
+OREGON
+Albany
+Astoria
+Baker
+Bend
+Corvallis
+Eugene
+Grants Pass
+Klamath Falls
+Medford
+Pendleton
+Portland
+Portland
+Roseburg
+Salem
+The Dalles
+PENNSYLVANIA
+Allentown
+Altoona
+Butler
+Chambersburg
+Erie
+Harrisburg
+Johnstown
+Lancaster
+Meadville
+New Castle
+Philadelphia
+Pittsburgh
+Pittsburgh
+Reading
+Scranton/Wilkes-Barre
+Statellege
+Sunbury
+Uniontown
+Warren
+West Chester
+Williamsport
+York
+RHODE ISLAND
+Newport
+Providence
+SOUTH Carolina
+Anderson
+Charleston
+Charleston
+Columbia
+Florence
+Georgetown
+Greenville
+Greenwood
+Orangeburg
+Rock Hill
+Spartanburg
+Sumter Shaw
+SOUTH DAKOTA
+Aberdeen
+Brookings
+Huron
+Mitchell
+Pierre
+Rapid City
+Sioux Falls
+Watertown
+Yankton
+TENNESSEE
+Athens
+Bristol-Tri City
+Chattanooga
+Clarksville
+Columbia
+Dyersburg
+Greenville
+Jackson
+Knoxville
+Memphis
+Murfreesboro
+Nashville
+Tullahoma
+TEXAS
+Abilene
+Alice
+Amarillo
+Austin
+Bay City
+Beaumont
+Beeville
+Big Spring
+Brownsville
+Brownwood
+Bryan
+Corpus Christi
+Corsicana
+Dallas
+Del Rio Laughlin
+Denton
+Eagle Pass
+El Paso
+Fort Worth
+Galveston
+Greenville
+Harlingen
+Houston
+Houston
+Huntsville
+Killeen Robert Gray AAF
+Lamesa
+Laredo
+Longview
+Lubbock
+Lufkin
+Mcallen
+Midland
+Mineral Wells
+Palestine
+Pampa
+Pecos
+Plainview
+Port Arthur
+Goodfellow
+San Antonio
+Sherman Perrin
+Snyder
+Temple
+Tyler
+Vernon
+Victoria
+Waco
+Wichita Falls
+UTAH
+Cedar City
+Logan
+Moab
+Ogden
+Price
+Provo
+Richfield
+St George
+Salt Lake City
+Vernal
+VERMONT
+Barre
+Burlington
+Rutland
+VIRGINIA
+Charlottesville
+Danville
+Fredericksburg
+Harrisonburg
+Lynchburg
+Norfolk
+Petersburg
+Richmond
+Roanoke
+Staunton
+Winchester
+WASHINGTON
+Aberdeen
+Bellingham
+Bremerton
+Ellensburg
+Everett Paine
+Kennewick
+Longview
+Moses Lake Larson
+Olympia
+Port Angeles
+Seattle-Boeing Field
+Seattle
+Seattle-Tacoma
+Spokane
+Tacoma McChord
+Walla Walla
+Wenatchee
+Yakima
+WEST VIRGINIA
+Beckley
+Bluefield
+Charleston
+Clarksburg
+Elkins
+Huntington
+Martinsburg
+Morgantown
+Parkersburg
+Wheeling
+WISCONSIN
+Appleton
+Ashland
+Beloit
+Eau Claire
+Fond Du Lac
+Green Bay
+La Crosse
+Madison
+Manitowoc
+Marinette
+Milwaukee
+Racine
+Sheboygan
+Stevens Point
+Waukesha
+Wausau
+WYOMING
+Casper
+Cheyenne
+Cody
+Evanston
+Lander
+Laramie
+Newcastle
+Rawlins
+Rock Springs
+Sheridan
+Torrington

@@ -1,17 +1,37 @@
 
 {% extends "loginbase.html" %}
 {% block content1 %}
-
 <div class="inner cover">
 	<h1 class="cover-heading"> Welcome </h1>
 	<h2 class="cover-heading"> Geographical Guessing Game </h2>
 	<h3>
-		Guess where you are on the planet with google street view stuff. 
+		Guess where you are on the planet with google street view stuff.
 	</h3><br>
 	<h3><a class="btn btn-lg btn-success" href="/game" role="button">Play Game</a></h3>
 	<h4>
 		By G.R.O.U.P Group: Jerome Freudenberg, Daniel Chernovolenko, Yiduo Ke, Alex Taradaychuk
 	</h4>
 </div>
+<div class="album text-muted">
+	<div class="container">
 
+	  <div class="row">
+			<div class="card" id = "normal">
+			  <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+			  <p class="card-text">same</p>
+			</div>
+		<div class="card" id = "theme-1-button-us">
+		  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="Card image cap">
+		  <p class="card-text" href="/game">United States</p>
+		</div>
+		<div class="card" id = "theme-2-button-uni">
+		  <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+		  <p class="card-text">American Universities</p>
+		</div>
+		<div class="card" id = "theme-3-button-amusement">
+			<img data-src="holder.js/100px280/thumb" alt="Card image cap">
+			<p class="card-text"> Amusment Parks </p>		</div>
+	</div>
+	</div>
+<script src = "../static/home.js"></script>
 {% endblock %}
