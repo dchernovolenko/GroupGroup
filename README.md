@@ -57,7 +57,9 @@ python app.py
 ## Bugs and Issues
 * You can submit your guess before it chooses a location
 * Sometimes it takes a long time if it lands in an area far from a streetview (it keeps increasing the radius until it hits a giving up threshold, where it re-chooses a random location)
+* Leaderboard only appears in navbar but not in home screen (so only accessible from in-game)
 * For people who love geography a lot, there are only 25,000 API calls per day.
+* Doesn't taste very good
 
 ## File Structure
 ```
