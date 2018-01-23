@@ -82,4 +82,7 @@ csv's for every continent
 ran into a lot of trouble with non ascii characters but fixed it by normalizing them yay
 
 freudenbergJ -- 2018-01-23 12:52:31
-linked margaret's csvs to db and added buttons
+linked yiduo's csvs to db and added buttons
+
+keY -- 2018-01-23 13:46:18
+goes for another location if it's taking more than 30 tries in increasing radius

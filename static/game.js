@@ -57,11 +57,10 @@ var landed_lng;
 var init_location;
 var landed_location;
 var user_score;
-var count = 0;
+var count = 0; // to see how many API calls I wasted lmao
 var place;
 var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
 
-var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
 var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
@@ -120,7 +119,6 @@ function increasingRadius(callback) {
       location: new google.maps.LatLng(latitude, longitude),
       radius: theme_radius
   }, callback);
-  console.log("theme");
   console.log("theme radius: " + theme_radius);
   if (theme == "africa") {
     theme_radius += 1000;
@@ -200,13 +198,10 @@ function geocodeAddress(location) {
       longitude = results[0].geometry.location.lng();
       console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
       increasingRadius(processSVDataTheme);
-      count = 0;
-      console.log("took " + count + " tries");
     } else {
       theme_locate();
       geocodeAddress(init_location);
       console.log("finding another place in theme...");
-      count++;
     }
   });
 }
@@ -218,19 +213,25 @@ function processSVDataTheme(data, status) {
     panorama.setPano(data.location.pano);
     landed_lat = data.location.latLng.lat();
     landed_lng = data.location.latLng.lng();
-    console.log("landed")
-    console.log(landed_lat)
-    console.log(landed_lng)
     panorama.set('addressControl', false);
     panorama.set('showRoadLabels', false);
     panorama.setVisible(true);
 
-    console.log("yay landed on a theme street view!");
-    // on_land = 1;
+    console.log("yay landed on a theme street view! Took " + count + " tries");
+    count = 0;
   } else {
-    console.log("increasing radius...");
-    increasingRadius(processSVDataTheme)
-    // on_land = 0;
+    if (count == 30){
+      count = 0;
+      theme_radius = 50;
+      theme_locate();
+      geocodeAddress(init_location);
+      console.log("taking more than 30 tries, finding another place instead...");
+    }
+    else{
+      console.log("increasing radius...");
+      increasingRadius(processSVDataTheme)
+      count++;
+    }
   }
 }
 
