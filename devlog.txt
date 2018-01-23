@@ -73,3 +73,6 @@ changed us_cities to using geocoding
 
 keY -- 2018-01-20 21:12:40
 now always lands on a themed place by keeping on trying until it lands
+
+freudenbergJ -- 2018-01-22 02:05:07
+linked buttons to theme toggling using localStorage

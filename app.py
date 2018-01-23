@@ -7,6 +7,9 @@ from utils import db, themes
 my_app = Flask(__name__)
 my_app.secret_key = os.urandom(64)
 
+theme = "us_cities"
+theme_toggle = 0
+
 
 @my_app.route('/')
 def root():

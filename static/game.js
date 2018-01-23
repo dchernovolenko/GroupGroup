@@ -59,24 +59,27 @@ var landed_location;
 var user_score;
 var count = 0;
 var place;
-var theme = "amusement"; //options are uni, us_cities, amusement (may not always work)
+var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
+var mapResized = false;
 
 var count = 0; // to see how many API calls I wasted lmao
 // var on_land; // to know if the random coordinate is a land coordinate
-var theme_toggle = 1;
+var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
 function initMap() {
   // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
   // var longitude = getRandomFloat(-180,180);
 
-
-  theme_locate() //defined up there, sets init_location to random theme location
-  console.log('hello')
-  console.log(latitude)
-  console.log(longitude)
+  console.log(theme);
+  console.log("theme IO:")
+  console.log(theme_toggle);
+  theme_locate(); //defined up there, sets init_location to random theme location
+  console.log('hello');
+  // console.log(latitude);
+  // console.log(longitude);
 
   place = {lat: latitude, lng: longitude};
-  console.log("the beginning: " + place.lat + ", " + place.lng);
+  // console.log("the beginning: " + place.lat + ", " + place.lng);
 
   var place2 = {lat: 0, lng: 0}; // for the map
   sv = new google.maps.StreetViewService();
@@ -89,12 +92,21 @@ function initMap() {
     zoom: 2,
     streetViewControl: false
   });
-
+  google.maps.event.addListener(map, 'bounds_changed', function() {
+    google.maps.event.trigger(map, 'resize');
+  });
+  google.maps.event.addListener(map, 'mousemove', function() {
+    google.maps.event.trigger(map, 'resize');
+  });
+  window.addEventListener("resize", function(event) {
+    google.maps.event.trigger(map, 'resize');
+  });
   if (theme_toggle) {
     // increasingRadius(processSVDataTheme);
       geocodeAddress(init_location);
   }
   else {
+    console.log("RANDOM");
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
@@ -136,6 +148,8 @@ else{
 }
 
   // distance from user click to actual place
+  latitude = event.latLng.lat();
+  longitude = event.latLng.lng();
   var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
   // scoring (half of Earth's circumference in km minus user click distance)
   user_score = 20037.5 - distance_to_goal;
@@ -143,6 +157,7 @@ else{
   // putting a marker down activates the submit button
   document.getElementById("submit").disabled = false;
 }
+
 
 $( "button" ).click(function() {
   // so they can't submit again
@@ -153,14 +168,31 @@ $( "button" ).click(function() {
 	map:map,
 	label: "B",
 });
-  google.maps.event.clearInstanceListeners(map);
 
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = 'you scored ' + user_score + " out of 20037.5";
-
-  // sending how much score to add to the user
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 20037.5</h1>";
+  //resizing map
+  document.getElementById("wrpr").style.top = "56px";
+  document.getElementById("wrpr").style.width = "100%";
+  document.getElementById("wrpr").style.height = "100%";
+  document.getElementById("controls").style.width = "100%";
+  document.getElementById("controls").style.height = "100%";
+  document.getElementById("map").style.cssText = null;
+  document.getElementById("map").style.height = "100%";
+  document.getElementById("map").style.width = "100%";
+   var end = new google.maps.LatLng(landed_lat,landed_lng);
+  var start = new google.maps.LatLng(latitude,longitude);
+  var bounds = new google.maps.LatLngBounds();
+    bounds.extend(end);
+    bounds.extend(start);
+   setTimeout(function () {
+    map.fitBounds(bounds);
+     google.maps.event.trigger(map, "resize");
+     console.log("thing2");
+        google.maps.event.clearListeners(map, 'click');
+   }, 200);
   $.ajax({
     url: '/addScore',
     type: 'GET',
