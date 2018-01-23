@@ -19,6 +19,9 @@ var setnorm = function(e) {
   console.log("toggling off");
   localStorage.setItem("theme_toggle", 0);
   console.log("turning off theme");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setus = function(e) {
@@ -26,6 +29,9 @@ var setus = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to US");
   localStorage.setItem("theme", "us_cities");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setuni = function(e) {
@@ -33,6 +39,9 @@ var setuni = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to uni");
   localStorage.setItem("theme", "uni");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setamus = function(e) {
@@ -40,6 +49,9 @@ var setamus = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to amusement parks");
   localStorage.setItem("theme", "amusement");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setafri = function(e) {
@@ -47,6 +59,9 @@ var setafri = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to africa");
   localStorage.setItem("theme", "africa");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setasia = function(e) {
@@ -54,6 +69,9 @@ var setasia = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to asia");
   localStorage.setItem("theme", "asia");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setnoam = function(e) {
@@ -61,6 +79,9 @@ var setnoam = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to north america");
   localStorage.setItem("theme", "north_america");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var seteuro = function(e) {
@@ -68,6 +89,9 @@ var seteuro = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to europe");
   localStorage.setItem("theme", "europe");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setocea = function(e) {
@@ -75,6 +99,9 @@ var setocea = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to oceania");
   localStorage.setItem("theme", "oceania");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setwoca = function(e) {
@@ -82,6 +109,9 @@ var setwoca = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to world capitals");
   localStorage.setItem("theme", "world_capitals");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 var setsoam = function(e) {
@@ -89,6 +119,9 @@ var setsoam = function(e) {
   localStorage.setItem("theme_toggle", 1);
   console.log("setting theme to south america");
   localStorage.setItem("theme", "south_america");
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
 }
 
 normal_button.addEventListener("click", setnorm);

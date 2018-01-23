@@ -22,14 +22,21 @@
 					<li class="nav-item">
 							<a class="nav-link" href="/leaderboard">Leaderboard</a>
 						</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/login">Login</a>
-					</li>
 				</ul>
+
 				<ul class="navbar-nav">
+					{% if not session["user"] %}
+					<li class="nav-item pull-right">
+							<a class="nav-link pull-right" href="/login">Login</a>
+						</li>
+					<li class="nav-item pull-right">
+							<a class="nav-link pull-right" href="/register">Register</a>
+						</li>
+					{% else %}
 					<li class="nav-item pull-right">
 						<a class="nav-link pull-right" href="/logout">Sign Out</a>
 					</li>
+					{% endif %}
 				</ul>
 			</div>
 		</nav>

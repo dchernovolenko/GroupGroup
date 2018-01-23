@@ -194,9 +194,9 @@ else{
 }
 
 
-$( "button" ).click(function() {
+$( "#submit" ).click(function() {
   // so they can't submit again
-  $( "button" ).remove();
+  $( "#submit" ).remove();
   // making a marker at the correct spot, marked "B"
   var endMark = new google.maps.Marker({
 	position: {lat: landed_lat, lng: landed_lng},
@@ -207,7 +207,7 @@ $( "button" ).click(function() {
   // determining the score
   var score = document.getElementById("score");
   console.log( 'score: ' + user_score );
-  score.innerHTML = '<h1>you scored ' + user_score + " out of 5000</h1>";
+  score.innerHTML = '<h1>you scored ' + user_score + " out of 5000</h1> <button class='btn btn-primary' onClick='window.location.reload()'> Play again! </button>";
   //resizing map
   document.getElementById("wrpr").style.top = "56px";
   document.getElementById("wrpr").style.width = "100%";
@@ -223,11 +223,11 @@ $( "button" ).click(function() {
     bounds.extend(end);
     bounds.extend(start);
    setTimeout(function () {
-    map.fitBounds(bounds);
      google.maps.event.trigger(map, "resize");
+     map.fitBounds(bounds);
      console.log("thing2");
         google.maps.event.clearListeners(map, 'click');
-   }, 200);
+   }, 300);
   $.ajax({
     url: '/addScore',
     type: 'GET',
