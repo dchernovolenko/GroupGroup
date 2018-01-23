@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   form{
     padding-left: 1.5rem;
     padding-right:  1.5rem;
@@ -63,7 +63,7 @@
     position: absolute;
       z-index: 200;
     color: #44FFD1;
-    transition: all, 0.5s;
+    transition: all, 0.2s;
   }
   #wrpr {
     height:600px;
@@ -88,10 +88,9 @@
       height: 500px;
   }
   #score{
-    position: fixed;
-    top: 50%;
+    position: relative;
+    top:75px;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     z-index: 201;
   }
@@ -101,7 +100,7 @@
     height: 250px;
     top: 0;
     right: 0;
-    transition: all, 0.5s;
+    transition: all, 0.2s;
     float: right;
   }
   #submit{
