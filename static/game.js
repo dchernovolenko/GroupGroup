@@ -180,6 +180,9 @@ else{
   else if (theme == "europe") {
     max_dist = 5342.6; //thanks quora
   }
+  else if (theme == "south_america") {
+    max_dist = distance(11.48, -72.6, -54.9, -67);
+  }
 
 
 

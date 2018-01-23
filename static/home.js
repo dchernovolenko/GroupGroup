@@ -8,6 +8,7 @@ var noam_button = document.getElementById("theme-6-button-north-america");
 var euro_button = document.getElementById("theme-7-button-europe");
 var ocea_button = document.getElementById("theme-8-button-oceania");
 var woca_button = document.getElementById("theme-9-button-world-capitals");
+var soam_button = document.getElementById("theme-10-button-south-america");
 
 
 
@@ -83,6 +84,13 @@ var setwoca = function(e) {
   localStorage.setItem("theme", "world_capitals");
 }
 
+var setsoam = function(e) {
+  console.log("toggling on");
+  localStorage.setItem("theme_toggle", 1);
+  console.log("setting theme to south america");
+  localStorage.setItem("theme", "south_america");
+}
+
 normal_button.addEventListener("click", setnorm);
 us_button.addEventListener("click", setus);
 uni_button.addEventListener("click", setuni);
@@ -93,3 +101,4 @@ noam_button.addEventListener("click", setnoam);
 euro_button.addEventListener("click", seteuro);
 ocea_button.addEventListener("click", setocea);
 woca_button.addEventListener("click", setwoca);
+soam_button.addEventListener("click", setsoam);
