@@ -84,6 +84,17 @@ static/
     |  loginstylesheet.css
   images/
     |  background.jpg
+    |  africa.jpg
+    |  amuse.jpg
+    |  asia.jpg
+    |  au.jpg
+    |  capitol.jpg
+    |  eu.jpg
+    |  na.jpg
+    |  SA.jpg
+    |  unis.jpg
+    |  us.jpg
+    |  world.jpg
   | game.js
   | home.js
 templates/
