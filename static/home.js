@@ -1,3 +1,5 @@
+$("#dummy").hide();
+
 var normal_button = document.getElementById("normal");
 var us_button = document.getElementById("theme-1-button-us");
 var uni_button = document.getElementById("theme-2-button-uni");

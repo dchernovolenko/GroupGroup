@@ -1,4 +1,3 @@
-
 {% extends "loginbase.html" %}
 {% block content1 %}
 <div class="inner cover">
@@ -17,10 +16,10 @@
 	<div class="container">
 
 	  <div class="row">
-			<div class="card active" id = "normal">
-					<img src='../static/images/world.png' alt="Card image cap">
-			  <p class="card-text">Normal</p>
-			</div>
+		<div class="card" id = "normal">
+			<img src='../static/images/world.png' alt="Card image cap">
+			<p class="card-text">World</p>
+		</div>
 		<div class="card" id = "theme-1-button-us">
 		  <img src='../static/images/us.png' alt="Card image cap">
 		  <p class="card-text" href="/game">United States</p>
@@ -61,7 +60,12 @@
 				<img src='../static/images/sa.png' alt="Card image cap">
 			<p class="card-text"> South America </p>
 		</div>
+		<div class="card active" id = "dummy">
+		</div>
 	</div>
-	</div>
+</div>
+<!-- <script>
+	$("#dummy").hide();
+</script> -->
 <script src = "../static/home.js"></script>
 {% endblock %}
