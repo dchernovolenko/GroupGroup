@@ -67,6 +67,9 @@ road label on the floor is removed so players can't cheat by looking up the road
 keY -- 2018-01-17 11:32:26
 better algorithm for themed games
 
+danielC -- 2018-01-23 16:02:44
+Map resize on hover + more CSS + yes
+
 freudenbergJ -- 2018-01-20 20:34:16
 added function to turn dataset of locations into db table
 changed us_cities to using geocoding
@@ -84,8 +87,14 @@ ran into a lot of trouble with non ascii characters but fixed it by normalizing 
 freudenbergJ -- 2018-01-23 12:52:31
 linked yiduo's csvs to db and added buttons
 
+danielC -- 2018-01-23 13:05:44
+Map refresh and resize on submit, also other map stuff
+
 keY -- 2018-01-23 13:46:18
 goes for another location if it's taking more than 30 tries in increasing radius
+
+danielC -- 2018-01-24 22:23:17
+Added CSS for login and register, other things prettier
 
 freudenbergJ -- 2018-01-23 23:38:26
 readme, changes.txt, and updated design doc
