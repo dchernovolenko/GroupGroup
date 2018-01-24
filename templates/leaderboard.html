@@ -15,7 +15,7 @@
 	  </thead>
         </tr>
         {% for ranking in lb %}
-        <tr {% if ranking[0] == "huh" %} class ="bg-primary" {% endif %}  >
+        <tr {% if ranking[0] == user %} class ="bg-primary" {% endif %}  >
           <td> {{ ranking[0] }} </td>
           <td> {{ ranking[1] }} </td>
         </tr>

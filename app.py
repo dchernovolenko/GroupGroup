@@ -19,7 +19,12 @@ def root():
 @my_app.route('/leaderboard')
 def leaderboard():
     lb = db.leaderboard()
-    return render_template("leaderboard.html", lb = lb)
+    username = ""
+    if "user" in session:
+        username = session["user"]
+    else:
+        username = "no"
+    return render_template("leaderboard.html", lb = lb, user = username)
 
 
 @my_app.route('/game')
