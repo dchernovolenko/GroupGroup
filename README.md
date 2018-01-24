@@ -7,7 +7,7 @@
 Geopardy is a Flask-based web app that offers users the opportunity to challenge their geographical know-how by displaying a google street-view of a location with a specific theme (e.g. United States, World Capitals, European Soccer Stadiums) and having the user place a pin on a map to indicate their estimate of the location. The software will then find the distance between the two and award a certain number of points to the user based on the accuracy of their guess. Users will also have the option to log in to have their cumulative points displayed on a leaderboard so they can compare their scores with their friends in the spirit of mature competition.
 
 ## Video Link
-<Insert Here>
+https://youtu.be/azpnWi_RUFc
 
 ## Launch Instructions
 
