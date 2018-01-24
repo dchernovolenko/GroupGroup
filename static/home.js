@@ -1,4 +1,4 @@
-$("#dummy").hide();
+$("#dummy").hide(); // so none the icons is autoselected to make activization work
 
 var normal_button = document.getElementById("normal");
 var us_button = document.getElementById("theme-1-button-us");
