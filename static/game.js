@@ -2,10 +2,6 @@ function getRandomFloat(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// function get_us_coord() {
-//
-// }
-
 function distance(lat1,lon1,lat2,lon2) {
 var R = 6371; // Radius of the earth in km
 var dLat = deg2rad(lat2-lat1);  // deg2rad below
@@ -74,8 +70,6 @@ function initMap() {
   console.log(theme_toggle);
   theme_locate(); //defined up there, sets init_location to random theme location
   console.log('hello');
-  // console.log(latitude);
-  // console.log(longitude);
 
   place = {lat: latitude, lng: longitude};
   // console.log("the beginning: " + place.lat + ", " + place.lng);

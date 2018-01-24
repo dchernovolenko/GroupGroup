@@ -15,10 +15,9 @@
     </div>
     </div>
     </div>
-    <div id="streetview">
-    <script src = "../static/game.js"></script>
-    </div>
+    <div id="streetview"></div>
+    <script async src = "../static/game.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mIp5CiUGgspmP4WYqijELDBFv-7CUc8&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key={{ key }}&callback=initMap">
     </script>
 {% endblock %}
