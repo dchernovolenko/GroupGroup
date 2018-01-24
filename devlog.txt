@@ -86,3 +86,6 @@ linked yiduo's csvs to db and added buttons
 
 keY -- 2018-01-23 13:46:18
 goes for another location if it's taking more than 30 tries in increasing radius
+
+freudenbergJ -- 2018-01-23 23:38:26
+readme, changes.txt, and updated design doc

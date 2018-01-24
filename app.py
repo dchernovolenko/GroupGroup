@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
 from random import *
 import json, urllib2, sys, os
-import sqlite3, os
+import sqlite3
 from utils import db, themes
 
 my_app = Flask(__name__)

@@ -6,6 +6,9 @@
 
 Geopardy is a Flask-based web app that offers users the opportunity to challenge their geographical know-how by displaying a google street-view of a location with a specific theme (e.g. United States, World Capitals, European Soccer Stadiums) and having the user place a pin on a map to indicate their estimate of the location. The software will then find the distance between the two and award a certain number of points to the user based on the accuracy of their guess. Users will also have the option to log in to have their cumulative points displayed on a leaderboard so they can compare their scores with their friends in the spirit of mature competition.
 
+## Video Link
+<Insert Here>
+
 ## Launch Instructions
 
 
@@ -51,14 +54,13 @@ python app.py
 * `from flask import Flask, render_template, request, session, redirect, url_for, flash`
   * requires `pip install flask`
 * [`python2.7`](https://www.python.org/download/releases/2.7/)
-* `import requests, json`
-  * requires `pip install requests`
+* `import json, urllib2, sys, os, sqlite3, random`
+  * should be included with python
 
 ## Bugs and Issues
 * You can submit your guess before it chooses a location
 * Sometimes it takes a long time if it lands in an area far from a streetview (it keeps increasing the radius until it hits a giving up threshold, where it re-chooses a random location)
-* Leaderboard only appears in navbar but not in home screen (so only accessible from in-game)
-* Passwords are not hashed
+* Passwords are not hashed (so Mr. DW could hack our accounts if it pleased him).
 * For people who love geography a lot, there are only 25,000 API calls per day.
 * Doesn't taste very good
 
@@ -78,6 +80,7 @@ data/
     | us_cities.csv
     | world_capitals.csv
   | accounts.db
+  | key.csv **<--- INSERT KEY HERE**
 static/
   css/
     |  bodystylesheet.css
