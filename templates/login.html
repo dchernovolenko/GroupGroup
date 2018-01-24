@@ -1,25 +1,31 @@
-{% extends "uniTemp.html" %}
+{% extends "loginbase.html" %}
 {% block content1 %}
-  <body>
-    <center>
-      {% set messages = get_flashed_messages() %}
-      {% for message in messages %}
-      {{ message }}
-      {% endfor %}
-      <br><br><br>
-      <form method = "POST" action = "/authenticate">
-        <b> Input your user </b>
-        <input type = "text" name = "username"> <br>
-        <b> Input your password </b>
-	      <input type = "password" name = "password"> <br>
-        <input type = "submit" value = "Boom">
-        <br>
-      </form>
-      <br>
-      <form method = "GET" action = "/register">
-        <input type = "submit" value = "register"> </input>
-      </form>
-      <br><br>
-      Water tastes good.
-    </center>
+    <div class="container">
+        {% set messages = get_flashed_messages() %}
+              <form method = "POST" action="/authenticate" class="form-signin">
+                <h2 class="form-signin-heading">Please sign in. </h2>
+                {% if messages[0] == "User does not exist." %}
+                <label for="inputEmail" class="sr-only">username</label>
+                <input type="user" id="inputEmail" class="form-control" name="username" placeholder="Username" required autofocus>
+                <h3 id="passwordHelp" class="text-danger">
+                  User does not exist, please register to make an account if you don't have one yet.
+                </h3>
+              {% else %}
+              <label for="inputEmail" class="sr-only">username</label>
+              <input type="user" id="inputEmail" class="form-control" name="username" placeholder="Username" required autofocus>
+              {% endif %}
+              {% if messages[0] == "Incorrect Password." %}
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+                <h3 id="passwordHelp" class="text-danger">
+                  Wrong password.
+                </h3>
+                {% else %}
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+                {% endif %}
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submitType" value="Sign In">Sign in</button>
+              </form>
+
+            </div>
 {% endblock %}

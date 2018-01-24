@@ -68,10 +68,10 @@ def user_creation():
     pw_confirm = request.form['confirm']
 
     if db.look_for(user):
-        flash ("User already exists")
+        flash ("Username already exists.")
         return redirect(url_for('register'))
     if pw != pw_confirm:
-        flash ("Passwords must match")
+        flash ("Passwords do not match.")
         return redirect(url_for('register'))
     db.create_account(user, pw, 0)
     flash ("Account Created")

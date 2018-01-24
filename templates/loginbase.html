@@ -23,18 +23,24 @@
 						<a class="navbar-brand" href="/">Home <span class="sr-only"></span></a>
 					</li>
 					<li class="nav-item">
-                        <a class="navbar-brand" href="/login">Sign In</a>
-                    </li>										
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="/register">Register</a>
-					</li>	
-					{% else %}	
+												<a class="navbar-brand" href="/leaderboard">Leaderboard</a>
+					</li>
 					<li class="nav-item">
-							<a class="navbar-brand" href="/">Welcome, {{ session["user"] }}  <span class="sr-only"></span></a>
+	            <a class="navbar-brand" href="/login">Sign In</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="navbar-brand" href="/register">Register</a>
+					</li>
+					{% else %}
+					<li class="nav-item">
+							<a class="navbar-brand" href="/">Welcome, {{ session["user"] }}.  <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item">
+													<a class="navbar-brand" href="/leaderboard">Leaderboard</a>
 						</li>
 					<li class="nav-item">
                         <a class="navbar-brand" href="/logout">Sign Out</a>
-					</li>	
+					</li>
 					{% endif %}
 				</ul>
 			</div>
@@ -43,6 +49,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	</body>
-	
+
 		{% block content1 %}
 		{% endblock %}
