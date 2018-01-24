@@ -27,14 +27,11 @@ function theme_locate() {
     url: "/theme/" + theme,
     async: false,
   }).done(function(response) {
-     console.log(response);
      var obj = JSON.parse(response);
-     console.log(typeof(obj));
      init_location = obj.place;
      if (theme == "us_cities") {
        init_location += ", US";
      }
-     console.log(init_location);
   });
 }
 
@@ -58,21 +55,12 @@ var place;
 var theme = localStorage.getItem("theme"); //options are uni, us_cities, amusement (may not always work)
 var mapResized = false;
 
-// var on_land; // to know if the random coordinate is a land coordinate
 var theme_toggle = parseInt(localStorage.getItem("theme_toggle"));
 
 function initMap() {
-  // var latitude = getRandomFloat(-45,66); // avoiding the arctic circles and then some
-  // var longitude = getRandomFloat(-180,180);
-
-  console.log(theme);
-  console.log("theme IO:")
-  console.log(theme_toggle);
   theme_locate(); //defined up there, sets init_location to random theme location
-  console.log('hello');
 
   place = {lat: latitude, lng: longitude};
-  // console.log("the beginning: " + place.lat + ", " + place.lng);
 
   var place2 = {lat: 0, lng: 0}; // for the map
   sv = new google.maps.StreetViewService();
@@ -99,7 +87,6 @@ function initMap() {
       geocodeAddress(init_location);
   }
   else {
-    console.log("RANDOM");
     TryRandomLocation(processSVData);
   }
   //when the user clicks on the map
@@ -122,7 +109,6 @@ function increasingRadius(callback) {
       location: new google.maps.LatLng(latitude, longitude),
       radius: theme_radius
   }, callback);
-  console.log("theme radius: " + theme_radius);
   if (theme == "africa") {
     theme_radius += 1000;
   }
@@ -150,7 +136,6 @@ else{
   longitude = event.latLng.lng();
   var distance_to_goal = distance(event.latLng.lat(), event.latLng.lng(), landed_lat, landed_lng);
   // scoring (half of Earth's circumference in km minus user click distance)
-  // user_score = 20037.5 - distance_to_goal;
   var max_dist = 20037.5;
   if (theme_toggle == 0 || theme == "amusement" || theme == "world_capitals") {
     max_dist = 20037.5;
@@ -178,9 +163,9 @@ else{
     max_dist = distance(11.48, -72.6, -54.9, -67);
   }
 
+  var coefficient = 5000/Math.pow(max_dist,3);
 
-
-  user_score = Math.pow(5000, (max_dist - distance_to_goal) / max_dist);
+  user_score = coefficient * Math.pow((max_dist - distance_to_goal),3);
   user_score = Math.round (user_score * 10) / 10;
 
   // putting a marker down activates the submit button
@@ -200,7 +185,6 @@ $( "#submit" ).click(function() {
 
   // determining the score
   var score = document.getElementById("score");
-  console.log( 'score: ' + user_score );
   score.innerHTML = '<h1>you scored ' + user_score + " out of 5000</h1> <button class='btn btn-primary' onClick='window.location.reload()'> Play again! </button>";
   //resizing map
   document.getElementById("wrpr").style.top = "56px";
@@ -219,7 +203,6 @@ $( "#submit" ).click(function() {
    setTimeout(function () {
      google.maps.event.trigger(map, "resize");
      map.fitBounds(bounds);
-     console.log("thing2");
         google.maps.event.clearListeners(map, 'click');
    }, 300);
   $.ajax({
@@ -227,10 +210,8 @@ $( "#submit" ).click(function() {
     type: 'GET',
     data: {"score": user_score},
     success: function(response){
-      console.log(response);
     },
     error: function(error){
-      console.log(error);
     }
   });
 
@@ -242,12 +223,10 @@ function geocodeAddress(location) {
     if (status === 'OK') {
       latitude = results[0].geometry.location.lat();
       longitude = results[0].geometry.location.lng();
-      console.log("geocode latitude: " + results[0].geometry.location.lat() + ", " + "longitude: " + + results[0].geometry.location.lng())
       increasingRadius(processSVDataTheme);
     } else {
       theme_locate();
       geocodeAddress(init_location);
-      console.log("finding another place in theme...");
     }
   });
 }
@@ -262,8 +241,6 @@ function processSVDataTheme(data, status) {
     panorama.set('addressControl', false);
     panorama.set('showRoadLabels', false);
     panorama.setVisible(true);
-
-    console.log("yay landed on a theme street view! Took " + count + " tries");
     count = 0;
   } else {
     if (count == 30){
@@ -271,10 +248,8 @@ function processSVDataTheme(data, status) {
       theme_radius = 50;
       theme_locate();
       geocodeAddress(init_location);
-      console.log("taking more than 30 tries, finding another place instead...");
     }
     else{
-      console.log("increasing radius...");
       increasingRadius(processSVDataTheme)
       count++;
     }
@@ -290,13 +265,10 @@ function processSVData(data, status) {
     panorama.set('addressControl', false);
     panorama.setVisible(true);
 
-    console.log("YAY! " + data.location.latLng.lat() + ", " + data.location.latLng.lng());
-    console.log("took " + count + " tries");
     count = 0;
   } else {
     // longitude++;
     count++;
-    console.log("getting a good location...");
     TryRandomLocation(processSVData);
   }
 }
